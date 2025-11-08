@@ -29,112 +29,112 @@ Aufwandsschätzung (S = ≤2 PT, M = 3–5 PT, L = >5 PT).
 
 ### Phase B – MVP Kern
 
-4. AP-B1: Kartenintegration & Tile-Provider
+1. AP-B1: Kartenintegration & Tile-Provider
     - Ziel: Anzeige Grundkarte + Attribution.
     - Deliverables: MapView, Attribution-Leiste.
     - Abhängigkeiten: AP-A3.
     - Aufwand: M
-5. AP-B2: Standortbestimmung (Foreground)
+2. AP-B2: Standortbestimmung (Foreground)
     - Ziel: Live-Position mit Update-Stream.
     - Deliverables: LocationService Modul, Permission-Dialog.
     - Abhängigkeiten: AP-B1.
     - Aufwand: S
-6. AP-B3: Overpass-Abfrage + Parser
+3. AP-B3: Overpass-Abfrage + Parser
     - Ziel: Abfrage stationärer Blitzer und maxspeed (optional) für Bounding Box.
     - Deliverables: OverpassClient, QueryBuilder, Parser-Tests.
     - Abhängigkeiten: AP-B2.
     - Aufwand: M
-7. AP-B4: POI-Overlay & Cache
+4. AP-B4: POI-Overlay & Cache
     - Ziel: Darstellung gefundener POIs, lokaler Cache (Hive/SQLite).
     - Deliverables: CacheRepository, POI-Modelle, Overlay-Komponenten.
     - Abhängigkeiten: AP-B3.
     - Aufwand: M
-8. AP-B5: Warnlogik (Distanzberechnung + HUD + Audio)
+5. AP-B5: Warnlogik (Distanzberechnung + HUD + Audio)
     - Ziel: Erste visuelle/akustische Warnung beim Eintritt in konfigurierten Radius.
     - Deliverables: WarningEngine, HUD-Komponente, Basis-Sound.
     - Abhängigkeiten: AP-B4.
     - Aufwand: M
-9. AP-B6: Einstellungen (Radius, Ton, Datenschutzhinweis)
+6. AP-B6: Einstellungen (Radius, Ton, Datenschutzhinweis)
     - Ziel: Persistente Konfiguration.
     - Deliverables: SettingsView, SettingsStore, Datenschutzhinweis.
     - Abhängigkeiten: AP-B5.
     - Aufwand: S
-10. AP-B7: Offline-Grundfunktion (Letzte Region)
-    - Ziel: Anzeige letzter POIs ohne Netz.
-    - Deliverables: Cache-Ladepfad, Offline-Hinweis.
-    - Abhängigkeiten: AP-B4.
-    - Aufwand: S
+7. AP-B7: Offline-Grundfunktion (Letzte Region)
+   - Ziel: Anzeige letzter POIs ohne Netz.
+   - Deliverables: Cache-Ladepfad, Offline-Hinweis.
+   - Abhängigkeiten: AP-B4.
+   - Aufwand: S
 
 ### Phase C – Erweiterung I
 
-11. AP-C1: Geofencing (Hintergrundwarnungen)
-    - Ziel: Energieeffiziente Hintergrundwarnungen.
-    - Deliverables: GeofencingService, Testfälle.
-    - Abhängigkeiten: AP-B5.
-    - Aufwand: L
-12. AP-C2: Mehrsprachigkeit (DE/EN)
-    - Ziel: i18n Grundlagen.
-    - Deliverables: Lokalisierte Strings, Umschaltlogik.
-    - Abhängigkeiten: AP-B6.
-    - Aufwand: S
-13. AP-C3: Accessibility Basis
-    - Ziel: Kontraste, Labels, Screenreader-Test.
-    - Deliverables: A11y-Checkliste, UI-Anpassungen.
-    - Abhängigkeiten: AP-B1–B6.
-    - Aufwand: M
+1. AP-C1: Geofencing (Hintergrundwarnungen)
+   - Ziel: Energieeffiziente Hintergrundwarnungen.
+   - Deliverables: GeofencingService, Testfälle.
+   - Abhängigkeiten: AP-B5.
+   - Aufwand: L
+2. AP-C2: Mehrsprachigkeit (DE/EN)
+   - Ziel: i18n Grundlagen.
+   - Deliverables: Lokalisierte Strings, Umschaltlogik.
+   - Abhängigkeiten: AP-B6.
+   - Aufwand: S
+3. AP-C3: Accessibility Basis
+   - Ziel: Kontraste, Labels, Screenreader-Test.
+   - Deliverables: A11y-Checkliste, UI-Anpassungen.
+   - Abhängigkeiten: AP-B1–B6.
+   - Aufwand: M
 
 ### Phase D – Erweiterung II
 
-14. AP-D1: OSM Notes Integration (Meldungen)
-    - Ziel: Nutzer kann Note erstellen (anonym/OAuth).
-    - Deliverables: NotesClient, Meldedialog, Validierung.
-    - Abhängigkeiten: AP-B3, optional AP-C2.
-    - Aufwand: M
-15. AP-D2: Performance & Energieoptimierung
-    - Ziel: Einhaltung Startzeit, Latenz, Akku-Verbrauch.
-    - Deliverables: Profiling-Bericht, Optimierungspatches.
-    - Abhängigkeiten: AP-C1.
-    - Aufwand: M
-16. AP-D3: Erweiterte Offline-Cache/Regionen
-    - Ziel: Vorkonfiguration zusätzlicher Regionen.
-    - Deliverables: Regionpack-Logik, Speichergrößeninfo.
-    - Abhängigkeiten: AP-B7.
-    - Aufwand: M
+1. AP-D1: OSM Notes Integration (Meldungen)
+   - Ziel: Nutzer kann Note erstellen (anonym/OAuth).
+   - Deliverables: NotesClient, Meldedialog, Validierung.
+   - Abhängigkeiten: AP-B3, optional AP-C2.
+   - Aufwand: M
+2. AP-D2: Performance & Energieoptimierung
+   - Ziel: Einhaltung Startzeit, Latenz, Akku-Verbrauch.
+   - Deliverables: Profiling-Bericht, Optimierungspatches.
+   - Abhängigkeiten: AP-C1.
+   - Aufwand: M
+3. AP-D3: Erweiterte Offline-Cache/Regionen
+   - Ziel: Vorkonfiguration zusätzlicher Regionen.
+   - Deliverables: Regionpack-Logik, Speichergrößeninfo.
+   - Abhängigkeiten: AP-B7.
+   - Aufwand: M
 
 ### Phase E – Release & Qualität
 
-17. AP-E1: Testautomatisierung Ausbau
-    - Ziel: ≥70% Branch Coverage kritische Logik.
-    - Deliverables: Test-Suite, Coverage-Bericht.
-    - Abhängigkeiten: Kernmodule fertig.
-    - Aufwand: M
-18. AP-E2: Beta-Test & Feedback-Auswertung
-    - Ziel: Stabilitäts-/Usability-Prüfung.
-    - Deliverables: Testprotokolle, Anpassungsliste.
-    - Abhängigkeiten: MVP + Erweiterungen stabil.
-    - Aufwand: M
-19. AP-E3: App-Store Vorbereitung (Listing, Compliance)
-    - Ziel: Einreichungsbereitschaft.
-    - Deliverables: Beschreibung, Screenshots, Datenschutz-Formulare.
-    - Abhängigkeiten: AP-E2.
-    - Aufwand: S
-20. AP-E4: Release-Kandidaten & Final Review
-    - Ziel: Freigabe.
-    - Deliverables: RC-Builds, Abschlusscheckliste.
-    - Abhängigkeiten: AP-E3.
-    - Aufwand: S
+1. AP-E1: Testautomatisierung Ausbau
+   - Ziel: ≥70% Branch Coverage kritische Logik.
+   - Deliverables: Test-Suite, Coverage-Bericht.
+   - Abhängigkeiten: Kernmodule fertig.
+   - Aufwand: M
+2. AP-E2: Beta-Test & Feedback-Auswertung
+   - Ziel: Stabilitäts-/Usability-Prüfung.
+   - Deliverables: Testprotokolle, Anpassungsliste.
+   - Abhängigkeiten: MVP + Erweiterungen stabil.
+   - Aufwand: M
+3. AP-E3: App-Store Vorbereitung (Listing, Compliance)
+   - Ziel: Einreichungsbereitschaft.
+   - Deliverables: Beschreibung, Screenshots, Datenschutz-Formulare.
+   - Abhängigkeiten: AP-E2.
+   - Aufwand: S
+4. AP-E4: Release-Kandidaten & Final Review
+   - Ziel: Freigabe.
+   - Deliverables: RC-Builds, Abschlusscheckliste.
+   - Abhängigkeiten: AP-E3.
+   - Aufwand: S
 
 ### Phase F – Nachrelease / Wartung (laufend)
 
-21. AP-F1: Fehlerbehebungen / Patch-Zyklus
-    - Ziel: Stabilität, Crashrate < 0.5%.
-    - Aufwand: laufend.
-22. AP-F2: Monitoring lokale Metriken (Opt-in)
-    - Ziel: Verbesserungsdaten ohne Tracking.
-    - Aufwand: S (Initial) + laufend.
-23. AP-F3: Community-Feedback OSM Notes
-    - Ziel: Prüfung Note-Qualität, ggf. Guideline-Anpassungen.
-    - Aufwand: laufend.
+1. AP-F1: Fehlerbehebungen / Patch-Zyklus
+   - Ziel: Stabilität, Crashrate < 0.5%.
+   - Aufwand: laufend.
+2. AP-F2: Monitoring lokale Metriken (Opt-in)
+   - Ziel: Verbesserungsdaten ohne Tracking.
+   - Aufwand: S (Initial) + laufend.
+3. AP-F3: Community-Feedback OSM Notes
+   - Ziel: Prüfung Note-Qualität, ggf. Guideline-Anpassungen.
+   - Aufwand: laufend.
 
 ## 5.2 Zeitplan und Meilensteine
 
