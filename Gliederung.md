@@ -1,69 +1,53 @@
 ﻿# Gliederung
 
 ## Inhaltsverzeichnis
-
-## Kurzbeschreibung/Abstract
-
-## 1 Einleitung
-> ### 1.1 Hintergrund
-> ### 1.2 Zielsetzung
-> ### 1.3 Methodik
-
-## 2 Marktanalyse / Situationsanalyse
-> ### 2.1 Bestehende Lösungen
-> ### 2.2 Stärken und Schwächen
-> ### 2.3 Chancen und Risiken
-
-## 3 Anforderungsanalyse
-> ### 3.1 Funktionale Anforderungen
-> ### 3.2 Nicht-funktionale Anforderungen
-> ### 3.3 Datenschutz und Sicherheit
-> ### 3.4 Rechtliches und Compliance
-
-## 4 Stakeholder-Analyse
-> ### 4.1 Identifikation der Stakeholder
-> ### 4.2 Bedürfnisse und Erwartungen
-> ### 4.3 Kommunikationsplan
-
-## 5 Projektstrukturplan
-> ### 5.1 Arbeitspakete
-> ### 5.2 Zeitplan und Meilensteine
-> ### 5.3 Ressourcenplanung
-
-## 6 Finanzplanung
-> ### 6.1 Budgetierung
-> ### 6.2 Kostenkontrolle
-> ### 6.3 Finanzierungsquellen
-
-## 7 Risikoanalyse
-> ### 7.1 Identifikation von Risiken
-> ### 7.2 Bewertung und Priorisierung
-> ### 7.3 Maßnahmenplanung
-
-## 8 Impactanalyse
-> ### 8.1 Ökologische Auswirkungen
-> ### 8.2 Soziale Auswirkungen
-> ### 8.3 Wirtschaftliche Auswirkungen
-
-## 9 Marketing- und Vertriebsstrategie
-> ### 9.1 Zielgruppenanalyse
-> ### 9.2 Marketing-Mix
-> ### 9.3 Vertriebswege
-
-## 10 Umsetzungsstrategie
-> ### 10.1 Entwicklungsansatz
-> ### 10.2 Technologie-Stack
-> ### 10.3 Qualitätsmanagement
-
-## 11 Fazit und Ausblick
-> ### 11.1 Kurze Zusammenfassung der Ergebnisse
-> ### 11.2 Kritische Bewertung
-> ### 11.3 Handlungsempfehlungen
-
-
-
-# Weitere Ideen
-## 10 Monitoring und Evaluierung
-> ### 10.1 Erfolgskriterien
-> ### 10.2 Monitoring-Methoden
-> ### 10.3 Evaluierungsplan
+- [Kurzbeschreibung / Abstract](Chapters/Kurzbeschreibung.md)
+- [1 Einleitung](Chapters/Einleitung.md)
+  - [1.1 Hintergrund](Chapters/Einleitung.md#11-hintergrund)
+  - [1.2 Zielsetzung](Chapters/Einleitung.md#12-zielsetzung)
+  - [1.3 Methodik](Chapters/Einleitung.md#13-methodik)
+- [2 Marktanalyse / Situationsanalyse](Chapters/Markt-SituationsAnalyse.md)
+  - [2.1 Bestehende Lösungen](Chapters/Markt-SituationsAnalyse.md#21-bestehende-lösungen)
+  - [2.2 Stärken und Schwächen](Chapters/Markt-SituationsAnalyse.md#22-stärken-und-schwächen)
+  - [2.3 Chancen und Risiken](Chapters/Markt-SituationsAnalyse.md#23-chancen-und-risiken)
+- [3 Anforderungsanalyse](Chapters/Anforderungsanalyse.md)
+  - [3.1 Funktionale Anforderungen](Chapters/Anforderungsanalyse.md#31-funktionale-anforderungen)
+  - [3.2 Nicht-funktionale Anforderungen](Chapters/Anforderungsanalyse.md#32-nicht-funktionale-anforderungen)
+  - [3.3 Datenschutz und Sicherheit](Chapters/Anforderungsanalyse.md#33-datenschutz-und-sicherheit)
+  - [3.4 Rechtliches und Compliance](Chapters/Anforderungsanalyse.md#34-rechtliches-und-compliance)
+- [4 Stakeholder-Analyse](Chapters/StakeholderAnalyse.md)
+  - [4.1 Identifikation der Stakeholder](Chapters/StakeholderAnalyse.md#41-identifikation-der-stakeholder)
+  - [4.2 Bedürfnisse und Erwartungen](Chapters/StakeholderAnalyse.md#42-bedürfnisse-und-erwartungen)
+  - [4.3 Kommunikationsplan](Chapters/StakeholderAnalyse.md#43-kommunikationsplan)
+- [5 Projektstrukturplan](Chapters/Projektstrukturplan.md)
+  - [5.1 Arbeitspakete](Chapters/Projektstrukturplan.md#51-arbeitspakete-wbs)
+  - [5.2 Zeitplan und Meilensteine](Chapters/Projektstrukturplan.md#52-zeitplan-und-meilensteine)
+  - [5.3 Ressourcenplanung](Chapters/Projektstrukturplan.md#53-ressourcenplanung)
+- [6 Finanzplanung](Chapters/Finanzplanung.md)
+  - [6.1 Budgetierung](Chapters/Finanzplanung.md#61-budgetierung)
+  - [6.2 Kostenkontrolle](Chapters/Finanzplanung.md#62-kostenkontrolle)
+  - [6.3 Finanzierungsquellen](Chapters/Finanzplanung.md#63-finanzierungsquellen)
+- [7 Risikoanalyse](Chapters/RisikoAnalyse.md)
+  - [7.1 Identifikation von Risiken](Chapters/RisikoAnalyse.md#71-identifikation-von-risiken)
+  - [7.2 Bewertung und Priorisierung](Chapters/RisikoAnalyse.md#72-bewertung-und-priorisierung)
+  - [7.3 Maßnahmenplanung](Chapters/RisikoAnalyse.md#73-maßnahmenplanung)
+- [8 Impactanalyse](Chapters/ImpactAnalyse.md)
+  - [8.1 Ökologische Auswirkungen](Chapters/ImpactAnalyse.md#81-ökologische-auswirkungen)
+  - [8.2 Soziale Auswirkungen](Chapters/ImpactAnalyse.md#82-soziale-auswirkungen)
+  - [8.3 Wirtschaftliche Auswirkungen](Chapters/ImpactAnalyse.md#83-wirtschaftliche-auswirkungen)
+- [9 Marketing- und Vertriebsstrategie](Chapters/Marketing.md)
+  - [9.1 Zielgruppenanalyse](Chapters/Marketing.md#91-zielgruppenanalyse)
+  - [9.2 Marketing-Mix](Chapters/Marketing.md#92-marketing-mix-produkt-preis-promotion)
+  - [9.3 Vertriebswege](Chapters/Marketing.md#93-vertriebswege)
+- [10 Umsetzungsstrategie](Chapters/Umsetzungsstrategie.md)
+  - [10.1 Entwicklungsansatz](Chapters/Umsetzungsstrategie.md#101-entwicklungsansatz)
+  - [10.2 Technologie-Stack](Chapters/Umsetzungsstrategie.md#102-technologie-stack)
+  - [10.3 Qualitätsmanagement](Chapters/Umsetzungsstrategie.md#103-qualitätsmanagement)
+- [11 Fazit und Ausblick](Chapters/Fazit.md)
+  - [11.1 Kurze Zusammenfassung der Ergebnisse](Chapters/Fazit.md#111-kurze-zusammenfassung-der-ergebnisse)
+  - [11.2 Kritische Bewertung](Chapters/Fazit.md#112-kritische-bewertung)
+  - [11.3 Handlungsempfehlungen](Chapters/Fazit.md#113-handlungsempfehlungen)
+- [Anhang](Chapters/Anhang.md)
+  - [A. Overpass-Queries](Chapters/Anhang.md#a-beispiel-overpass-queries)
+  - [B. OSM Notes API](Chapters/Anhang.md#b-osm-notes-api--beispiel)
+  - [C. Glossar](Chapters/Anhang.md#c-glossar-ergänzung)
