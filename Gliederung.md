@@ -47,6 +47,7 @@
   - [11.1 Kurze Zusammenfassung der Ergebnisse](Chapters/Fazit.md#111-kurze-zusammenfassung-der-ergebnisse)
   - [11.2 Kritische Bewertung](Chapters/Fazit.md#112-kritische-bewertung)
   - [11.3 Handlungsempfehlungen](Chapters/Fazit.md#113-handlungsempfehlungen)
+- [Quellenverzeichnis](Chapters/Quellenverzeichnis.md)
 - [Anhang](Chapters/Anhang.md)
   - [A. Overpass-Queries](Chapters/Anhang.md#a-beispiel-overpass-queries)
   - [B. OSM Notes API](Chapters/Anhang.md#b-osm-notes-api--beispiel)
