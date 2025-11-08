@@ -1,6 +1,6 @@
 ﻿# Gliederung
 
-## Projektname: [Hier Projektnamen einfügen]
+## Inhaltsverzeichnis
 
 ## Kurzbeschreibung/Abstract
 
