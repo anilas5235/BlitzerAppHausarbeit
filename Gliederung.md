@@ -46,9 +46,9 @@
 > ### 8.3 Wirtschaftliche Auswirkungen
 
 ## 9 Marketing- und Vertriebsstrategie
-> ### 8.1 Zielgruppenanalyse
-> ### 8.2 Marketing-Mix
-> ### 8.3 Vertriebswege
+> ### 9.1 Zielgruppenanalyse
+> ### 9.2 Marketing-Mix
+> ### 9.3 Vertriebswege
 
 ## 10 Umsetzungsstrategie
 > ### 10.1 Entwicklungsansatz
