@@ -1,5 +1,9 @@
 ﻿# Gliederung
 
+## Projektname: [Hier Projektnamen einfügen]
+
+## Kurzbeschreibung/Abstract
+
 ## 1 Einleitung
 > ### 1.1 Hintergrund
 > ### 1.2 Zielsetzung
@@ -31,17 +35,30 @@
 > ### 6.2 Kostenkontrolle
 > ### 6.3 Finanzierungsquellen
 
-## 7 Risikoanalyse und -management
+## 7 Risikoanalyse
 > ### 7.1 Identifikation von Risiken
 > ### 7.2 Bewertung und Priorisierung
 > ### 7.3 Maßnahmenplanung
 
 ## 8 Impactanalyse
+> ### 8.1 Ökologische Auswirkungen
+> ### 8.2 Soziale Auswirkungen
+> ### 8.3 Wirtschaftliche Auswirkungen
 
-## 9 Umsetzungsstrategie
+## 9 Marketing- und Vertriebsstrategie
+> ### 8.1 Zielgruppenanalyse
+> ### 8.2 Marketing-Mix
+> ### 8.3 Vertriebswege
 
-## 10 Fazit und Ausblick
+## 10 Umsetzungsstrategie
+> ### 10.1 Entwicklungsansatz
+> ### 10.2 Technologie-Stack
+> ### 10.3 Qualitätsmanagement
 
+## 11 Fazit und Ausblick
+> ### 11.1 Kurze Zusammenfassung der Ergebnisse
+> ### 11.2 Kritische Bewertung
+> ### 11.3 Handlungsempfehlungen
 
 
 
