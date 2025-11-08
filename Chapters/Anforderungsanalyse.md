@@ -115,5 +115,4 @@ Die funktionalen Anforderungen sind nach MUSS / SOLL / KANN priorisiert. Jede An
   Messung: Accessibility-Scanner Ergebnisse sauber.
 
 ## Zusammenfassung
-Die Anforderungen stellen sicher, dass die BlitzerApp den Fokus auf Datenschutz, Transparenz und Effizienz wahrt. Funktionale Kernziele (Warnung, lokale Verarbeitung, offene Daten) werden durch klare MUSS/SOLL/KANN-Priorisierung und messbare Kriterien operationalisiert. Nicht-funktionale Anforderungen definieren Qualitätsziele (Performance, Energie, Wartbarkeit) und verankern Datenschutz sowie Compliance. Dies bildet die Grundlage für Architektur- und Umsetzungsentscheidungen (Kapitel 10) sowie Evaluierung und Monitoring (späteres Kapitel).
-
+Die Anforderungen stellen sicher, dass die BlitzerApp den Fokus auf Datenschutz, Transparenz und Effizienz wahrt. Funktionale Kernziele (Warnung, lokale Verarbeitung, offene Daten) werden durch klare MUSS/SOLL/KANN-Priorisierung und messbare Kriterien operationalisiert. Nicht-funktionale Anforderungen definieren Qualitätsziele (Performance, Energie, Wartbarkeit) und verankern Datenschutz sowie Compliance. Dies bildet die Grundlage für Architektur- und Umsetzungsentscheidungen (Kapitel 10) sowie Evaluierung und Monitoring (Qualitätsmanagement in Kapitel 10.3).

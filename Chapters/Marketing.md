@@ -47,7 +47,7 @@ Promotion (privacy-freundlich, organisch):
 
 ASO/Messaging-Leitlinien:
 - Headline: „Blitzer-Warnungen – ohne Tracking. Offen. Lokal.“  
-- Key Points: „OSM-Daten“, „Offline-Cache“, „Datenschutz by Design“, „Energieeffizient“, „Rechtliche Hinweise beachten“.  
+- Key Points: „OSM-Daten“, „Offline-Cache“, „Privacy-by-Design“, „Energieeffizient“, „Rechtliche Hinweise beachten“.  
 - Visuelle Assets: Karten-Screenshot mit POIs, Warn-Overlay, Einstellungen (Radius); klar sichtbare Attribution „© OpenStreetMap contributors“.
 
 Messung (ohne personenbezogenes Tracking):

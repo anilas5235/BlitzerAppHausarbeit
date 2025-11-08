@@ -1,7 +1,7 @@
 ﻿# 8 Impactanalyse
 
 Dieses Kapitel bewertet die Auswirkungen der BlitzerApp auf ökologische, soziale und wirtschaftliche Dimensionen.
-Grundlage sind die Architektur (rein clientseitig, keine eigene Server-Infrastruktur), Datenschutz by Design und die
+Grundlage sind die Architektur (rein clientseitig, keine eigene Server-Infrastruktur), Privacy-by-Design und die
 Zielsetzung, Geschwindigkeitsbegrenzungen einzuhalten, ohne neue Risiken (Ablenkung, Datenschutzverletzungen) zu
 schaffen.
 

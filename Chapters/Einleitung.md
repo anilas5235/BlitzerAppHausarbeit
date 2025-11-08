@@ -25,4 +25,4 @@ Die Herangehensweise folgt einem iterativen, evidenzbasierten Vorgehen:
 
 Die Methodik legt ihren Schwerpunkt auf Minimalismus in der Infrastruktur, Nutzung offener Standards und transparente Kommunikation der Grenzen (z. B. Unvollständigkeit mobiler Blitzer). Rechtliche und ethische Aspekte fließen durch einen früh eingebauten Compliance-Check und klare Nutzerhinweise beim ersten Start mit ein.
 
-> Weiterführende Details zu Anforderungen, Architektur, Risiken und Evaluierung sind in den jeweiligen Kapiteln (2–10) der Arbeit vertieft und bauen auf dieser Einleitung auf.
+> Weiterführende Details zu Anforderungen, Architektur, Risiken und Evaluierung sind in den jeweiligen Kapiteln (2–11) der Arbeit vertieft und bauen auf dieser Einleitung auf.

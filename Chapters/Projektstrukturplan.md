@@ -2,7 +2,7 @@
 
 Dieses Kapitel beschreibt die strukturierte Zerlegung (Work Breakdown Structure), den Zeitplan mit Meilensteinen sowie
 die Ressourcenplanung für die BlitzerApp. Fokus: rein clientseitige Entwicklung ohne eigenes Backend, Nutzung offener
-Schnittstellen (Overpass/OSM), Datenschutz by Design.
+Schnittstellen (Overpass/OSM), Privacy-by-Design.
 
 ## 5.1 Arbeitspakete (WBS)
 
