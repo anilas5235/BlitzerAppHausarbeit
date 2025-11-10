@@ -6,10 +6,10 @@
   - [1.1 Hintergrund](Chapters/Einleitung.md#11-hintergrund)
   - [1.2 Zielsetzung](Chapters/Einleitung.md#12-zielsetzung)
   - [1.3 Methodik](Chapters/Einleitung.md#13-methodik)
-- [2 Situationsanalyse](Chapters/Markt-SituationsAnalyse.md)
+- [2 Situationsanalyse](Chapters/Markt-SituationsAnalyse.md) Jim
   - Ausgangssituation
   - Analyse der Voraussetzungen
-  - Marktanalyse:
+  - Marktanalyse: 
     -  Zielsetzung
     -  Aufbau & Definitoion des MArkts (Größe, Trends etc.)
     -  Zielgruppenanalyse
@@ -19,41 +19,38 @@
         - EU
         - DE
   - Stakeholderanalyse (haben wir schon, Excel, nochmal überarbeiten & genauer beschreiben in TExtform)
+      - Identifikation
+      - Zuständigkeiten/Zugehörigkeiten
+      - Kommunikationsplan -> z.B. wann muss man mit wem sprechen?
   - SWOT Analyse (Stärken, Schwächen, Chancen, Gefahren)
-- [3 Anforderungsanalyse](Chapters/Anforderungsanalyse.md)
-  - [3.1 Funktionale Anforderungen](Chapters/Anforderungsanalyse.md#31-funktionale-anforderungen)
-  - [3.2 Nicht-funktionale Anforderungen](Chapters/Anforderungsanalyse.md#32-nicht-funktionale-anforderungen)
+- [3 Anforderungsanalyse](Chapters/Anforderungsanalyse.md) (Aufteilung der Anforderungen in Kann, Muss, Soll) Tim/Robin
+  - [3.1 Funktionale Anforderungen](Chapters/Anforderungsanalyse.md#31-funktionale-anforderungen) -> was ist für die App essentiell notwendig? Grundlegende Funktionalität
+  - [3.2 Nicht-funktionale Anforderungen](Chapters/Anforderungsanalyse.md#32-nicht-funktionale-anforderungen) -> Zusätzlich, z.B. Usability, etc.
   - [3.3 Datenschutz und Sicherheit](Chapters/Anforderungsanalyse.md#33-datenschutz-und-sicherheit)
   - [3.4 Rechtliches und Compliance](Chapters/Anforderungsanalyse.md#34-rechtliches-und-compliance)
-- [4 Stakeholder-Analyse](Chapters/StakeholderAnalyse.md)
-  - [4.1 Identifikation der Stakeholder](Chapters/StakeholderAnalyse.md#41-identifikation-der-stakeholder)
-  - [4.2 Bedürfnisse und Erwartungen](Chapters/StakeholderAnalyse.md#42-bedürfnisse-und-erwartungen)
-  - [4.3 Kommunikationsplan](Chapters/StakeholderAnalyse.md#43-kommunikationsplan)
-- [5 Projektstrukturplan](Chapters/Projektstrukturplan.md)
+- [5 Projektstrukturplan](Chapters/Projektstrukturplan.md) Niklas
   - [5.1 Arbeitspakete](Chapters/Projektstrukturplan.md#51-arbeitspakete-wbs)
   - [5.2 Zeitplan und Meilensteine](Chapters/Projektstrukturplan.md#52-zeitplan-und-meilensteine)
   - [5.3 Ressourcenplanung](Chapters/Projektstrukturplan.md#53-ressourcenplanung)
-- [6 Finanzplanung](Chapters/Finanzplanung.md)
+- [6 Finanzplanung](Chapters/Finanzplanung.md) Niklas
   - [6.1 Budgetierung](Chapters/Finanzplanung.md#61-budgetierung)
   - [6.2 Kostenkontrolle](Chapters/Finanzplanung.md#62-kostenkontrolle)
   - [6.3 Finanzierungsquellen](Chapters/Finanzplanung.md#63-finanzierungsquellen)
-- [7 Risikoanalyse](Chapters/RisikoAnalyse.md)
+- [7 Risikoanalyse](Chapters/RisikoAnalyse.md) -> komplett auf unser Projekt bezogen (Was verändern wir darauf basierend) Robin
   - [7.1 Identifikation von Risiken](Chapters/RisikoAnalyse.md#71-identifikation-von-risiken)
   - [7.2 Bewertung und Priorisierung](Chapters/RisikoAnalyse.md#72-bewertung-und-priorisierung)
   - [7.3 Maßnahmenplanung](Chapters/RisikoAnalyse.md#73-maßnahmenplanung)
-- [8 Impactanalyse](Chapters/ImpactAnalyse.md)
+- [8 Impactanalyse](Chapters/ImpactAnalyse.md) Tim
   - [8.1 Ökologische Auswirkungen](Chapters/ImpactAnalyse.md#81-ökologische-auswirkungen)
   - [8.2 Soziale Auswirkungen](Chapters/ImpactAnalyse.md#82-soziale-auswirkungen)
   - [8.3 Wirtschaftliche Auswirkungen](Chapters/ImpactAnalyse.md#83-wirtschaftliche-auswirkungen)
-- [9 Marketing- und Vertriebsstrategie](Chapters/Marketing.md)
-  - [9.1 Zielgruppenanalyse](Chapters/Marketing.md#91-zielgruppenanalyse)
-  - [9.2 Marketing-Mix](Chapters/Marketing.md#92-marketing-mix-produkt-preis-promotion)
-  - [9.3 Vertriebswege](Chapters/Marketing.md#93-vertriebswege)
-- [10 Umsetzungsstrategie](Chapters/Umsetzungsstrategie.md)
+- [9 Marketing- und Vertriebsstrategie](Chapters/Marketing.md) Robin
+  - Vorgehen...........?
+- [10 Umsetzungsstrategie](Chapters/Umsetzungsstrategie.md) zusammen (z.B. wie würde das im Team umgesetzt)
   - [10.1 Entwicklungsansatz](Chapters/Umsetzungsstrategie.md#101-entwicklungsansatz)
   - [10.2 Technologie-Stack](Chapters/Umsetzungsstrategie.md#102-technologie-stack)
   - [10.3 Qualitätsmanagement](Chapters/Umsetzungsstrategie.md#103-qualitätsmanagement)
-- [11 Fazit und Ausblick](Chapters/Fazit.md)
+- [11 Fazit und Ausblick](Chapters/Fazit.md) Zusammen
   - [11.1 Kurze Zusammenfassung der Ergebnisse](Chapters/Fazit.md#111-kurze-zusammenfassung-der-ergebnisse)
   - [11.2 Kritische Bewertung](Chapters/Fazit.md#112-kritische-bewertung)
   - [11.3 Handlungsempfehlungen](Chapters/Fazit.md#113-handlungsempfehlungen)
