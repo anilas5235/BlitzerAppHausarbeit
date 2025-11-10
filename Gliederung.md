@@ -1,61 +1,99 @@
 ﻿# Gliederung
 
-## Inhaltsverzeichnis
-- [Kurzbeschreibung / Abstract](Chapters/Kurzbeschreibung.md)
-- [1 Einleitung](Chapters/Einleitung.md) Tim
-  - [1.1 Hintergrund](Chapters/Einleitung.md#11-hintergrund)
-  - [1.2 Zielsetzung](Chapters/Einleitung.md#12-zielsetzung)
-  - [1.3 Methodik](Chapters/Einleitung.md#13-methodik)
-- [2 Situationsanalyse](Chapters/Markt-SituationsAnalyse.md) Jim
-  - Ausgangssituation
-  - Analyse der Voraussetzungen
-  - Marktanalyse: 
-    -  Zielsetzung
-    -  Aufbau & Definitoion des MArkts (Größe, Trends etc.)
-    -  Zielgruppenanalyse
-    -  Konkkurenzanalyse("Tabellen, Features & Grobe Übersicht Vergleich)
-    -  Technologie: Was verwenden die anderen Blitzerapps?
-    -  Rechtliche Lage grob
-        - EU
-        - DE
-  - Stakeholderanalyse (haben wir schon, Excel, nochmal überarbeiten & genauer beschreiben in TExtform)
-      - Identifikation
-      - Zuständigkeiten/Zugehörigkeiten
-      - Kommunikationsplan -> z.B. wann muss man mit wem sprechen?
-  - SWOT Analyse (Stärken, Schwächen, Chancen, Gefahren)
-- [3 Anforderungsanalyse](Chapters/Anforderungsanalyse.md) (Aufteilung der Anforderungen in Kann, Muss, Soll) Tim/Robin
-  - [3.1 Funktionale Anforderungen](Chapters/Anforderungsanalyse.md#31-funktionale-anforderungen) -> was ist für die App essentiell notwendig? Grundlegende Funktionalität
-  - [3.2 Nicht-funktionale Anforderungen](Chapters/Anforderungsanalyse.md#32-nicht-funktionale-anforderungen) -> Zusätzlich, z.B. Usability, etc.
-  - [3.3 Datenschutz und Sicherheit](Chapters/Anforderungsanalyse.md#33-datenschutz-und-sicherheit)
-  - [3.4 Rechtliches und Compliance](Chapters/Anforderungsanalyse.md#34-rechtliches-und-compliance)
-- [5 Projektstrukturplan](Chapters/Projektstrukturplan.md) Niklas
-  - [5.1 Arbeitspakete](Chapters/Projektstrukturplan.md#51-arbeitspakete-wbs)
-  - [5.2 Zeitplan und Meilensteine](Chapters/Projektstrukturplan.md#52-zeitplan-und-meilensteine)
-  - [5.3 Ressourcenplanung](Chapters/Projektstrukturplan.md#53-ressourcenplanung)
-- [6 Finanzplanung](Chapters/Finanzplanung.md) Niklas
-  - [6.1 Budgetierung](Chapters/Finanzplanung.md#61-budgetierung)
-  - [6.2 Kostenkontrolle](Chapters/Finanzplanung.md#62-kostenkontrolle)
-  - [6.3 Finanzierungsquellen](Chapters/Finanzplanung.md#63-finanzierungsquellen)
-- [7 Risikoanalyse](Chapters/RisikoAnalyse.md) -> komplett auf unser Projekt bezogen (Was verändern wir darauf basierend) Robin
-  - [7.1 Identifikation von Risiken](Chapters/RisikoAnalyse.md#71-identifikation-von-risiken)
-  - [7.2 Bewertung und Priorisierung](Chapters/RisikoAnalyse.md#72-bewertung-und-priorisierung)
-  - [7.3 Maßnahmenplanung](Chapters/RisikoAnalyse.md#73-maßnahmenplanung)
-- [8 Impactanalyse](Chapters/ImpactAnalyse.md) Tim
-  - [8.1 Ökologische Auswirkungen](Chapters/ImpactAnalyse.md#81-ökologische-auswirkungen)
-  - [8.2 Soziale Auswirkungen](Chapters/ImpactAnalyse.md#82-soziale-auswirkungen)
-  - [8.3 Wirtschaftliche Auswirkungen](Chapters/ImpactAnalyse.md#83-wirtschaftliche-auswirkungen)
-- [9 Marketing- und Vertriebsstrategie](Chapters/Marketing.md) Robin
-  - Vorgehen...........?
-- [10 Umsetzungsstrategie](Chapters/Umsetzungsstrategie.md) zusammen (z.B. wie würde das im Team umgesetzt)
-  - [10.1 Entwicklungsansatz](Chapters/Umsetzungsstrategie.md#101-entwicklungsansatz)
-  - [10.2 Technologie-Stack](Chapters/Umsetzungsstrategie.md#102-technologie-stack)
-  - [10.3 Qualitätsmanagement](Chapters/Umsetzungsstrategie.md#103-qualitätsmanagement)
-- [11 Fazit und Ausblick](Chapters/Fazit.md) Zusammen
-  - [11.1 Kurze Zusammenfassung der Ergebnisse](Chapters/Fazit.md#111-kurze-zusammenfassung-der-ergebnisse)
-  - [11.2 Kritische Bewertung](Chapters/Fazit.md#112-kritische-bewertung)
-  - [11.3 Handlungsempfehlungen](Chapters/Fazit.md#113-handlungsempfehlungen)
-- [Quellenverzeichnis](Chapters/Quellenverzeichnis.md)
-- [Anhang](Chapters/Anhang.md)
-  - [A. Overpass-Queries](Chapters/Anhang.md#a-beispiel-overpass-queries)
-  - [B. OSM Notes API](Chapters/Anhang.md#b-osm-notes-api--beispiel)
-  - [C. Glossar](Chapters/Anhang.md#c-glossar-ergänzung)
+### Inhaltsverzeichnis
+
+### [Kurzbeschreibung / Abstract](Chapters/Kurzbeschreibung.md)
+
+### 1 Einleitung (Tim)
+  - [1.1 Hintergrund](Chapters/Einleitung/Hintergrund.md)
+  - [1.2 Zielsetzung](Chapters/Einleitung/Zielsetzung.md)
+  - [1.3 Methodik](Chapters/Einleitung/Methodik.md)
+
+### 2 Situationsanalyse (Jim)
+- [2.1 Ausgangssituation](Chapters/Situationsanalyse/Ausgangssituation.md)
+- [2.2 Analyse der Voraussetzungen](Chapters/Situationsanalyse/Analyse_der_Voraussetzungen.md)
+- [2.3 Marktanalyse](Chapters/Situationsanalyse/Marktanalyse.md)
+    - [2.3.1 Zielsetzung](Chapters/Situationsanalyse/Marktanalyse.md)
+    - [2.3.2 Aufbau & Definition des Markts (Größe, Trends etc.)](Chapters/Situationsanalyse/Marktanalyse.md)
+    - [2.3.3 Zielgruppenanalyse](Chapters/Situationsanalyse/Marktanalyse.md)
+    - [2.3.4 Konkurrenzanalyse](Chapters/Situationsanalyse/Marktanalyse.md) ("Tabellen, Features & Grobe Übersicht
+      Vergleich)
+    - [2.3.5 Technologie: Was verwenden die anderen Blitzer-Apps?](Chapters/Situationsanalyse/Marktanalyse.md)
+    - [2.3.6 Rechtliche Lage (grob)](Chapters/Situationsanalyse/Marktanalyse.md)
+        - [2.3.6.1 EU](Chapters/Situationsanalyse/Marktanalyse.md)
+        - [2.3.6.2 DE](Chapters/Situationsanalyse/Marktanalyse.md)
+
+### [2.4 Stakeholderanalyse](Chapters/Situationsanalyse/Stakeholderanalyse.md) 
+#### (haben wir schon, Excel, nochmal überarbeiten & genauer beschreiben in Textform)
+- [2.4.1 Identifikation](Chapters/Situationsanalyse/Stakeholderanalyse.md)
+- [2.4.2 Zuständigkeiten/Zugehörigkeiten](Chapters/Situationsanalyse/Stakeholderanalyse.md)
+- [2.4.3 Kommunikationsplan](Chapters/Situationsanalyse/Stakeholderanalyse.md)(z.B. wann muss man mit wem
+  sprechen?)
+- [2.5 SWOT-Analyse](Chapters/Situationsanalyse/SWOT-Analyse.md) (Stärken, Schwächen, Chancen, Gefahren)
+
+### 3 Anforderungsanalyse (Aufteilung der Anforderungen in Kann, Muss, Soll) (Tim/Robin)
+- [3.1 Funktionale Anforderungen](Chapters/Anforderungsanalyse/Funktionale_Anforderungen.md) (was ist für die App
+  essenziell notwendig? Grundlegende Funktionalität)
+- [3.2 Nicht-funktionale Anforderungen](Chapters/Anforderungsanalyse/Nichtfunktionale_Anforderungen.md) (Zusätzlich,
+  z.B. Usability, etc.)
+- [3.3 Datenschutz und Sicherheit](Chapters/Anforderungsanalyse/Datenschutz_Sicherheit.md)
+- [3.4 Rechtliches und Compliance](Chapters/Anforderungsanalyse/Rechtliches_Compliance.md)
+
+### 4 Projektstrukturplan (Niklas)
+- [4.1 Arbeitspakete](Chapters/Projektstrukturplan/Arbeitspakete.md)
+- [4.2 Zeitplan und Meilensteine](Chapters/Projektstrukturplan/Zeitplan_Meilensteine.md)
+- [4.3 Ressourcenplanung](Chapters/Projektstrukturplan/Ressourcenplanung.md)
+
+### 5 Finanzplanung (Niklas)
+- [5.1 Budgetierung](Chapters/Finanzplanung/Budgetierung.md)
+    - [5.1.1 Personenaufwand (Phasen & Kosten)](Chapters/Finanzplanung/Budgetierung.md)
+    - [5.1.2 Sachkosten / Dienste](Chapters/Finanzplanung/Budgetierung.md)
+    - [5.1.3 Reserve / Risikopuffer](Chapters/Finanzplanung/Budgetierung.md)
+    - [5.1.4 Kostentreiber & Einsparpotenziale](Chapters/Finanzplanung/Budgetierung.md)
+- [5.2 Kostenkontrolle](Chapters/Finanzplanung/Kostenkontrolle.md)
+    - [5.2.1 Steuerungsinstrumente](Chapters/Finanzplanung/Kostenkontrolle.md)
+    - [5.2.2 Überwachung externer Nutzung](Chapters/Finanzplanung/Kostenkontrolle.md)
+    - [5.2.3 Entscheidungs-Trigger](Chapters/Finanzplanung/Kostenkontrolle.md)
+    - [5.2.4 Reporting & Transparenz](Chapters/Finanzplanung/Kostenkontrolle.md)
+    - [5.2.5 Kostenrisiken & Gegenmaßnahmen](Chapters/Finanzplanung/Kostenkontrolle.md)
+- [5.3 Finanzierungsquellen](Chapters/Finanzplanung/Finanzierungsquellen.md)
+    - [5.3.1 Primäre Quellen](Chapters/Finanzplanung/Finanzierungsquellen.md)
+    - [5.3.2 Sekundäre Monetarisierungsoptionen (datenschutzfreundlich)](Chapters/Finanzplanung/Finanzierungsquellen.md)
+    - [5.3.3 Open-Source Ansatz](Chapters/Finanzplanung/Finanzierungsquellen.md)
+    - [5.3.4 Nachhaltigkeit & Kosten-Nutzen](Chapters/Finanzplanung/Finanzierungsquellen.md)
+    - [5.3.5 Bewertung Monetarisierungs-Risiken](Chapters/Finanzplanung/Finanzierungsquellen.md)
+
+### 6 Risikoanalyse
+#### komplett auf unser Projekt bezogen (Was verändern wir darauf basierend bzw. Worauf müssen wir besonders aufpassen) (Robin) (im Moment noch dummy)
+- [6.1 Identifikation von Risiken](Chapters/Risikoanalyse/Identifikation.md)
+- [6.2 Bewertung und Priorisierung](Chapters/Risikoanalyse/Bewertung_Priorisierung.md)
+- [6.3 Maßnahmenplanung](Chapters/Risikoanalyse/Massnahmenplanung.md)
+    - [6.3.1 Prävention (Auswahl)](Chapters/Risikoanalyse/Massnahmenplanung.md)
+    - [6.3.2 Monitoring](Chapters/Risikoanalyse/Massnahmenplanung.md)
+    - [6.3.3 Reaktion (Contingency)](Chapters/Risikoanalyse/Massnahmenplanung.md)
+    - [6.3.4 Risiko-Review Zyklus](Chapters/Risikoanalyse/Massnahmenplanung.md)
+    - [6.3.5 Residualrisiken](Chapters/Risikoanalyse/Massnahmenplanung.md)
+
+### 7 Impactanalyse (Tim) (im Moment noch dummy)
+- [7.1 Ökologische Auswirkungen](Chapters/Impactanalyse/Oekologische_Auswirkungen.md)
+- [7.2 Soziale Auswirkungen](Chapters/Impactanalyse/Soziale_Auswirkungen.md)
+- [7.3 Wirtschaftliche Auswirkungen](Chapters/Impactanalyse/Wirtschaftliche_Auswirkungen.md)
+
+### 8 Marketing- und Vertriebsstrategie (Robin)
+- ?
+
+### 9 Umsetzungsstrategie (Zusammen) (z. B. wie würde das im Team umgesetzt)
+- [9.1 Entwicklungsansatz](Chapters/Umsetzungsstrategie/Entwicklungsansatz.md)
+- [9.2 Technologie-Stack](Chapters/Umsetzungsstrategie/Technologie_Stack.md)
+- [9.3 Qualitätsmanagement](Chapters/Umsetzungsstrategie/Qualitaetsmanagement.md)
+
+### 10 Fazit und Ausblick (Zusammen) (im Moment noch dummy)
+- [10.1 Kurze Zusammenfassung der Ergebnisse](Chapters/Fazit/Zusammenfassung.md)
+- [10.2 Kritische Bewertung](Chapters/Fazit/Kritische_Bewertung.md)
+- [10.3 Handlungsempfehlungen](Chapters/Fazit/Handlungsempfehlungen.md)
+
+### [Quellenverzeichnis](Chapters/Quellenverzeichnis.md)
+### Anhang
+- [A. Overpass-Queries](Chapters/Anhang/Overpass_Queries.md)
+- [B. OSM Notes API](Chapters/Anhang/OSM_Notes_API.md)
+- [C. Glossar](Chapters/Anhang/Glossar.md)
