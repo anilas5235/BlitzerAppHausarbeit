@@ -2,14 +2,24 @@
 
 ## Inhaltsverzeichnis
 - [Kurzbeschreibung / Abstract](Chapters/Kurzbeschreibung.md)
-- [1 Einleitung](Chapters/Einleitung.md)
+- [1 Einleitung](Chapters/Einleitung.md) Tim
   - [1.1 Hintergrund](Chapters/Einleitung.md#11-hintergrund)
   - [1.2 Zielsetzung](Chapters/Einleitung.md#12-zielsetzung)
   - [1.3 Methodik](Chapters/Einleitung.md#13-methodik)
-- [2 Marktanalyse / Situationsanalyse](Chapters/Markt-SituationsAnalyse.md)
-  - [2.1 Bestehende Lösungen](Chapters/Markt-SituationsAnalyse.md#21-bestehende-lösungen)
-  - [2.2 Stärken und Schwächen](Chapters/Markt-SituationsAnalyse.md#22-stärken-und-schwächen)
-  - [2.3 Chancen und Risiken](Chapters/Markt-SituationsAnalyse.md#23-chancen-und-risiken)
+- [2 Situationsanalyse](Chapters/Markt-SituationsAnalyse.md)
+  - Ausgangssituation
+  - Analyse der Voraussetzungen
+  - Marktanalyse:
+    -  Zielsetzung
+    -  Aufbau & Definitoion des MArkts (Größe, Trends etc.)
+    -  Zielgruppenanalyse
+    -  Konkkurenzanalyse("Tabellen, Features & Grobe Übersicht Vergleich)
+    -  Technologie: Was verwenden die anderen Blitzerapps?
+    -  Rechtliche Lage grob
+        - EU
+        - DE
+  - Stakeholderanalyse (haben wir schon, Excel, nochmal überarbeiten & genauer beschreiben in TExtform)
+  - SWOT Analyse (Stärken, Schwächen, Chancen, Gefahren)
 - [3 Anforderungsanalyse](Chapters/Anforderungsanalyse.md)
   - [3.1 Funktionale Anforderungen](Chapters/Anforderungsanalyse.md#31-funktionale-anforderungen)
   - [3.2 Nicht-funktionale Anforderungen](Chapters/Anforderungsanalyse.md#32-nicht-funktionale-anforderungen)
