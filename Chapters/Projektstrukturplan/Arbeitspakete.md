@@ -1,8 +1,9 @@
-﻿# Projektstrukturplan & Zeitplan
+﻿# Produktplan & Zeitplan
 
 Dieses Kapitel beschreibt die strukturierte Zerlegung (Work Breakdown Structure), den Zeitplan mit Meilensteinen sowie
 die Ressourcenplanung für die BlitzerApp. Fokus: rein clientseitige Entwicklung ohne eigenes Backend, Nutzung offener
-Schnittstellen (Overpass/OSM), Privacy-by-Design.
+Schnittstellen (Overpass/OSM), Privacy-by-Design. Die nachfolgenden Strukturen bilden die Grundlage für die weitere
+Kapazitäts- und Kostenplanung.
 
 Im Sinne eines agilen Vorgehens nach Scrum werden die Arbeitspakete nicht als starre, vollständig vorab geplante
 Einheiten verstanden, sondern als Grundlage für ein Product Backlog. Die Umsetzung erfolgt iterativ in Sprints, in

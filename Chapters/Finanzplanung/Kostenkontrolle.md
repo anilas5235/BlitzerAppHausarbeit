@@ -1,6 +1,7 @@
 ﻿## 5.2 Kostenkontrolle
 
-Ziel: Frühzeitiges Erkennen von Abweichungen, ohne Overhead.
+Ziel: Frühzeitiges Erkennen von Abweichungen, ohne Overhead, und Unterstützung der in Abschnitt 5.1 beschriebenen
+agilen Budgetsteuerung.
 
 ### 5.2.1 Steuerungsinstrumente
 
@@ -13,7 +14,10 @@ Ziel: Frühzeitiges Erkennen von Abweichungen, ohne Overhead.
     - Indikatoren: CPI = EV/AC (<1 = Kostenüberzug), SPI = EV/PV (<1 = Verzug).
 
 Diese Kennzahlen werden sprintweise erhoben und im Rahmen der Sprint Reviews betrachtet. Abweichungen fließen in die
-Sprint Retrospektiven ein und führen zu Anpassungen bei Planung, Schätzung und Arbeitsweise.
+Sprint Retrospektiven ein und führen zu Anpassungen bei Planung, Schätzung und Arbeitsweise. Sie beziehen sich auf die
+in Abschnitt 5.1 geplanten Personentage und Phasen und dienen damit als Frühwarnsystem, ob die nächste Budgettranche
+(z. B. für die Erweiterungsphasen C und D oder die Nachrelease-Phase F) wie vorgesehen freigegeben werden sollte oder ob
+Umfang und Prioritäten im Backlog angepasst werden müssen.
 
 Hinweis: Sprint-basierte Steuerung in Anlehnung an den Scrum Guide (2020); Werte/Prinzipien vgl. Agile Manifest (siehe
 Quellenverzeichnis).
@@ -27,15 +31,20 @@ verbrauchten Ressourcen.
 - Overpass-Abfragen: Logging Anzahl/Tag, mittlere Antwortzeit, Fehlerquote; Warnschwelle >20% Fehlversuche.
 - Tile-Abrufe: Statistiken (sofern Provider-Dashboard) → monatlicher Check; Ziel: stabile Nutzung, kein exponentielles
   Wachstum.
-- Geräte-Profiling: Quartalsweise Energieverbrauchs-Review (bei wesentlicher Feature-Erweiterung.
+- Geräte-Profiling: Quartalsweise Energieverbrauchs-Review (bei wesentlicher Feature-Erweiterung).
 
 ### 5.2.3 Entscheidungs-Trigger
 
 - Abweichung >15% in CPI/SPI über 2 aufeinanderfolgende Wochen → Review & Re-Priorisierung (Feature-Scope kürzen oder
   Ressourcen erhöhen).
-- Performanceziel (Startzeit, Warn-Latenz) nicht erfüllt vor Phase D → zusätzliche Optimierungs-Sprint einplanen (Budget
+- Performanceziel (Startzeit, Warn-Latenz) nicht erfüllt vor Phase D → zusätzlichen Optimierungs-Sprint einplanen (Budget
   aus Reserve).
 - Store-Review Blockade → sofortige Taskforce (Dev + Compliance) ≤ 3 PT Zusatz.
+
+Insbesondere an den Meilensteinen M2 (MVP) und M5 (Beta/Store-Ready) werden die aggregierten Kennzahlen (EV, CPI/SPI,
+Outcome-Metriken) herangezogen, um über die Freigabe der nächsten Budgettranche gemäß Abschnitt 5.1 zu entscheiden.
+So werden Scope- und Budgetentscheidungen nicht nur einmalig zu Projektbeginn getroffen, sondern regelmäßig auf Basis
+der tatsächlich gelieferten Ergebnisse und Kosten überprüft.
 
 ### 5.2.4 Reporting & Transparenz
 
@@ -45,7 +54,8 @@ verbrauchten Ressourcen.
 
 Sprint Reviews dienen als natürliche Reporting-Termine mit Stakeholdern, Sprint Retrospektiven als Forum zur internen
 Verbesserung. Größere Releases werden zusätzlich mit aggregierten Kosten- und Nutzenberichten hinterlegt, um
-mehrphasige Budgetentscheidungen zu unterstützen.
+mehrphasige Budgetentscheidungen zu unterstützen. Diese Berichte bilden zugleich eine Entscheidungsgrundlage für die in
+Abschnitt 5.1 beschriebene phasenweise Budgetfreigabe und mögliche Anpassungen des Projektumfangs.
 
 ### 5.2.5 Kostenrisiken & Gegenmaßnahmen
 

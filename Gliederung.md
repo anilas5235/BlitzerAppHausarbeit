@@ -44,7 +44,7 @@
 - [4.2 Zeitplan und Meilensteine](Chapters/Projektstrukturplan/Zeitplan_Meilensteine.md)
 - [4.3 Ressourcenplanung](Chapters/Projektstrukturplan/Ressourcenplanung.md)
 
-### 5 Finanzplanung (Niklas)
+### 5 Produktplan & Zeitplan (Niklas)
 - [5.1 Budgetierung](Chapters/Finanzplanung/Budgetierung.md)
     - [5.1.1 Personenaufwand (Phasen & Kosten)](Chapters/Finanzplanung/Budgetierung.md)
     - [5.1.2 Sachkosten / Dienste](Chapters/Finanzplanung/Budgetierung.md)
