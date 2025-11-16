@@ -11,6 +11,12 @@ Rollen & grobe Kapazitäten (Annahme kleines Kernteam):
 - Privacy/Compliance Beratung (0.1 FTE ad hoc): Prüfung Datenschutztexte, rechtliche Hinweise.
 - Community Liaison (evtl. Product kombiniert) (0.1 FTE): OSM Notes Guidelines, Feedbackkanäle.
 
+Die Ressourcenplanung folgt dem Scrum-Prinzip eines stabilen, cross-funktionalen Teams. Der Product Owner verantwortet
+Vision und Priorisierung des Product Backlogs sowie die Abnahme der Inkremente im Sprint Review. Das Entwicklungsteam
+(Entwickler:innen, UX/Design, QA) liefert gemeinsam die Sprintziele und organisiert sich in der Umsetzung eigenständig.
+Privacy/Compliance sowie Community Liaison werden bedarfsgerecht in Sprints eingebunden, insbesondere bei
+Datenschutzthemen und Community-Funktionen.
+
 Skill-Matrix (Kernthemen):
 
 - Geodaten/Overpass: Dev1
@@ -26,6 +32,15 @@ Auslastungsüberblick vs. Phasen (qualitativ):
 - Phase C/D: Dev1+Dev2 hoch, QA steigt ein, UX für Accessibility/i18n.
 - Phase E: QA hoch (Tests/Beta), PO für Store, Devs Performance & Stabilität.
 - Phase F: Devs Wartung, QA Monitoring leicht, PO Feedback.
+
+Die FTE-Werte dienen als Grundlage für die Kapazitätsplanung pro Sprint (zwei Wochen). Für jeden Sprint wird im Vorfeld
+sichergestellt, dass das Team ausreichend verfügbar ist (Urlaubsplanung etc.), sodass realistische Sprintziele
+festgelegt werden können. Die detaillierte Aufwandschätzung und Zerlegung in kleinere Aufgaben erfolgt im Rahmen des
+Sprint Plannings.
+
+Agile Feedbackschleifen: Community- und Beta-Feedback wird in Sprint Reviews gesammelt, als Backlog-Items erfasst und
+in folgenden Sprints priorisiert umgesetzt. Privacy/Compliance wird früh (Phase A) sowie vor dem Store-Release (Phase E)
+gezielt eingebunden, um Anforderungen iterativ statt nachgelagert zu integrieren.
 
 Externe Ressourcen / Tools:
 

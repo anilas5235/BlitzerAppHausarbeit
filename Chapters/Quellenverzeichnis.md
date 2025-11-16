@@ -39,3 +39,5 @@ Hinweis: Alle Links zuletzt abgerufen am 2025-11-08.
 ## Sonstiges / Referenztexte (Stand: 2025-11-08)
 - OSM API (Allgemein): https://wiki.openstreetmap.org/wiki/API
 - OSM Community – Hilfe/Wiki Start: https://wiki.openstreetmap.org/wiki/DE:Main_Page
+- Scrum Guide (offiziell, DE): https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-German.pdf
+- Agile Manifesto (DE): https://agilemanifesto.org/iso/de/manifesto.html

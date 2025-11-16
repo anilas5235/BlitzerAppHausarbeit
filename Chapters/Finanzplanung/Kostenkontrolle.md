@@ -12,6 +12,16 @@ Ziel: Frühzeitiges Erkennen von Abweichungen, ohne Overhead.
     - AC (Actual Cost): Tatsächlich angefallene PT * Tagessätze.
     - Indikatoren: CPI = EV/AC (<1 = Kostenüberzug), SPI = EV/PV (<1 = Verzug).
 
+Diese Kennzahlen werden sprintweise erhoben und im Rahmen der Sprint Reviews betrachtet. Abweichungen fließen in die
+Sprint Retrospektiven ein und führen zu Anpassungen bei Planung, Schätzung und Arbeitsweise.
+
+Hinweis: Sprint-basierte Steuerung in Anlehnung an den Scrum Guide (2020); Werte/Prinzipien vgl. Agile Manifest (siehe
+Quellenverzeichnis).
+
+Zusätzlich zu Aufwand- und Kostenmetriken werden Outcome-orientierte Kennzahlen beobachtet, z. B. Crashrate,
+App-Startzeit, Warn-Latenz sowie Feedback aus Beta-Tests. So bleibt der Fokus auf Nutzen und Qualität, nicht nur auf
+verbrauchten Ressourcen.
+
 ### 5.2.2 Überwachung externer Nutzung
 
 - Overpass-Abfragen: Logging Anzahl/Tag, mittlere Antwortzeit, Fehlerquote; Warnschwelle >20% Fehlversuche.
@@ -33,6 +43,10 @@ Ziel: Frühzeitiges Erkennen von Abweichungen, ohne Overhead.
 - Meilenstein-Ende: Zusammenfassung Ist vs. Plan, verbleibende Restkosten, Nachjustierungen.
 - Keine personenbezogenen Daten im Reporting; rein technische & Aufwandmetriken.
 
+Sprint Reviews dienen als natürliche Reporting-Termine mit Stakeholdern, Sprint Retrospektiven als Forum zur internen
+Verbesserung. Größere Releases werden zusätzlich mit aggregierten Kosten- und Nutzenberichten hinterlegt, um
+mehrphasige Budgetentscheidungen zu unterstützen.
+
 ### 5.2.5 Kostenrisiken & Gegenmaßnahmen
 
 | Risiko                             | Auswirkung                       | Gegenmaßnahme                                 |
@@ -43,3 +57,7 @@ Ziel: Frühzeitiges Erkennen von Abweichungen, ohne Overhead.
 | Verzögerte Store-Freigabe          | Release verschoben               | Frühe Prüfung Richtlinien, Beta Testlauf      |
 | Zugänglichkeit (A11y) unterschätzt | Nacharbeit, Image-Risiko         | Früh AP-C3, Checklisten etablieren            |
 | Datenqualität unzureichend lokal   | Geringer Nutzen                  | OSM Notes Integration zur Verbesserung        |
+
+Die hier beschriebenen Kostenrisiken stehen in engem Zusammenhang mit der Risikoanalyse in Kapitel 6. Relevante
+Maßnahmen werden im Backlog abgebildet und in Sprints eingeplant, sodass Risiken und Kosteneffekte frühzeitig adressiert
+werden können.

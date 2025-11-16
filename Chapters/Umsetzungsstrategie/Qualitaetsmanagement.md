@@ -8,6 +8,9 @@
 - Crashrate < 0.5% in Beta
 - Testabdeckung kritischer Logik ≥ 70% Branch Coverage
 
+Das Qualitätsmanagement ist in den Scrum-Zyklus eingebettet: Tests, Reviews und Retrospektiven finden sprintweise statt
+und die Definition of Done (vgl. Kapitel 4.1) stellt sicher, dass jedes Inkrement tatsächlich release-fähig ist.
+
 ### Teststrategie
 
 | Testart             | Fokus                     | Beispiele                                            |
@@ -18,6 +21,8 @@
 | Performance-Tests   | Startzeit, Latenz         | Automatisiertes Profiling Skript / Benchmark Harness |
 | Feldtests           | Realgeräte Verhalten      | Energieprofil, GPS-Genauigkeit, Geofence-Auslösung   |
 | Accessibility-Tests | Nutzbarkeit               | Screenreader Fokus, Kontrastprüfung                  |
+
+Automatisierte Tests sind Teil der Definition of Done und werden in der CI/CD-Pipeline bei jedem Merge ausgeführt.
 
 ### Metriken & Monitoring (Privacy-freundlich)
 
@@ -30,11 +35,13 @@
 Vor jedem Meilenstein-Release (vgl. Projektstrukturplan):
 
 1. Build Stabilität: Keine kritischen Fehler/Warnungen.
-2. Tests: Kern-Suite grün; Coverage-Bericht erfüllt Mindestschwelle.
-3. Performance: Benchmark Skript bestätigt Startzeit/Warn-Latenz.
-4. Energie: Feldmessung Hintergrundbetrieb im Zielkorridor.
-5. Datenschutz: Code-Scan bestätigt keine Standortübermittlung; Privacy-Text aktuell.
-6. Accessibility: Checkliste (Kontrast, Labels) ohne kritische Mängel.
+2. CI/CD-Pipeline: Build, Lint und Tests (Unit/Widget/Integration) grün.
+3. Tests: Kern-Suite grün; Coverage-Bericht erfüllt Mindestschwelle.
+4. Performance: Benchmark Skript bestätigt Startzeit/Warn-Latenz.
+5. Energie: Feldmessung Hintergrundbetrieb im Zielkorridor.
+6. Datenschutz: Code-Scan bestätigt keine Standortübermittlung; Privacy-Text aktuell.
+7. Accessibility: Checkliste (Kontrast, Labels) ohne kritische Mängel.
+8. DoD erfüllt: Definition of Done gemäß Kapitel 4.1 eingehalten (inkl. Dokumentationsupdate und Review durch PO).
 
 ### Fehler- & Incident-Handling
 
@@ -52,6 +59,8 @@ Vor jedem Meilenstein-Release (vgl. Projektstrukturplan):
 
 - Beta-Feedback Kanban → Priorisierung nach Impact (Performance/Privacy > Komfortfeatures).
 - KPI-Drift (Startzeit, Energie) → automatisierter Hinweis im Diagnosepanel (Opt-in) → Task-Erstellung.
+- Sprint Reviews liefern strukturiertes Stakeholder-Feedback; Aktionen daraus und aus der Sprint Retrospektive werden als
+  Backlog-Items erfasst, priorisiert und in kommenden Sprints umgesetzt.
 
 ### Risiken im Qualitätsmanagement (Auszug) & Mitigation
 

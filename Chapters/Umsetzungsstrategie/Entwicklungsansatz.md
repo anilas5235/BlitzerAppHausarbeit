@@ -23,6 +23,22 @@ Technologie-Stack, Qualitätsmanagement.
     - Platform Services (Location, Geofencing, Permissions, Audio)
 - Testbarkeit: Business-Logik (Distanz, Geofence-Registrierung, Parser) isoliert ohne UI-Abhängigkeit.
 
+Zusätzlich stützt sich der Entwicklungsansatz auf ein Scrum-inspiriertes Vorgehen mit kurzen Iterationen und einem
+stabilen, cross-funktionalen Team:
+
+- Das zentrale Planungsartefakt ist ein priorisiertes Product Backlog, das fachliche Anforderungen, technische
+  Verbesserungen und Wartungsaufgaben bündelt (vgl. Projektstrukturplan in Kapitel 4).
+- In festen Sprints (zwei Wochen) plant das Scrum-Team im Sprint Planning, welche Backlog-Einträge zum nächsten
+  Inkrement verarbeitet werden. Die detaillierte Zerlegung in Tasks und die Aufwandsschätzung (z. B. Planning Poker)
+  erfolgen dabei durch das Team selbst und werden im Rahmen dieser Arbeit bewusst nicht im Detail vorweggenommen.
+- Am Ende jedes Sprints steht ein potenziell auslieferbares Inkrement, das im Sprint Review demonstriert wird. Feedback
+  von Stakeholdern fließt direkt in die Priorisierung des Backlogs ein.
+- In der anschließenden Sprint Retrospektive reflektiert das Team die Zusammenarbeit und die Prozessqualität und leitet
+  konkrete Verbesserungen für den nächsten Sprint ab.
+
+Hinweis: Das Vorgehen orientiert sich am offiziellen Scrum Guide (Version 2020) sowie den Werten und Prinzipien des
+Agile Manifests (siehe Quellenverzeichnis).
+
 ### Ablauf Phasen (Kurz)
 
 1. Architektur-Feinschnitt & Projekt-Setup (CI, Linter, Basis-Ordnerstruktur)

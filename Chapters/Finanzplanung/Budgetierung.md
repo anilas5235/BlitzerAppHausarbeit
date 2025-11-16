@@ -4,6 +4,14 @@ Dieses Kapitel schätzt die zu erwartenden Kosten, beschreibt Mechanismen zur Ko
 Finanzierungsquellen für die BlitzerApp. Fokus: Client-only Architektur (kein eigenes Backend), Nutzung offener
 Schnittstellen (Overpass/OSM), Datenschutz als Wertversprechen.
 
+Die Finanzplanung ist eng mit dem agilen Vorgehen nach Scrum verknüpft. Anstatt das Gesamtbudget einmalig und starr
+vorab festzulegen, erfolgt die Budgetfreigabe inkrementell entlang der definierten Phasen und Releases. Ergebnisse aus
+abgeschlossenen Sprints und Meilensteinen dienen als Grundlage für fundierte Entscheidungen über die weitere Mittel-
+verwendung.
+
+Hinweis: Agile Budgetsteuerung orientiert an Scrum-Grundlagen (Scrum Guide 2020) und den Prinzipien des Agile Manifests
+(siehe Quellenverzeichnis).
+
 ## 5.1 Budgetierung
 
 Die Budgetierung erfolgt auf Basis von Personenaufwand (Personentage, PT), Sachkosten (Tools, Geräte, Dienste) und einem
@@ -13,6 +21,13 @@ Risiko-/Reserveposten. Beispielhafte Annahmen (können angepasst werden):
 - UX/Design: 550 € / PT
 - QA/Testing: 500 € / PT
 - Beratung (Privacy/Compliance): 800 € / PT (punktuell)
+
+Die geschätzten Personentage leiten sich aus den in Kapitel 4.3 beschriebenen Kapazitäten (FTE je Rolle) und der Anzahl
+geplanter Sprints pro Phase ab. Damit bleibt die Budgetierung eng an die tatsächliche Teamverfügbarkeit gekoppelt.
+
+Sie orientiert sich am in Kapitel 4.2 dargestellten Zeitplan mit 12 Sprints zu je zwei Wochen sowie 1–2 zusätzlichen
+Puffersprints. Die dort abgeleitete Gesamtdauer von ca. 26–28 Wochen bildet die zeitliche Grundlage für die hier
+kalkulierten Personentage.
 
 ### 5.1.1 Personenaufwand (Phasen kumuliert, aus Kapitel 5 abgeleitet)
 
@@ -27,6 +42,11 @@ Risiko-/Reserveposten. Beispielhafte Annahmen (können angepasst werden):
 | Gesamtsumme                    | 98                | 18    | 32    | 5           | 153      | ≈ 87.700 €                                                             |
 
 Hinweis: Rundungsdifferenzen möglich; Reserven siehe unten.
+
+Die Phasen A–F entsprechen den in Kapitel 4 beschriebenen Releases (Grundlagen, MVP, Erweiterungen, Qualität/Release,
+Nachrelease). Nach jedem wesentlichen Meilenstein (z. B. M1–M5) kann auf Basis der gelieferten Inkremente, der
+Kostenentwicklung und der Projektziele entschieden werden, ob und in welchem Umfang die nächste Phase finanziert wird.
+So wird vermieden, dass das vollständige Budget frühzeitig gebunden wird.
 
 ### 5.1.2 Sachkosten / Dienste
 
@@ -53,3 +73,7 @@ Geschätztes Gesamtbudget inkl. Puffer: ca. 100.000 € (Bandbreite 95k–105k) 
 - Kostentreiber: Geofencing-Optimierung, Performance-Tuning, QA für Stabilität & Energieverbrauch.
 - Einsparung: Verzicht auf eigenes Backend → keine Server-/Ops-Kosten; konsequentes Caching → niedrigere Tile-Kosten;
   modulare Architektur → schnellere Iterationen.
+
+Bei Budgetdruck können agile Mechanismen genutzt werden, um Kosten zu steuern: weniger kritische Erweiterungsfeatures
+in späteren Phasen werden verschoben oder reduziert, während Kernfunktionalität und Qualität erhalten bleiben. Die
+Priorisierung im Product Backlog ermöglicht eine laufende Anpassung des Umfangs an verfügbare Mittel.

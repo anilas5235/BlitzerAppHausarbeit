@@ -19,6 +19,15 @@ Die Herangehensweise folgt einem iterativen, evidenzbasierten Vorgehen:
 - Evaluierung & Monitoring (späteres Kapitel): Definition von Kennzahlen (Warn-Latenz, Crashrate, Energieverbrauch),
   regelmäßige Überprüfung und Ableitung von Optimierungen, ohne invasive Nutzungsanalyse.
 
+Agiles Vorgehen (Scrum):
+- Organisation der Arbeit über ein priorisiertes Product Backlog (Kapitel 4) und feste Sprints mit zwei Wochen Dauer.
+- Sprint Planning, tägliche Kurzabstimmung, Sprint Review (Inkrement-Demo mit Stakeholdern) und Sprint Retrospektive
+  (Prozessverbesserung); Ergebnisse steuern Budget- und Scope-Entscheidungen (Kapitel 5).
+- Definition of Done stellt sicher, dass jedes Sprint-Inkrement release-fähig ist (vgl. Kapitel 4.1 und 9.3).
+- Detaillierte Zerlegung/Schätzung (z. B. Planning Poker) erfolgt durch das Team im Projektverlauf; nicht vorab in
+  dieser Arbeit festgelegt (vgl. Kapitel 9.1).
+- Orientierung an Scrum Guide (2020) und den Werten des Agile Manifests (siehe Quellenverzeichnis).
+
 Die Methodik legt ihren Schwerpunkt auf Minimalismus in der Infrastruktur, Nutzung offener Standards und transparente
 Kommunikation der Grenzen (z. B. Unvollständigkeit mobiler Blitzer). Rechtliche und ethische Aspekte fließen durch einen
 früh eingebauten Compliance-Check und klare Nutzerhinweise beim ersten Start mit ein.
