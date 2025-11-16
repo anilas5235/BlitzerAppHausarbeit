@@ -18,8 +18,8 @@ Wichtig ist außerdem die Bewertung der Wettbewerbsfähigkeit.
 
 
 ### 2.3.4 Konkurrenzanalyse
-
-(Platzhalter — Wettbewerber, Tabellen/Feature-Übersicht und Vergleich ergänzen.)
+<img width="846" height="414" alt="Screenshot 2025-11-16 at 7 11 55 PM" src="https://github.com/user-attachments/assets/d4d24128-98f1-46c4-8c23-2ab9d225cbac" />
+<img width="603" height="500" alt="Screenshot 2025-11-16 at 7 12 54 PM" src="https://github.com/user-attachments/assets/2a5f3e67-7e80-46a8-94a9-a37a1b4e5f13" />
 
 ### 2.3.5 Technologie: Was verwenden die anderen Blitzer-Apps?
 
