@@ -1,7 +1,9 @@
 ﻿## 4.2 Zeitplan und Meilensteine
 
 Der Projektablauf wird in Sprints mit einer festen Dauer von zwei Wochen strukturiert. Mehrere Sprints bilden gemeinsam
-jeweils eine Phase bzw. ein Release (z. B. MVP, Erweiterung, Qualitäts-/Release-Phase).
+jeweils eine Phase bzw. ein Release (z. B. MVP, Erweiterung, Qualitäts-/Release-Phase). Der Zeitplan dient als
+Orientierung für die Umsetzung der in Abschnitt 4.1 beschriebenen Arbeitspakete und bildet die zeitliche Grundlage für
+die Kapazitäts- und Budgetplanung.
 
 ### 4.2.1 Übersicht Sprints und Phasen
 

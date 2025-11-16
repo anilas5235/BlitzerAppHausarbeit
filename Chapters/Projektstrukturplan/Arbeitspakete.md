@@ -13,21 +13,13 @@ Hinweis: Vorgehen gemäß Scrum-Grundlagen; vgl. Scrum Guide (2020) und Agile Ma
 
 ## 4.1 Arbeitspakete (WBS)
 
-Die Arbeitspakete sind nach Phasen gruppiert. Jede Einheit enthält Ziel, Haupt-Deliverables, Abhängigkeiten und grobe
-Aufwandsschätzung (S = ≤2 PT, M = 3–5 PT, L = >5 PT).
+Die Arbeitspakete beschreiben die fachlichen und technischen Bausteine, die als Epics im Product Backlog geführt und
+über mehrere Sprints hinweg umgesetzt werden. Sie sind nach Phasen gruppiert, die jeweils einen sinnvollen
+Release- bzw. Ergebniszuschnitt darstellen.
 
-Die Gesamtheit der Arbeitspakete bildet das Product Backlog des Projekts. Die Feinpriorisierung innerhalb der Phasen
-und die Zerlegung in kleinere Aufgaben (Tasks) erfolgt im Rahmen der Sprint Plannings durch das cross-funktionale
-Scrum-Team. Detaillierte Schätzungen (z. B. mittels Planning Poker) werden damit bewusst in den späteren
-Projektverlauf verlagert und nicht vollständig im Vorfeld festgeschrieben.
+### 4.1.1 Grundlagen & MVP
 
-Ein Arbeitspaket gilt als abgeschlossen (Definition of Done), wenn:
-- die fachlichen Akzeptanzkriterien erfüllt und mit dem Product Owner abgestimmt sind,
-- automatisierte Tests für die betroffene Logik erfolgreich durchlaufen,
-- relevante Dokumentation (z. B. Nutzerhinweise, Datenschutztexte) aktualisiert wurde und
-- die Funktionalität im Sprint Review demonstriert werden kann.
-
-### Phase A – Grundlagen & Planung
+#### Phase A – Grundlagen & Planung
 
 1. AP-A1: Feinspezifikation Anforderungen
     - Ziel: Detaillierte Verfeinerung aus Kapitel 3; MUSS/SOLL finalisieren.
@@ -46,7 +38,7 @@ Ein Arbeitspaket gilt als abgeschlossen (Definition of Done), wenn:
     - Abhängigkeiten: AP-A2.
     - Aufwand: S
 
-### Phase B – MVP Kern
+#### Phase B – MVP Kern
 
 Hinweis: Phase B stellt den MVP-Scope dar, der in einem ersten Release ausgeliefert werden kann. Die Elemente AP-B1 bis
 AP-B6 sind Must-have für den MVP; AP-B7 ist Nice-to-have (kann bei Bedarf nach hinten priorisiert werden).
@@ -90,7 +82,9 @@ AP-B6 sind Must-have für den MVP; AP-B7 ist Nice-to-have (kann bei Bedarf nach 
     - Abhängigkeiten: AP-B4.
     - Aufwand: S
 
-### Phase C – Erweiterung I
+### 4.1.2 Erweiterungen
+
+#### Phase C – Erweiterung I
 
 1. AP-C1: Geofencing (Hintergrundwarnungen)
     - Ziel: Energieeffiziente Hintergrundwarnungen.
@@ -111,7 +105,7 @@ AP-B6 sind Must-have für den MVP; AP-B7 ist Nice-to-have (kann bei Bedarf nach 
     - Abhängigkeiten: AP-B1–B6.
     - Aufwand: M
 
-### Phase D – Erweiterung II
+#### Phase D – Erweiterung II
 
 1. AP-D1: OSM Notes Integration (Meldungen)
     - Ziel: Nutzer kann Note erstellen (anonym/OAuth).
@@ -131,7 +125,9 @@ AP-B6 sind Must-have für den MVP; AP-B7 ist Nice-to-have (kann bei Bedarf nach 
     - Abhängigkeiten: AP-B7.
     - Aufwand: M
 
-### Phase E – Release & Qualität
+### 4.1.3 Release & Betrieb
+
+#### Phase E – Release & Qualität
 
 1. AP-E1: Testautomatisierung Ausbau
     - Ziel: ≥70% Branch Coverage kritische Logik.
@@ -154,7 +150,7 @@ AP-B6 sind Must-have für den MVP; AP-B7 ist Nice-to-have (kann bei Bedarf nach 
     - Abhängigkeiten: AP-E3.
     - Aufwand: S
 
-### Phase F – Nachrelease / Wartung (laufend)
+#### Phase F – Nachrelease / Wartung (laufend)
 
 1. AP-F1: Fehlerbehebungen / Patch-Zyklus
     - Ziel: Stabilität, Crashrate < 0.5%.

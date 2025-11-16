@@ -46,7 +46,7 @@ bisherige Projektverlauf und der sichtbare Produktnutzen dies rechtfertigen.
 
 Die folgende Übersicht fasst die geschätzten Personentage je Rolle und Phase zusammen und leitet daraus die erwarteten
 Personalkosten ab. Sie bildet den größten Block des Gesamtbudgets und ist direkt an die in Kapitel 4 beschriebenen
-Releases und Kapazitäten gekoppelt. Hierbei handelt es sich um eine grobe Schätzung; die tatsächlichen Aufwände werden 
+Releases und Kapazitäten gekoppelt (vgl. Ressourcenplanung 4.3). Hierbei handelt es sich um eine grobe Schätzung; die tatsächlichen Aufwände werden 
 im Rahmen der Sprint Plannings bzw. bei der Planung der nächsten Phase durch das Team selbst ermittelt und können im 
 Projektverlauf angepasst werden.
 
