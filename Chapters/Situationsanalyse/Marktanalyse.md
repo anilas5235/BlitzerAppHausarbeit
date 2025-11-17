@@ -27,7 +27,14 @@ Wichtig ist außerdem die Bewertung der Wettbewerbsfähigkeit.
 
 ### 2.3.6 Rechtliche Lage (grob)
 
-(Platzhalter — rechtliche Rahmenbedingungen grob skizzieren.)
+In Deutschland ist die Nutzung von Geräten (auch Apps) zur Anzeige oder Störung von Verkehrsüberwachung technisch oder rechtlich eingeschränkt: Laut § 23 Abs. 1c der Straßenverkehrs-Ordnung (StVO) dürfen technische Geräte, die zur Anzeige oder Beeinflussung von Überwachungsmaßnahmen dienen, nicht betrieben werden.
+
+Die Anbieterin der App muss sicherstellen, dass keine Funktionen angeboten werden, die als „Interferenz“ oder „Störung“ gewertet werden (z. B. Anzeige einer Laser-Messung, Echtzeit-Störung etc.).
+
+Unterschiedliche Länder: Was in Deutschland zulässig ist, kann in anderen EU-Staaten verboten sein (z. B. GPS-Warnfunktion ok, aber aktive Radar-Erkennung verboten).
+
+Datenschutzhinweise: Wenn die App Standortdaten/sensorische Daten verarbeitet, muss DSGVO-Konformität gewährleistet sein. Weiterhin könnten Haftungsfragen auftreten, wenn Warnungen falsch oder verzögert geliefert werden.
+
 
 #### 2.3.6.1 EU
 
