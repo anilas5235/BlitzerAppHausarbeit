@@ -31,7 +31,7 @@
   sprechen?)
 - [2.5 SWOT-Analyse](Chapters/Situationsanalyse/SWOT-Analyse.md) (Stärken, Schwächen, Chancen, Gefahren)
 
-### 3 Anforderungsanalyse (Aufteilung der Anforderungen in Kann, Muss, Soll) (Tim/Robin)
+### 3 Anforderungsanalyse (Aufteilung der Anforderungen in Kann, Muss, Soll) (Tim/Jim)
 - [3.1 Funktionale Anforderungen](Chapters/Anforderungsanalyse/Funktionale_Anforderungen.md) (was ist für die App
   essenziell notwendig? Grundlegende Funktionalität)
 - [3.2 Nicht-funktionale Anforderungen](Chapters/Anforderungsanalyse/Nichtfunktionale_Anforderungen.md) (Zusätzlich,
