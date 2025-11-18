@@ -57,17 +57,3 @@ Verbesserung. Größere Releases werden zusätzlich mit aggregierten Kosten- und
 mehrphasige Budgetentscheidungen zu unterstützen. Diese Berichte bilden zugleich eine Entscheidungsgrundlage für die in
 Abschnitt 5.1 beschriebene phasenweise Budgetfreigabe und mögliche Anpassungen des Projektumfangs.
 
-### 5.2.5 Kostenrisiken & Gegenmaßnahmen
-
-| Risiko                             | Auswirkung                       | Gegenmaßnahme                                 |
-|------------------------------------|----------------------------------|-----------------------------------------------|
-| Geofencing komplexer als erwartet  | Mehr Entwicklungs-PT             | Früher Spike (Prototyp) in Phase B            |
-| Übernutzung Overpass → Rate-Limits | Verzögerung, Re-Engineering      | Caching, kleinere BBox, Backoff, Mirrors      |
-| Energieverbrauch zu hoch           | Ablehnung durch Nutzer/App Store | Profiling früh, iterative Optimierung (AP-D2) |
-| Verzögerte Store-Freigabe          | Release verschoben               | Frühe Prüfung Richtlinien, Beta Testlauf      |
-| Zugänglichkeit (A11y) unterschätzt | Nacharbeit, Image-Risiko         | Früh AP-C3, Checklisten etablieren            |
-| Datenqualität unzureichend lokal   | Geringer Nutzen                  | OSM Notes Integration zur Verbesserung        |
-
-Die hier beschriebenen Kostenrisiken stehen in engem Zusammenhang mit der Risikoanalyse in Kapitel 6. Relevante
-Maßnahmen werden im Backlog abgebildet und in Sprints eingeplant, sodass Risiken und Kosteneffekte frühzeitig adressiert
-werden können.

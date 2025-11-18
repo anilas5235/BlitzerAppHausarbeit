@@ -23,8 +23,8 @@
         - [2.3.6.1 EU](Chapters/Situationsanalyse/Marktanalyse.md)
         - [2.3.6.2 DE](Chapters/Situationsanalyse/Marktanalyse.md)
 
-### [2.4 Stakeholderanalyse](Chapters/Situationsanalyse/Stakeholderanalyse.md) 
-#### (haben wir schon, Excel, nochmal überarbeiten & genauer beschreiben in Textform)
+- [2.4 Stakeholderanalyse](Chapters/Situationsanalyse/Stakeholderanalyse.md) 
+(haben wir schon, Excel, nochmal überarbeiten & genauer beschreiben in Textform)
 - [2.4.1 Identifikation](Chapters/Situationsanalyse/Stakeholderanalyse.md)
 - [2.4.2 Zuständigkeiten/Zugehörigkeiten](Chapters/Situationsanalyse/Stakeholderanalyse.md)
 - [2.4.3 Kommunikationsplan](Chapters/Situationsanalyse/Stakeholderanalyse.md)(z.B. wann muss man mit wem
@@ -54,7 +54,6 @@
   - [4.3.2 Skills und Spezialisierungen](Chapters/Projektstrukturplan/Ressourcenplanung.md)
   - [4.3.3 Auslastung nach Phasen](Chapters/Projektstrukturplan/Ressourcenplanung.md)
   - [4.3.4 Externe Ressourcen und Tools](Chapters/Projektstrukturplan/Ressourcenplanung.md)
-  - [4.3.5 Ressourcenrisiken und Skalierung](Chapters/Projektstrukturplan/Ressourcenplanung.md)
 
 ### 5 Finanzplanung (Niklas)
 - [5.1 Budgetierung](Chapters/Finanzplanung/Budgetierung.md)
@@ -67,13 +66,11 @@
     - [5.2.2 Überwachung externer Nutzung](Chapters/Finanzplanung/Kostenkontrolle.md)
     - [5.2.3 Entscheidungs-Trigger](Chapters/Finanzplanung/Kostenkontrolle.md)
     - [5.2.4 Reporting & Transparenz](Chapters/Finanzplanung/Kostenkontrolle.md)
-    - [5.2.5 Kostenrisiken & Gegenmaßnahmen](Chapters/Finanzplanung/Kostenkontrolle.md)
 - [5.3 Finanzierungsquellen](Chapters/Finanzplanung/Finanzierungsquellen.md)
     - [5.3.1 Primäre Quellen](Chapters/Finanzplanung/Finanzierungsquellen.md)
     - [5.3.2 Sekundäre Monetarisierungsoptionen (datenschutzfreundlich)](Chapters/Finanzplanung/Finanzierungsquellen.md)
     - [5.3.3 Open-Source Ansatz](Chapters/Finanzplanung/Finanzierungsquellen.md)
     - [5.3.4 Nachhaltigkeit & Kosten-Nutzen](Chapters/Finanzplanung/Finanzierungsquellen.md)
-    - [5.3.5 Bewertung Monetarisierungs-Risiken](Chapters/Finanzplanung/Finanzierungsquellen.md)
 
 ### 6 Risikoanalyse
 #### komplett auf unser Projekt bezogen (Was verändern wir darauf basierend bzw. Worauf müssen wir besonders aufpassen) (Robin) (im Moment noch dummy)

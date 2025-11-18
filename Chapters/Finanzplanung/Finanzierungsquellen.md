@@ -51,15 +51,6 @@ Barrierefreiheits-Funktionen). So bleibt die Weiterentwicklung des Produkts eng 
 
 Hinweis: Agiles Vorgehen und Release-Reviews vgl. Scrum Guide (2020) und Agile Manifest (siehe Quellenverzeichnis).
 
-### 5.3.5 Bewertung Monetarisierungs-Risiken
-
-| Option                    | Risiko                   | Mitigation                                    |
-|---------------------------|--------------------------|-----------------------------------------------|
-| Classic Ads               | Datenschutz-Imageverlust | Nicht einsetzen                               |
-| Verkauf Standortdaten     | Widerspricht Kernwerten  | Ausschließen                                  |
-| Zu hohe Abo-Preise        | Geringe Adoption         | Moderate Preisstrategie, Mehrwert klar zeigen |
-| Reine Spendenabhängigkeit | Unsichere Planung        | Mischmodell, transparente Roadmap             |
-
 ## Zusammenfassung
 
 Die Finanzplanung zeigt ein moderates Gesamtbudget durch Wegfall serverseitiger Infrastruktur. Kostenkontrolle stützt
