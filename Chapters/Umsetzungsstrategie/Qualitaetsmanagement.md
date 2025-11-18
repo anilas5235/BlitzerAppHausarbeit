@@ -32,7 +32,7 @@ Automatisierte Tests sind Teil der Definition of Done und werden in der CI/CD-Pi
 
 ### Release-Gates / Abnahmecheck
 
-Vor jedem Meilenstein-Release (vgl. Projektstrukturplan):
+Vor jedem Meilenstein-Release (vgl. Produktplan):
 
 1. Build Stabilität: Keine kritischen Fehler/Warnungen.
 2. CI/CD-Pipeline: Build, Lint und Tests (Unit/Widget/Integration) grün.

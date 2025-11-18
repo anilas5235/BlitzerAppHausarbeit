@@ -27,7 +27,7 @@ Zusätzlich stützt sich der Entwicklungsansatz auf ein Scrum-inspiriertes Vorge
 stabilen, cross-funktionalen Team:
 
 - Das zentrale Planungsartefakt ist ein priorisiertes Product Backlog, das fachliche Anforderungen, technische
-  Verbesserungen und Wartungsaufgaben bündelt (vgl. Projektstrukturplan in Kapitel 4).
+  Verbesserungen und Wartungsaufgaben bündelt (vgl. Produktplan in Kapitel 4).
 - In festen Sprints (zwei Wochen) plant das Scrum-Team im Sprint Planning, welche Backlog-Einträge zum nächsten
   Inkrement verarbeitet werden. Die detaillierte Zerlegung in Tasks und die Aufwandsschätzung (z. B. Planning Poker)
   erfolgen dabei durch das Team selbst und werden im Rahmen dieser Arbeit bewusst nicht im Detail vorweggenommen.

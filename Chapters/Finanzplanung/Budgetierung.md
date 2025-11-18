@@ -1,7 +1,7 @@
 ﻿# 5 Finanzplanung
 
 Dieses Kapitel schätzt die zu erwartenden Kosten, beschreibt Mechanismen zur Kostenkontrolle und skizziert mögliche
-Finanzierungsquellen für die BlitzerApp. Es baut auf dem in Kapitel 4 beschriebenen Projektstrukturplan (Arbeitspakete,
+Finanzierungsquellen für die BlitzerApp. Es baut auf dem in Kapitel 4 beschriebenen Produktplan (Arbeitspakete,
 Zeitplan, Ressourcen) auf und überführt dessen Annahmen in Budgetgrößen. Fokus: Client-only Architektur (kein eigenes
 Backend), Nutzung offener Schnittstellen (Overpass/OSM), Datenschutz als Wertversprechen.
 
@@ -26,7 +26,7 @@ Risiko-/Reserveposten. Beispielhafte Annahmen (können angepasst werden):
 ### 5.1.1 Einordnung und agile Herleitung
 
 Die geschätzten Personentage leiten sich aus dem in Kapitel 4.2 beschriebenen Zeitplan, den in Kapitel 4.3 dargestellten
-Kapazitäten (FTE je Rolle), dem Umfang der im Projektstrukturplan (Kapitel 4.1) beschriebenen Arbeitspakete (Epics) sowie
+Kapazitäten (FTE je Rolle), dem Umfang der im Produktplan (Kapitel 4.1) beschriebenen Arbeitspakete (Epics) sowie
 der Anzahl geplanter Sprints pro Phase ab. Die Arbeitspakete werden hierfür im Product Backlog grob geschätzt (z. B. in
 Story Points) und über die Sprints verteilt; zur Finanzplanung werden diese agilen Schätzwerte anschließend in
 Personentage pro Rolle verdichtet. Damit bleibt die Budgetierung eng an die tatsächliche Teamverfügbarkeit gekoppelt, ist
