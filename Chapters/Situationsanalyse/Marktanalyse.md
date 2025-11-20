@@ -53,6 +53,7 @@ https://www.fortunebusinessinsights.com/de/gps-markt-110523
 
 
 
+![Image](https://github.com/user-attachments/assets/c29d3ad3-aa69-4588-8841-65c380f2243b)
 
 
 
@@ -75,6 +76,7 @@ https://www.geblitzt.de/news/blitzer-einnahmen-so-viel-geld-bringen-verkehrssuen
 
 
 
+<img width="717" height="547" alt="Screenshot 2025-11-20 at 12 59 58 PM" src="https://github.com/user-attachments/assets/edb47b04-f707-4240-b200-ed34d47d6f26" />
 
 
 
@@ -105,8 +107,10 @@ blitzer.de Pro: 5M+ Downloads auf iOS
 
 
 
+![IMG_3B0987FDD7AF-1](https://github.com/user-attachments/assets/0e6d95bf-0fe4-41e0-80ea-4e509a133a4d)
 
 
+![IMG_A843C2B93093-1](https://github.com/user-attachments/assets/c3df7e03-966d-4779-aaa6-e2bde136c3f6)
 
 
 
