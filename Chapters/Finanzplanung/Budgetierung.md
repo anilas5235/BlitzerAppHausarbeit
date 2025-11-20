@@ -22,7 +22,7 @@ Risiko-/Reserveposten. Beispielhafte Annahmen (können angepasst werden):
 - UX/Design: 550 € / PT
 - QA/Testing: 500 € / PT
 - Beratung (Privacy/Compliance): 800 € / PT (punktuell)
-
+Quelle suchen.
 ### 5.1.1 Einordnung und agile Herleitung
 
 Die geschätzten Personentage leiten sich aus dem in Kapitel 4.2 beschriebenen Zeitplan, den in Kapitel 4.3 dargestellten

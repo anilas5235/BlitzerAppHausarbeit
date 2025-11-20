@@ -71,34 +71,34 @@ AP-B6 sind Must-have für den MVP; AP-B7 ist Nice-to-have (kann bei Bedarf nach 
     - User Value: Als Fahrer:in möchte ich frühzeitig und klar erkennbar vor Blitzern gewarnt werden, damit ich mein Fahrverhalten rechtzeitig anpassen kann.
     - Abhängigkeiten: AP-B4.
     - Aufwand: M
-6. AP-B6: Einstellungen (Radius, Ton, Datenschutzhinweis)
-    - Ziel: Persistente Konfiguration.
-    - Deliverables: SettingsView, SettingsStore, Datenschutzhinweis.
-    - Abhängigkeiten: AP-B5.
-    - Aufwand: S
-7. AP-B7: Offline-Grundfunktion (Letzte Region)
-    - Ziel: Anzeige letzter POIs ohne Netz.
-    - Deliverables: Cache-Ladepfad, Offline-Hinweis.
-    - Abhängigkeiten: AP-B4.
-    - Aufwand: S
+6. AP-B6: Geofencing (Hintergrundwarnungen)
+   - Ziel: Energieeffiziente Hintergrundwarnungen.
+   - Deliverables: GeofencingService, Testfälle.
+   - Besonderheit: Enthält initial einen Spike zur Evaluierung der Plattform-Geofencing-Möglichkeiten, um technische Risiken frühzeitig zu reduzieren.
+   - User Value: Als Fahrer:in möchte ich auch bei gesperrtem Bildschirm rechtzeitig und energieeffizient gewarnt werden, damit ich mich auf die Fahrt konzentrieren kann.
+   - Abhängigkeiten: AP-B5.
+   - Aufwand: L
 
 ### 4.1.2 Erweiterungen
 
 #### Phase C – Erweiterung I
 
-1. AP-C1: Geofencing (Hintergrundwarnungen)
-    - Ziel: Energieeffiziente Hintergrundwarnungen.
-    - Deliverables: GeofencingService, Testfälle.
-    - Besonderheit: Enthält initial einen Spike zur Evaluierung der Plattform-Geofencing-Möglichkeiten, um technische Risiken frühzeitig zu reduzieren.
-    - User Value: Als Fahrer:in möchte ich auch bei gesperrtem Bildschirm rechtzeitig und energieeffizient gewarnt werden, damit ich mich auf die Fahrt konzentrieren kann.
-    - Abhängigkeiten: AP-B5.
-    - Aufwand: L
-2. AP-C2: Mehrsprachigkeit (DE/EN)
+1. AP-C1: Einstellungen (Radius, Ton, Datenschutzhinweis)
+   - Ziel: Persistente Konfiguration.
+   - Deliverables: SettingsView, SettingsStore, Datenschutzhinweis.
+   - Abhängigkeiten: AP-B5.
+   - Aufwand: S
+2. AP-C2: Offline-Grundfunktion (Letzte Region)
+   - Ziel: Anzeige letzter POIs ohne Netz.
+   - Deliverables: Cache-Ladepfad, Offline-Hinweis.
+   - Abhängigkeiten: AP-B4.
+   - Aufwand: S
+3. AP-C3: Mehrsprachigkeit (DE/EN)
     - Ziel: i18n Grundlagen.
     - Deliverables: Lokalisierte Strings, Umschaltlogik.
     - Abhängigkeiten: AP-B6.
     - Aufwand: S
-3. AP-C3: Accessibility Basis
+4. AP-C4: Accessibility Basis
     - Ziel: Kontraste, Labels, Screenreader-Test.
     - Deliverables: A11y-Checkliste, UI-Anpassungen.
     - User Value: Als Nutzer:in mit Assistive-Technologien möchte ich die App barrierearm bedienen können, damit Warnungen zuverlässig zugänglich sind.
