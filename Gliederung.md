@@ -52,8 +52,10 @@
 - [4.3 Ressourcenplanung](Chapters/Produktplan_Zeitplan/Ressourcenplanung.md)
   - [4.3.1 Rollen und Kapazitäten](Chapters/Produktplan_Zeitplan/Ressourcenplanung.md)
   - [4.3.2 Skills und Spezialisierungen](Chapters/Produktplan_Zeitplan/Ressourcenplanung.md)
-  - [4.3.3 Auslastung nach Phasen](Chapters/Produktplan_Zeitplan/Ressourcenplanung.md)
-  - [4.3.4 Externe Ressourcen und Tools](Chapters/Produktplan_Zeitplan/Ressourcenplanung.md)
+    - [4.3.2.1 Technische und domänenspezifische Skills](Chapters/Produktplan_Zeitplan/Ressourcenplanung.md)
+    - [4.3.2.2 Agile und qualitätsorientierte Skills](Chapters/Produktplan_Zeitplan/Ressourcenplanung.md)
+    - [4.3.2.3 Teamübergreifende Aspekte](Chapters/Produktplan_Zeitplan/Ressourcenplanung.md)
+  - [4.3.3 Externe Ressourcen und Tools](Chapters/Produktplan_Zeitplan/Ressourcenplanung.md)
 
 ### 5 Finanzplanung (Niklas)
 - [5.1 Budgetierung](Chapters/Finanzplanung/Budgetierung.md)
