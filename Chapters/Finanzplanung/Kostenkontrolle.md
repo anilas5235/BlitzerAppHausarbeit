@@ -1,59 +1,98 @@
-﻿## 5.2 Kostenkontrolle
+﻿# 5.2 Kostenkontrolle
 
-Ziel: Frühzeitiges Erkennen von Abweichungen, ohne Overhead, und Unterstützung der in Abschnitt 5.1 beschriebenen
-agilen Budgetsteuerung.
+Dieses Kapitel beschreibt, wie die in 5.1 geplanten Budgets während des Projekts überwacht und gesteuert werden. Ziel
+ist es, Transparenz über den Mittelverbrauch zu schaffen, Abweichungen frühzeitig zu erkennen und fundierte
+Entscheidungen über den weiteren Projektverlauf zu ermöglichen. Die Kostenkontrolle ist eng mit dem agilen
+Vorgehensmodell verknüpft und orientiert sich an den Phasen und Meilensteinen aus Kapitel 4.
 
-### 5.2.1 Steuerungsinstrumente
+## 5.2.1 Steuerungsinstrumente
 
-- Kostenbaseline: Summe geplanter PT pro Phase vs. Ist-Aufwand (wöchentlich aktualisiert).
-- Burn-Down Diagramm (Aufgaben / verbleibende PT) je Sprint/Iterationsblock.
-- Earned Value Light:
-    - PV (Planned Value): Geplante PT bis Stichtag.
-    - EV (Earned Value): Abgeschlossene AP-PT (Abnahme-Kriterium erfüllt).
-    - AC (Actual Cost): Tatsächlich angefallene PT * Tagessätze.
-    - Indikatoren: CPI = EV/AC (<1 = Kostenüberzug), SPI = EV/PV (<1 = Verzug).
+Die zentralen Instrumente zur Kostenkontrolle sind:
 
-Diese Kennzahlen werden sprintweise erhoben und im Rahmen der Sprint Reviews betrachtet. Abweichungen fließen in die
-Sprint Retrospektiven ein und führen zu Anpassungen bei Planung, Schätzung und Arbeitsweise. Sie beziehen sich auf die
-in Abschnitt 5.1 geplanten Personentage und Phasen und dienen damit als Frühwarnsystem, ob die nächste Budgettranche
-(z. B. für die Erweiterungsphasen C und D oder die Nachrelease-Phase F) wie vorgesehen freigegeben werden sollte oder ob
-Umfang und Prioritäten im Backlog angepasst werden müssen.
+- Phasenbezogene Budgetrahmen (vgl. 5.1.2):
+  - Für jede Phase (Preparation, MVP-Kern, AppStore-Release & Qualität, erster Erweiterungszyklus, initiale
+    Nachrelease-/Wartungsphase) wird ein Budgetrahmen in Personentagen und Euro definiert.
+  - Diese Rahmen dienen als Orientierung für die Sprintplanung und werden nach jedem Meilenstein überprüft.
+- Budget-Burn vs. Fortschritt:
+  - In regelmäßigen Abständen (z. B. pro Sprint-Review) wird gegenübergestellt, wie viele Personentage je Rolle bereits
+    verbraucht sind und welche Arbeitspakete/Meilensteine erreicht wurden.
+  - Dies ermöglicht eine einfache Kontrolle, ob der „Burn“ des Budgets im erwarteten Verhältnis zu den gelieferten
+    Inkrementen steht.
+- Velocity- und Forecast-Betrachtung:
+  - Auf Basis der in den Sprints tatsächlich umgesetzten Story Points (Velocity) kann abgeschätzt werden, ob der
+    verbleibende Budgetrahmen ausreicht, um die noch offenen, priorisierten Backlog-Einträge zu realisieren.
+  - Bei deutlichen Abweichungen (z. B. deutlich geringerer Velocity als geplant) werden frühzeitig Anpassungen
+    eingeleitet (Scope-Anpassung, Verschiebung von Erweiterungsfeatures, Nachjustierung des Budgets).
+- Meilensteinbezogene Reviews:
+  - Zu den Meilensteinen M1–M6 (vgl. 4.2.4) wird neben dem fachlichen Fortschritt auch die Budgetseite betrachtet
+    (Ist-Kosten vs. geplante Kosten je Phase).
+  - Diese Meilenstein-Reviews bilden die Grundlage für Stop/Go-Entscheidungen und ggf. eine Re-Priorisierung des
+    Backlogs.
 
-Hinweis: Sprint-basierte Steuerung in Anlehnung an den Scrum Guide (2020); Werte/Prinzipien vgl. Agile Manifest (siehe
-Quellenverzeichnis).
+Durch die Kombination dieser Instrumente wird eine laufende, datengestützte Kostenkontrolle ermöglicht, ohne das
+tagessgeschäftliche Arbeiten im Scrum-Prozess zu überfrachten.
 
-Zusätzlich zu Aufwand- und Kostenmetriken werden Outcome-orientierte Kennzahlen beobachtet, z. B. Crashrate,
-App-Startzeit, Warn-Latenz sowie Feedback aus Beta-Tests. So bleibt der Fokus auf Nutzen und Qualität, nicht nur auf
-verbrauchten Ressourcen.
+## 5.2.2 Überwachung externer Nutzung
 
-### 5.2.2 Überwachung externer Nutzung
+Neben den Personalkosten müssen insbesondere die nutzungsabhängigen Sachkosten im Blick behalten werden. Im vorliegenden
+Projekt betrifft dies vor allem:
 
-- Overpass-Abfragen: Logging Anzahl/Tag, mittlere Antwortzeit, Fehlerquote; Warnschwelle >20% Fehlversuche.
-- Tile-Abrufe: Statistiken (sofern Provider-Dashboard) → monatlicher Check; Ziel: stabile Nutzung, kein exponentielles
-  Wachstum.
-- Geräte-Profiling: Quartalsweise Energieverbrauchs-Review (bei wesentlicher Feature-Erweiterung).
+- Tile-Provider API:
+  - Monitoring der abgerufenen Kacheln und des daraus entstehenden Verbrauchs (z. B. über Dashboard des Providers).
+  - Abgleich mit den in 5.1.3 angenommenen Kosten (Low-Usage Plan). Bei Annäherung an definierte Schwellenwerte können
+    Maßnahmen ergriffen werden (z. B. stärkere Caching-Strategien, Limitierung bestimmter Kartenansichten).
+- CI/CD-Build-Minuten:
+  - Überwachung der genutzten Build-Minuten bei Cloud-CI-Anbietern, um unerwartete Mehrkosten zu vermeiden.
+  - Gegebenenfalls Anpassung der Build-Frequenz (z. B. Nightly-Builds statt bei jedem Commit) oder Wechsel des Plans.
+- Geräte- und Infrastruktur-Nutzung:
+  - Sicherstellung, dass Testgeräte effizient genutzt werden (z. B. Bündelung von Testläufen), um den
+    Beschaffungsaufwand niedrig zu halten.
 
-### 5.2.3 Entscheidungs-Trigger
+Die Überwachung dieser externen Nutzungen kann stark automatisiert erfolgen (z. B. über Provider-Dashboards oder
+Reporting-Funktionen) und wird in regelmäßigen Abständen (z. B. monatlich oder pro Phase) gemeinsam mit der
+Personalkostenentwicklung betrachtet.
 
-- Abweichung >15% in CPI/SPI über 2 aufeinanderfolgende Wochen → Review & Re-Priorisierung (Feature-Scope kürzen oder
-  Ressourcen erhöhen).
-- Performanceziel (Startzeit, Warn-Latenz) nicht erfüllt vor Phase D → zusätzlichen Optimierungs-Sprint einplanen (Budget
-  aus Reserve).
-- Store-Review Blockade → sofortige Taskforce (Dev + Compliance) ≤ 3 PT Zusatz.
+## 5.2.3 Entscheidungs-Trigger
 
-Insbesondere an den Meilensteinen M2 (MVP) und M5 (Beta/Store-Ready) werden die aggregierten Kennzahlen (EV, CPI/SPI,
-Outcome-Metriken) herangezogen, um über die Freigabe der nächsten Budgettranche gemäß Abschnitt 5.1 zu entscheiden.
-So werden Scope- und Budgetentscheidungen nicht nur einmalig zu Projektbeginn getroffen, sondern regelmäßig auf Basis
-der tatsächlich gelieferten Ergebnisse und Kosten überprüft.
+Um Kostensteigerungen frühzeitig zu adressieren und das Projekt zielgerichtet zu steuern, werden klare
+Entscheidungs-Trigger definiert. Beispiele:
 
-### 5.2.4 Reporting & Transparenz
+- Budgetüberlauf in einer Phase:
+  - Wenn absehbar ist, dass der Budgetrahmen einer Phase (vgl. 5.1.2) um mehr als 10–15 % überschritten wird, wird im
+    Projektteam gemeinsam mit dem Product Owner eine Scope-Anpassung diskutiert.
+  - Mögliche Reaktionen: Verschieben optionaler Features in spätere Erweiterungszyklen, Reduktion des Umfangs einzelner
+    Arbeitspakete, gezielter Fokus auf die für den Meilenstein kritischen Funktionen.
+- Negative Trends bei Velocity oder Qualität:
+  - Wenn die tatsächliche Velocity über mehrere Sprints deutlich unter den Annahmen liegt oder die Anzahl kritischer
+    Defects stark ansteigt, erfolgt eine Ursachenanalyse. Gegebenenfalls werden technische Schulden priorisiert oder
+    zusätzliche Kapazitäten für Stabilisierung eingeplant.
+- Meilenstein-Entscheidungen (M3, M4):
+  - Nach M3 (MVP funktionsfähig) und M4 (Beta-Release) wird explizit geprüft, ob der bisherige Nutzen die weiteren
+    Investitionen in Release- und Erweiterungsphasen rechtfertigt.
+  - Entscheidungsoptionen: Voller Ausbau gemäß Plan, fokussierter Ausbau mit reduziertem Scope oder geordneter
+    Projektabschluss nach MVP.
+- Externe Kosten-Schwellen:
+  - Erreichen bestimmter Schwellen bei API-Nutzung oder CI/CD-Kosten löst eine Überprüfung aus, ob technische oder
+    vertragliche Optimierungen möglich und wirtschaftlich sinnvoll sind.
 
-- Wöchentlich: Kurzbericht (Progress, EV/CPI, größte Risiken) an Projektteam.
-- Meilenstein-Ende: Zusammenfassung Ist vs. Plan, verbleibende Restkosten, Nachjustierungen.
-- Keine personenbezogenen Daten im Reporting; rein technische & Aufwandmetriken.
+Diese Trigger sorgen dafür, dass Kostenkontrolle nicht nur retrospektiv erfolgt, sondern aktiv in den Steuerungsprozess
+integriert ist.
 
-Sprint Reviews dienen als natürliche Reporting-Termine mit Stakeholdern, Sprint Retrospektiven als Forum zur internen
-Verbesserung. Größere Releases werden zusätzlich mit aggregierten Kosten- und Nutzenberichten hinterlegt, um
-mehrphasige Budgetentscheidungen zu unterstützen. Diese Berichte bilden zugleich eine Entscheidungsgrundlage für die in
-Abschnitt 5.1 beschriebene phasenweise Budgetfreigabe und mögliche Anpassungen des Projektumfangs.
+## 5.2.4 Reporting & Transparenz
 
+Transparente Kommunikation der Kostenentwicklung ist eine Voraussetzung dafür, dass Stakeholder fundierte Entscheidungen
+mittragen und Prioritäten im Backlog nachvollziehen können. Vorgesehen ist daher ein leichtgewichtiges Reporting:
+
+- Sprintbasiertes Kurz-Reporting:
+  - Im Rahmen der Sprint Reviews werden neben fachlichen Ergebnissen auch Kennzahlen zum Ressourcenverbrauch
+    vorgestellt (z. B. „verbrauchte PT je Rolle in dieser Phase“, „verbleibender Budgetrahmen der aktuellen Phase“).
+- Phasen- bzw. Meilensteinberichte:
+  - Zu den Meilensteinen (M1–M6) wird ein komprimierter Bericht erstellt, der geplante vs. tatsächliche Personentage
+    und Sachkosten gegenüberstellt und die wesentlichen Abweichungsgründe dokumentiert.
+- Visualisierung:
+  - Einfache Diagramme (z. B. kumulativer Budget-Burn vs. Fortschritt nach Meilensteinen) unterstützen die schnelle
+    Erfassung des Projektstatus für Management und externe Stakeholder.
+
+Das Reporting orientiert sich am Prinzip der „information radiators“ aus der agilen Praxis: Relevante Informationen
+sollen für alle Beteiligten leicht zugänglich und verständlich sein, ohne unnötige Bürokratie zu erzeugen. Auf dieser
+Basis kann die in 5.1 skizzierte Budgetierung kontinuierlich überprüft und bei Bedarf angepasst werden.
