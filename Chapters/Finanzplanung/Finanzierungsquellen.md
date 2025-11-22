@@ -38,7 +38,7 @@ produktive Weiterentwicklung diskutiert.
 
 Sekundäre Monetarisierungsoptionen sind ergänzende Einnahmequellen, die insbesondere in einer späteren Produktphase
 relevant werden können. Im Sinne des Datenschutz- und Gemeinwohlfokus kommen klassische Werbe- und Trackingmodelle
-(inkl. personalisierter Werbung und umfassender Nutzungsprofile) bewusst **nicht** in Frage. Stattdessen bieten sich
+(inkl. personalisierter Werbung und umfassender Nutzungsprofile) bewusst **nicht** infrage. Stattdessen bieten sich
 unter anderem folgende, datenschutzfreundlichere Optionen an:
 
 - Optionale Pro-Features:
@@ -47,7 +47,7 @@ unter anderem folgende, datenschutzfreundlichere Optionen an:
     Allgemeinheit einzuschränken.
   - Datenschutzaspekt: Die Zahlungsabwicklung sollte über etablierte, datenschutzfreundliche Anbieter erfolgen, ohne
     zusätzliche Tracking-SDKs zu integrieren.
-- Spendenmodell / „Pay what you want“:
+- Spendenmodell / "Pay what you want":
   - Bereitstellung der App kostenfrei, ergänzt um eine freiwillige Spendenoption (z. B. über Plattformen wie
     OpenCollective, Liberapay oder klassische Spendenkonten).
   - Vorteil: Nutzer:innen können den wahrgenommenen Nutzen individuell honorieren; keine Notwendigkeit zur
@@ -108,6 +108,6 @@ stehen und wie nachhaltig die skizzierten Finanzierungsmodelle sind.
   - Der modulare Aufbau des Produktplans (Kapitel 4) und die agile Budgetsteuerung (Kapitel 5.1/5.2) erlauben es,
     die Finanzierung schrittweise an die tatsächliche Nutzung und das Feedback anzupassen.
 
-In Summe lässt sich festhalten, dass ein konservativ geplantes, überwiegend intern oder förderfinanziertes Modell in
+In Summe lässt sich festhalten, dass ein konservativ geplantes, überwiegend intern oder förder-finanziertes Modell in
 Kombination mit datenschutzfreundlichen, optionalen Einnahmequellen und einem Open-Source-Ansatz ein realistisches und
 mit den Zielen des Projekts vereinbares Finanzierungsmodell darstellt.
