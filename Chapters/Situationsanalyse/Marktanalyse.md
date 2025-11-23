@@ -1,4 +1,4 @@
-![IMG_3B0987FDD7AF-1](https://github.com/user-attachments/assets/4fff960c-8390-4bbc-9f1c-30346d4b4ffc)﻿## 2.3 Marktanalyse
+## 2.3 Marktanalyse
 
 ### 2.3.1 Zielsetzung
 
@@ -50,8 +50,9 @@ Die Dichte installierter Blitzer variiert stark zwischen den europäischen Länd
 
 
 Auch dem Appstore lässt sich durch eine Betrachtung der Charts von Navigationsapps entnehmen, dass Blitzerapps im Vergleich mit anderen Navigationsapps sehr beliebt sind. So belegen am 23.11.2025 Waze und Blitzer.de in der Kategorie “Free” Platz vier und fünf, Blitzer.de Pro in der Kategorie “Paid Apps” den Platz 1.
-![Uploading IMG_3B0987FDD7AF-1.j![IMG_A843C2B93093-1](https://github.com/user-attachments/assets/c3f70019-e2c3-413f-9f9c-cda3f8caf999)
-peg…]()
+![IMG_3B0987FDD7AF-1](https://github.com/user-attachments/assets/4fff960c-8390-4bbc-9f1c-30346d4b4ffc)﻿
+![IMG_A843C2B93093-1](https://github.com/user-attachments/assets/0ff8dc82-7be7-4f96-94bb-6d470c40295a)
+
 
 
 Auf Ebene der Wettbewerbssituation zeigt sich ein intensiver Markt mit großen Playern wie Garmin, Broadcom und etablierten Community-Apps. Allerdings sind genaue Downloadzahlen schwer zugänglich. Laut Google Playstore erreicht Radarbot  über 50 Millionen Downloads, Blitzer.de Pro über 5 Millionen Downloads im App Store. Eine vorsichtige Schätzung deutet auf ein internationales Gesamtvolumen im Bereich mehrerer hundert Millionen Downloads hin. Für die EU sind die ca. 79 Mio. Nutzer, basierend auf Bitkom-Daten, die sinnvollste und empirisch sauberste Größe.
