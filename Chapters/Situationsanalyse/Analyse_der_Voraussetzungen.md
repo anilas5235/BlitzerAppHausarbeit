@@ -12,3 +12,5 @@ Auch technologische Aspekte sind nicht zu vernachlässigen. Fortschritte in GPS-
 Ökologische Aspekte spielen eine indirekte, aber zunehmende Rolle. Hier ist vor allem der Einsatz energetisch optimierter Server-Infrastruktur und effizienter Softwarearchitekturen von Bedeutung.
 
 Vor allem die Rechtslage für Blitzerapps ist äußerst komplex. Die Nutzung von Blitzer-Apps ist in der EU rechtlich geregelt und meist mit massiven Einschränkungen verbunden. Datenschutz spielt eine zentrale Rolle, da Standortdaten und Bewegungsprofile verarbeitet werden. Die Einhaltung der Datenschutz-Grundverordnung (DSGVO) ist zwingend, da Apps typischerweise personenbezogene oder personenbeziehbare Daten nutzen. Darüber hinaus regeln nationale Straßenverkehrsgesetze, ob und wie Fahrer Warnhinweise nutzen dürfen. 
+
+Insgesamt zeigt die PESTEL-Analyse, dass der Markt für Blitzer-Apps großes Potential hat, gleichzeitig aber stark von rechtlichen Rahmenbedingungen und gesellschaftlicher Akzeptanz beeinflusst wird. 
