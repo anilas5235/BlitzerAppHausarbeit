@@ -80,8 +80,6 @@ Verhaltensorientiert unterscheidet sich die Zielgruppe vor allem hinsichtlich ih
 <img width="717" height="743" alt="Screenshot 2025-11-20 at 1 57 54 PM" src="https://github.com/user-attachments/assets/5657ec5b-798e-4b27-98db-4462eb23e8bf" />
 <img width="603" height="500" alt="Screenshot 2025-11-16 at 7 12 54 PM" src="https://github.com/user-attachments/assets/2a5f3e67-7e80-46a8-94a9-a37a1b4e5f13" />
 
-SWOT:
-<img width="654" height="176" alt="image" src="https://github.com/user-attachments/assets/bb78d358-d8fb-4483-93c8-ebf23663894b" />
 
 
 ### 2.3.5 Technologie: Was verwenden die anderen Blitzer-Apps?
