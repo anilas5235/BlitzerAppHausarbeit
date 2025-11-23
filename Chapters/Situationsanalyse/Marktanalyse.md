@@ -76,9 +76,13 @@ Verhaltensorientierung
 Verhaltensorientiert unterscheidet sich die Zielgruppe vor allem hinsichtlich ihres Nutzungsverhaltens. Die App soll sowohl für Vielfahrer als auch für Wenigfahrer attraktiv sein, wird jedoch typischerweise mehrmals täglich oder wöchentlich genutzt, besonders von Pendlern oder Fahrern im beruflichen Kontext. In Bezug auf Produktanforderungen erwarten die Nutzer eine App, die auch parallel zu anderen Navigationsapps reibungslos funktioniert und sich durch einfache, intuitive Bedienbarkeit auszeichnet. Warnungen sollen eindeutig und unaufdringlich erfolgen, um die Sicherheit nicht zu beeinträchtigen. Eine werbefreie Nutzung, Offline-Funktionalität sowie Echtzeitinformationen swerden ebenfalls als wichtig wahrgenommen. Da viele Nutzer nur begrenzten Speicherplatz zur Verfügung haben, wird auch eine geringe Größe der App geschätzt. Abschließend spielt die Preisgestaltung eine wesentliche Rolle da die Zielgruppe sich niedrige oder keine Kosten wünscht.
 
 
-### 2.3.4 Konkurrenzanalyse
+### 2.3.4 Konkurrenzanalyse ((Strategieprofilanalyse: Scheed, B., Scherer, P. (2021). MARKT – Strategische Markt- und Wettbewerbsanalyse und strategische Marktplanung. In: Strategisches Vertriebsmanagement . Springer Gabler, Wiesbaden. https://doi.org/10.1007/978-3-658-34548-8_2)
 <img width="717" height="743" alt="Screenshot 2025-11-20 at 1 57 54 PM" src="https://github.com/user-attachments/assets/5657ec5b-798e-4b27-98db-4462eb23e8bf" />
 <img width="603" height="500" alt="Screenshot 2025-11-16 at 7 12 54 PM" src="https://github.com/user-attachments/assets/2a5f3e67-7e80-46a8-94a9-a37a1b4e5f13" />
+
+SWOT:
+<img width="654" height="176" alt="image" src="https://github.com/user-attachments/assets/bb78d358-d8fb-4483-93c8-ebf23663894b" />
+
 
 ### 2.3.5 Technologie: Was verwenden die anderen Blitzer-Apps?
 
