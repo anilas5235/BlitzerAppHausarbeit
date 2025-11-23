@@ -11,7 +11,7 @@
 
 ### 2 Situationsanalyse (Jim)
 - [2.1 Ausgangssituation](Chapters/Situationsanalyse/Ausgangssituation.md)
-- [2.2 Analyse der Voraussetzungen](Chapters/Situationsanalyse/Analyse_der_Voraussetzungen.md)
+- [2.2 Umfeldanalyse PESTEL](Chapters/Situationsanalyse/Umfeldanalyse_Pestel.md)
 - [2.3 Marktanalyse](Chapters/Situationsanalyse/Marktanalyse.md)
     - [2.3.1 Zielsetzung](Chapters/Situationsanalyse/Marktanalyse.md)
     - [2.3.2 Aufbau & Definition des Markts (Größe, Trends etc.)](Chapters/Situationsanalyse/Marktanalyse.md)
