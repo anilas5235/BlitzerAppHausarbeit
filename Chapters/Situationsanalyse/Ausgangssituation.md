@@ -10,5 +10,5 @@ Für die technische Umsetzung stehen grundsätzlich alle notwendigen Tools zur V
 
 Zu Beginn des Projekts liegt nur sehr eingeschränktes Expertenwissen über den Markt für Blitzer-Apps, dessen Wettbewerbsdynamik und die regulatorischen Rahmenbedingungen vor. Dieses Wissen wird im Verlauf der Projektplanung, insbesondere durch die Markt- und Situationsanalyse, systematisch aufgebaut.
 
-Das Budget des Teams ist stark limitiert. Externe Entwickler oder Dienstleister könnten ohne Investoren nicht finanziert werd
+Das Budget des Teams ist stark limitiert. Externe Entwickler oder Dienstleister könnten ohne Investoren nicht finanziert werden.
 
