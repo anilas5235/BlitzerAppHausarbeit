@@ -81,20 +81,15 @@ Verhaltensorientiert unterscheidet sich die Zielgruppe vor allem hinsichtlich ih
 <img width="603" height="500" alt="Screenshot 2025-11-16 at 7 12 54 PM" src="https://github.com/user-attachments/assets/2a5f3e67-7e80-46a8-94a9-a37a1b4e5f13" />
 
 
+### 2.3.5 Rechtliche Lage (grob)
 
-### 2.3.5 Technologie: Was verwenden die anderen Blitzer-Apps?
-
-(Platzhalter — verwendete Technologien, Architekturen und Bibliotheken der Konkurrenz.)
-
-### 2.3.6 Rechtliche Lage (grob)
-
-#### 2.3.6.1 EU
+#### 2.3.5.1 EU
 
 Unterschiedliche Länder: Was in Deutschland zulässig ist, kann in anderen EU-Staaten verboten sein (z. B. GPS-Warnfunktion ok, aber aktive Radar-Erkennung verboten).
 Datenschutzhinweise: Wenn die App Standortdaten/sensorische Daten verarbeitet, muss DSGVO-Konformität gewährleistet sein. Weiterhin könnten Haftungsfragen auftreten, wenn Warnungen falsch oder verzögert geliefert werden.
 
 
-#### 2.3.6.2 DE
+#### 2.3.5.2 DE
 
 In Deutschland ist die Nutzung von Geräten (auch Apps) zur Anzeige oder Störung von Verkehrsüberwachung technisch oder rechtlich eingeschränkt: Laut § 23 Abs. 1c der Straßenverkehrs-Ordnung (StVO) dürfen technische Geräte, die zur Anzeige oder Beeinflussung von Überwachungsmaßnahmen dienen, nicht betrieben werden.
 Die Anbieterin der App muss sicherstellen, dass keine Funktionen angeboten werden, die als „Interferenz“ oder „Störung“ gewertet werden (z. B. Anzeige einer Laser-Messung, Echtzeit-Störung etc.).
