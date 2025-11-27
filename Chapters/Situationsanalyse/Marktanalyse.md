@@ -77,8 +77,35 @@ Verhaltensorientiert unterscheidet sich die Zielgruppe vor allem hinsichtlich ih
 
 
 ### 2.3.4 Konkurrenzanalyse ((Strategieprofilanalyse: Scheed, B., Scherer, P. (2021). MARKT – Strategische Markt- und Wettbewerbsanalyse und strategische Marktplanung. In: Strategisches Vertriebsmanagement . Springer Gabler, Wiesbaden. https://doi.org/10.1007/978-3-658-34548-8_2)
-<img width="717" height="743" alt="Screenshot 2025-11-20 at 1 57 54 PM" src="https://github.com/user-attachments/assets/5657ec5b-798e-4b27-98db-4462eb23e8bf" />
-<img width="603" height="500" alt="Screenshot 2025-11-16 at 7 12 54 PM" src="https://github.com/user-attachments/assets/2a5f3e67-7e80-46a8-94a9-a37a1b4e5f13" />
+
+
+Strategieprofilanalyse
+<img width="492" height="441" alt="image" src="https://github.com/user-attachments/assets/d37fb27a-960c-48ef-bdea-f8bd1f1c6da8" />
+
+
+
+Leistungsprofilanalyse
+<img width="499" height="285" alt="image" src="https://github.com/user-attachments/assets/b92a0610-c1d2-4365-b2b1-149ac4082dc2" />
+
+Konkurrenzanalyse
+
+Für die Konkurrenzanalyse wurden vier etablierte Apps ausgewählt, die den europäischen Markt für Blitzer- und Verkehrswarndienste maßgeblich prägen. Die Auswahl orientiert sich an einer Kombination aus Marktführerschaft, Relevanz für den EU-Raum, ähnlichen Funktionen zum geplanten Produkt sowie der Datenverfügbarkeit. Dabei stützt sich das Vorgehen auf eine Strategieprofilanalyse sowie eine Leistungsprofilanalyse (vgl. Konkurrenzanalyse (Strategieprofilanalyse: Scheed, B., Scherer, P. (2021). MARKT – Strategische Markt- und Wettbewerbsanalyse und strategische Marktplanung. In: Strategisches Vertriebsmanagement . Springer Gabler, Wiesbaden. https://doi.org/10.1007/978-3-658-34548-8_2). Um die Konkurrenz möglichst breit abzubilden wurden sowohl spezialisierte Blitzer-Apps als auch hybride Navigationslösungen mit integrierter Blitzerwarnung berücksichtigt. Die Angaben basieren auf öffentlich zugänglichen Informationen aus dem Apple App Store, dem Google Play Store, den jeweiligen Entwicklerseiten sowie den Datenschutz- und Funktionsbeschreibungen der Anbieter.
+
+Innerhalb der spezialisierten Apps wurden Blitzer.de Pro und Radarbot einbezogen, da sie zu den am weitesten verbreiteten reinen Blitzer-Apps im deutsch- und europaweiten Raum gehören. Blitzer.de Pro besitzt eine starke Stellung im deutschen Markt und gilt in Deutschland als einer der wichtigsten Anbieter im Segment, während Radarbot im europäischen Raum hohe Downloadzahlen verzeichnet und damit ein relevanter internationaler Vergleichspunkt ist. Ergänzend dazu wurden die hybriden Lösungen Waze und TomTom analysiert, weil sie Navigationsfunktionen mit Blitzerwarnungen kombinieren und damit als Substitute oder Alternativen für viele Nutzer dienen. Gleichzeitig verfügen diese Apps über sehr große Downloadzahlen was sie zu bedeutenden Wettbewerbern macht. Vor allem die verschiedenen Preismodelle liefern Erkenntnisse für die preisliche Positionierung des eigenen Produkts. Es zeigt sich, dass sehr verschiedene Monetarisierungsstrategien erfolgreich sein können.
+
+Um sinnvolle und vergleichbare Aussagen treffen zu können, wurden Kriterien berücksichtigt, die sowohl funktional als auch regulatorisch relevant sind. Dazu zählen insbesondere die Konformität mit EU-Recht und die Datenschutz- bzw. DSGVO-Konformität, da App-basierte Blitzerwarnungen in einigen Ländern eingeschränkt oder verboten sein können und der Umgang mit personenbezogenen Daten einen zentralen Aspekt bei der Entwicklung bildet. Ergänzt wurde die Analyse durch funktionale Kriterien, die für Nutzer entscheidend sind, darunter Echtzeitwarnungen, Crowdsourcing-Mechanismen, Offline-Verfügbarkeit, akustische und visuelle Warnsysteme, die Individualisierbarkeit der Hinweise sowie integrierte Routenplanung. Diese Kriterien ermöglichen eine systematische Bewertung des Funktionsumfangs der betrachteten Wettbewerber und zeigen gleichzeitig auf, welche Funktionen Konsumenten im Marktsegment erwarten.
+
+Auffällig ist jedoch, dass einige für die Konkurrenzanalyse relevanten Daten nur grob oder nicht kostenlos öffentlich verfügbar sind.  So werden Downloadzahlen aus dem Google Play Store nur in groben Bereichen (z. B. „50 M+“) angegeben und erlauben keine präzise Quantifizierung der tatsächlichen Nutzerbasis. Daten zu aktiven Nutzern, täglicher Nutzung, Retention-Rates oder Engagement-Kennzahlen sind ebenfalls nicht öffentlich zugänglich. Auch der Apple App Store stellt keine Downloadstatistiken bereit, weshalb ein exakter Vergleich auch hier nicht möglich ist. Diese Einschränkungen beeinflussen die Analyse der Konkurrenz negativ und führen dazu dass nur ein grober Vergleich möglich ist der teilweise auf Schätzungen basiert.
+
+Trotz dieser Einschränkungen lassen sich Unterschiede hinsichtlich des Funktionsumfangs, der Zielgruppenfokussierung, der Monetarisierungsstrategie und der Marktposition erkennen. Die Analyse zeigt außerdem, welche Funktionen Marktstandard sind und wo Differenzierungsmöglichkeiten bestehen, etwa durch präzisere Warnungen, bessere Datenqualität, geringeren Akkuverbrauch oder eine transparentere Datenschutzgestaltung. Auffällig ist jedoch, dass der Funktionsumfang der einzelnen Apps relativ ähnlich ist. Insgesamt bietet der Vergleich der vier ausgewählten App ein ausreichend aussagekräftiges Bild der Konkurrenz im EU-Markt und schafft damit eine Grundlage, insbesondere für die Anforderungsanalyse der App.
+
+
+
+
+
+
+
+
 
 
 ### 2.3.5 Rechtliche Lage (grob)
