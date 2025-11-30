@@ -2,57 +2,23 @@
 
 ## 3.1 Funktionale Anforderungen
 
-Die funktionalen Anforderungen sind nach MUSS / SOLL / KANN priorisiert. Jede Anforderung erhält (wo möglich) ein
-messbares Abnahmekriterium.
+Anforderungsanalyse:  (Quelle Methodik: Broy, M., Kuhrmann, M. (2021). Anforderungsanalyse und Anforderungsmanagement. In: Einführung in die Softwaretechnik. Xpert.press. Springer Vieweg, Berlin, Heidelberg. https://doi.org/10.1007/978-3-662-50263-1_5)
 
-### MUSS-Anforderungen
 
-1. Standortbestimmung (Foreground) – Die App ermittelt und aktualisiert die Geräteposition mindestens alle 2 Sekunden,
-   solange der Warnmodus aktiv ist.  
-   Abnahmekriterium: Positionsaktualisierung < 2 s Intervall bei stabiler GNSS-Verbindung.
-2. Kartenanzeige – Darstellung einer interaktiven Karte mit aktueller Position und stationären Blitzer-POIs aus OSM (
-   Overpass-Abfragen).  
-   Abnahmekriterium: POIs werden innerhalb von 3 s nach erfolgreicher Overpass-Abfrage gerendert.
-3. Warnlogik – Visuelle und akustische Warnung beim Eintritt in den konfigurierbaren Warnradius um einen Blitzer.  
-   Abnahmekriterium: Auslösung der Warnung ≤ 2 s nach Unterschreiten des Distanzschwellwerts.
-4. Konfigurierbarer Warnradius – Nutzer kann Radius (z. B. 200–1000 m) einstellen.  
-   Abnahmekriterium: Änderung im Einstellungsbildschirm wirkt sofort (nächste Distanzberechnung) ohne Neustart.
-5. Lokaler Cache – Letzte geladene Blitzer-POIs und relevante Kartenausschnitte sind offline verfügbar.  
-   Abnahmekriterium: Nach Trennen der Datenverbindung bleiben POIs sichtbar; mindestens 1 Stadtgebiet (~5 km²) cached.
-6. Keine Standortübertragung – Der aktuelle Standort wird nicht an externe Server gesendet.  
-   Abnahmekriterium: Code-Review + Logging-Analyse zeigen keine Netzwerkrequests mit Standortdaten (außer Tile/Overpass
-   ohne Rückübermittlung persönlicher Koordinaten).
-7. Fehlerbehandlung API – Timeouts oder Rate-Limits bei Overpass führen zu gewählter Fallback-Strategie (Retry mit
-   Backoff, Hinweis an Nutzer).  
-   Abnahmekriterium: Simulierter Overpass-Timeout erzeugt Nutzerhinweis und verzögerte Wiederholung ≤ 30 s.
-8. Basis-Einstellungen – Nutzer kann Warnungen aktivieren/deaktivieren, Ton stumm schalten, Datenschutz-Hinweis
-   einsehen.  
-   Abnahmekriterium: Änderungen persistieren lokal und bleiben nach App-Neustart bestehen.
+Die Anforderungsanalyse bildet die Grundlage für die zielgerichtete Entwicklung der Blitzer-App und stellt sicher, dass das System vor allem aus technischer Sicht klar definiert und realisierbar ist. Wichtig ist dabei eine klare Grundlage für die spätere Umsetzung zu schaffen. Dadurch werden insbesondere Entwicklungsrisiken minimiert und eine realistische Aufwandsschätzung sowie Priorisierung der Funktionen ermöglicht.
 
-### SOLL-Anforderungen
+Die Anforderungen setzen sich aus mehreren Quellen zusammen. Sie ergeben sich vor allem aus den Erkenntnissen der Markt- und Situationsanalyse, insbesondere aus den dort identifizierten Nutzerbedürfnissen, Funktionalitäten der Konkurrenzapps sowie technischen und rechtlichen Rahmenbedingungen. Zusätzlich ergeben sich Anforderungen aus der Stakeholderanalyse, da die unterschiedliche Interessengruppen jeweils spezifische Erwartungen und Einschränkungen mitbringen.
 
-9. Hintergrundwarnungen (Geofencing) – Warnungen sollen auch bei minimierter App erfolgen, sofern
-   Plattform-Berechtigungen erteilt.  
-   Abnahmekriterium: Eintritt in Geofence löst Testwarnung im Hintergrund aus (Mindestens 1 Plattform verifiziert).
-10. Geschwindigkeitslimit-Kontext – Anzeige aktueller OSM maxspeed (falls verfügbar) und kontextsensitiv verstärkte
-    Warnung bei Überschreitung.  
-    Abnahmekriterium: Bei vorhandener maxspeed wird Limit angezeigt; Testfall mit bewusst überschrittener
-    Geschwindigkeit verstärkt Warnsignal.
-11. Nutzer-Meldungen über OSM Notes – Möglichkeit, über die App eine neue Note (Blitzer-Hinweis / Korrektur) zu
-    erstellen (anonym oder via OAuth).  
-    Abnahmekriterium: Erfolgreiches Anlegen einer Note mit Koordinate und Text erhält Bestätigungs-ID.
-12. Mehrsprachigkeit – Mind. Deutsch und Englisch vollständig lokalisiert.  
-    Abnahmekriterium: Umschalten der Sprache aktualisiert alle UI-Texte ohne Neustart.
-13. Dark Mode / Barrierefreiheit – Unterstützung systemweiter Themes; Mindestkontraste (WCAG AA) für Kernansichten.  
-    Abnahmekriterium: Farbkontrastprüfung zeigt Kontrast ≥ 4.5:1 für Primärtexte.
+Um die gesammelten Anforderungen klar strukturiert, nachvollziehbar und umsetzungsorientiert aufzubereiten, wird die Analyse in drei Kategorien unterteilt: funktionale Anforderungen, nicht-funktionale Anforderungen sowie rechtliche und datenschutzbezogene Anforderungen. Diese Gliederung stellt sicher, dass sowohl die inhaltlichen Funktionen der App als auch die Qualitätsmerkmale und regulatorischen Vorgaben eindeutig voneinander getrennt betrachtet und systematisch formuliert werden können.
 
-### KANN-Anforderungen
+Die Funktionalen Anforderungen beschreiben die groben Funktionsbedarfe der App und definieren  zudem wie diese realisiert werden. Sie bilden somit die Grundlage für den späteren Funktionsumfang und stellen sicher, dass die App die identifizierten Nutzerbedürfnisse adressiert.
 
-14. Integration Fahrzeugmodi (CarPlay/Android Auto) – Anzeige aktiver Warnungen in kompatiblen Fahrzeug-Interfaces.  
-    Abnahmekriterium: Prototyp zeigt Warnsymbol + Distanz im Fahrzeugdisplay (Testgerät/Simulator).
-15. Erweiterte Offline-Regionpacks – Nutzer kann zusätzliche Regionen vorab herunterladen.  
-    Abnahmekriterium: Auswahl einer Region lädt POIs + minimal Tileset; Größenangabe vor Download.
-16. Anpassbare Warnsounds / Stimmen – Auswahl aus vordefinierten Signalen.  
-    Abnahmekriterium: Änderung im Einstellungsmenü wirkt beim nächsten Warnereignis.
-17. Widgets / Quick Toggles – Schnelles Aktivieren/Deaktivieren von Warnmodus und Ton.  
-    Abnahmekriterium: Widget-Aktion spiegelt sich in App-Zustand ≤ 2 s.
+Nicht-funktionale Anforderungen ergänzen diese Ebene, indem sie festhalten, wie die App arbeiten soll. Dazu gehören unter anderem Kriterien wie Zuverlässigkeit, Geschwindigkeit, Benutzerfreundlichkeit und technische Stabilität. Gerade bei einer Blitzer-App, die in Echtzeit funktioniert und in sicherheitskritischen Kontexten genutzt wird, sind diese Qualitätsmerkmale entscheidend für Nutzerakzeptanz und Vertrauen.
+
+Die dritte Kategorie umfasst rechtliche und datenschutzbezogene Anforderungen, die im Kontext von Standort-basierten Warnsystemen zwingend notwendig sind. Sie sorgen dafür, dass der Umgang mit Positionsdaten, Nutzerdaten und Schnittstellen im Einklang mit geltenden Vorschriften steht. Diese Trennung ermöglicht eine klare Identifikation aller regulatorischen Pflichten und verhindert, dass rechtliche Anforderungen im technischen Entwicklungsprozess vernachlässigt werden.
+
+Durch diese Strukturierung lassen sich die Anforderungen geordnet dokumentieren, sauber priorisieren und später leichter verifizieren. Zudem wird bereits in der frühen Projektphase ersichtlich, welche Aspekte funktional umgesetzt werden müssen, welche Qualitätsziele das System erfüllen soll und welche Rahmenbedingungen zwingend einzuhalten sind. Dadurch entsteht ein konsistentes Fundament, das sowohl die Benutzererwartungen als auch technische und rechtliche Machbarkeit berücksichtigt.
+
+<img width="1280" height="1076" alt="image" src="https://github.com/user-attachments/assets/4d518c13-f846-423e-b317-cc4cde855bda" />
+
+Hier das ganze nochmal in Textform, auch die einzelnen Anforderungen bisschen beschreiben/erklären und warum man das braucht…
