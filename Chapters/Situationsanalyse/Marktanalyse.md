@@ -108,7 +108,7 @@ Trotz dieser Einschränkungen lassen sich Unterschiede hinsichtlich des Funktion
 
 
 
-### 2.3.5 Rechtliche Lage (grob)
+### 2.3.5 Rechtliche Lage (https://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:32016R0679 , https://www.adac.de/verkehr/recht/verkehrsvorschriften-deutschland/radarwarner/ , https://de.wikipedia.org/wiki/Blitzer-App)
 
 #### 2.3.5.1 EU
 
