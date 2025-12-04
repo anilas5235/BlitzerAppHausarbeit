@@ -1,10 +1,50 @@
 ﻿# 4.1 Planungsvorgehen (Hybrides Projektmanagement)
 
-Für die Planung und Steuerung des Projekts zur Entwicklung der Blitzer-App wird ein hybrides Projektvorgehen gewählt, das Elemente eines phasenorientierten, klassischen Projektmanagements mit agilen Praktiken kombiniert. Dieses Vorgehen trägt dem Umstand Rechnung, dass einerseits rechtliche Rahmenbedingungen, Datenschutzanforderungen und Abhängigkeiten zu externen Datenquellen (z. B. OpenStreetMap, Overpass API) eine verlässliche, vorgelagerte Planung erfordern, während andererseits die nutzerzentrierte Ausgestaltung der App-Funktionen, der Umgang mit technischer Unsicherheit (z. B. Geofencing, Performance auf unterschiedlichen Endgeräten) und die hohe Dynamik des App-Marktes von iterativer, inkrementeller Entwicklung profitieren. In Anlehnung an etablierte hybride Modelle wie den PMI Agile Practice Guide oder PRINCE2 Agile [1][2] wird ein Rahmen gewählt, in dem strategische Eckpunkte klassisch festgelegt und die Umsetzung operativ in agilen Sprints organisiert wird.
+Für die Planung und Steuerung des Projekts zur Entwicklung der Blitzer-App wird ein hybrides Projektvorgehen gewählt,
+das Elemente eines phasenorientierten, klassischen Projektmanagements mit agilen Praktiken kombiniert. Dieses Vorgehen
+trägt dem Umstand Rechnung, dass einerseits rechtliche Rahmenbedingungen, Datenschutzanforderungen und Abhängigkeiten zu
+externen Datenquellen (z. B. OpenStreetMap, Overpass API) eine verlässliche, vorgelagerte Planung erfordern, während
+andererseits die nutzerzentrierte Ausgestaltung der App-Funktionen, der Umgang mit technischer Unsicherheit (z. B.
+Geofencing, Performance auf unterschiedlichen Endgeräten) und die hohe Dynamik des App-Marktes von iterativer,
+inkrementeller Entwicklung profitieren. In Anlehnung an etablierte hybride Modelle (vgl. Baum, 2024; Staudter, 2019)
+wird ein Rahmen gewählt, in dem strategische Eckpunkte klassisch festgelegt und die Umsetzung operativ in agilen Sprints
+organisiert wird.
 
-Das Gesamtprojekt wird dazu in klar abgegrenzte Phasen strukturiert: eine Vorbereitungsphase (Anforderungsanalyse, Architekturentwurf, Datenschutz- und Rechtsklärung), eine MVP-Entwicklungsphase, eine Release-Phase sowie eine Phase für Betrieb und Weiterentwicklung. Diese Phasen bilden die Grundlage für die in Kapitel 4.2 beschriebenen Arbeitspakete und sind im Zeitplan mit zentralen Meilensteinen (z. B. MVP-fähiger Prototyp, Abschluss Datenschutz-Freigabe, App-Store-Release) hinterlegt (vgl. Kapitel 4.3). Innerhalb der MVP- und Erweiterungsphase wird die eigentliche Umsetzung in zeitlich fixen Sprints organisiert, in denen jeweils priorisierte Funktionspakete der Blitzer-App realisiert, getestet und zur Abnahme bereitgestellt werden. Die in Kapitel 4.4 dargestellte Ressourcenplanung wird dabei phasen- und sprintübergreifend verwendet, um Teamkapazitäten, benötigte Experten (z. B. Datenschutzbeauftragte, Jurist:innen) und technische Ressourcen (Testgeräte, Infrastruktur) zu hinterlegen und Engpässe frühzeitig sichtbar zu machen.
+Es ist wichtig zu betonen, dass es keine offizielle, standardisierte „Hybrid-Methode“ im gleichen Sinne wie den
+„offiziellen Scrum Guide“ gibt. Hybridität ist definitionsgemäß eine maßgeschneiderte Kombination verschiedener Ansätze,
+die auf den spezifischen Kontext des Projekts, des Unternehmens und des Teams zugeschnitten ist (vgl. ifm-business.de,
+o. D.; Springer Professional, o. D.).
 
-Die im Rahmen der phasenorientierten Planung definierten Arbeitspakete (WBS) werden für die operative Umsetzung in Epics, User Stories und technische Tasks überführt. Ein Arbeitspaket wie „Implementierung MVP-Funktionen“ wird beispielsweise in mehrere Epics zerlegt (etwa „Standort- und Kartenfunktionen“, „Warnlogik und Benachrichtigungen“, „Benutzeroberfläche und Usability“), die wiederum in konkrete User Stories mit klaren Akzeptanzkriterien und technische Unteraufgaben ausdifferenziert werden. Dieser Top-down-Übersetzungsschritt folgt den Empfehlungen hybrider Vorgehensmodelle („Water‑Scrum‑Fall“) [3], bei denen die klassische Strukturierung auf Projektebene mit agilen Backlogs und Sprints auf Umsetzungsebene verzahnt wird. Die Pflege des Product Backlogs und die Sprint-Planung stellen sicher, dass die im WBS definierten Ergebnisse schrittweise umgesetzt, regelmäßig priorisiert und bei Bedarf an neue Erkenntnisse (z. B. aus Usability-Tests oder Stakeholder-Feedback) angepasst werden können.
+Das Gesamtprojekt wird dazu in klar abgegrenzte Phasen strukturiert: eine Vorbereitungsphase (Anforderungsanalyse,
+Architekturentwurf, Datenschutz- und Rechtsklärung), eine MVP-Entwicklungsphase, eine Release-Phase sowie eine Phase für
+Betrieb und Weiterentwicklung. Diese Phasen bilden die Grundlage für die in Kapitel 4.2 beschriebenen Arbeitspakete und
+sind im Zeitplan mit zentralen Meilensteinen (z. B. MVP-fähiger Prototyp, Abschluss Datenschutz-Freigabe,
+App-Store-Release) hinterlegt (vgl. Kapitel 4.3). Innerhalb der MVP- und Erweiterungsphase wird die eigentliche
+Umsetzung in zeitlich fixen Sprints organisiert, in denen jeweils priorisierte Funktionspakete der Blitzer-App
+realisiert, getestet und zur Abnahme bereitgestellt werden. Die in Kapitel 4.4 dargestellte Ressourcenplanung wird dabei
+phasen- und sprintübergreifend verwendet, um Teamkapazitäten, benötigte Experten (z. B. Datenschutzbeauftragte, Jurist:
+innen) und technische Ressourcen (Testgeräte, Infrastruktur) zu hinterlegen und Engpässe frühzeitig sichtbar zu machen.
 
-Ein zentrales Prinzip des Vorgehens ist die konzentrierte Ausrichtung auf ein Minimal Viable Product (MVP), das die wesentlichen Kernfunktionen der Blitzer-App (Anzeige relevanter Gefahrenstellen, performante Standortbestimmung, verständliche Warnungen) frühzeitig in nutzbarer Form bereitstellt. Um technische und fachliche Risiken gezielt zu adressieren, werden in den frühen Sprints bewusst Spikes, d. h. explorative Kurzprojekte, eingeplant. Diese dienen etwa der Untersuchung von Geofencing-Strategien, der Performance-Optimierung bei hoher Datenlast oder dem Prototyping verschiedener UI-Konzepte. Parallel dazu werden Datenschutz, rechtliche Anforderungen und Qualitätsaspekte systematisch in das hybride Vorgehen integriert: Bereits in der Vorbereitungsphase werden Datenschutz-Folgenabschätzung und rechtliche Rahmenbedingungen analysiert und als nicht-funktionale Anforderungen in Backlog-Einträge überführt; in den Sprints werden diese Aspekte in Definition-of-Done-Kriterien (z. B. Datenminimierung, Transparenz der Einwilligung, Antwortzeiten, Bedienbarkeit im Fahrzeugkontext) verankert. In Anlehnung an etablierte Leitfäden zu Agile Governance und Qualitätsmanagement [1][4] wird so sichergestellt, dass rechtliche Konformität, Performance und Usability nicht nachgelagert „hinzugefügt“, sondern von Beginn an integraler Bestandteil des Planungsvorgehens sind.
+Die im Rahmen der phasenorientierten Planung definierten Arbeitspakete (WBS) werden für die operative Umsetzung in
+Epics, User Stories und technische Tasks überführt. Ein Arbeitspaket wie „Implementierung MVP-Funktionen“ wird
+beispielsweise in mehrere Epics zerlegt (etwa „Standort- und Kartenfunktionen“, „Warnlogik und Benachrichtigungen“,
+„Benutzeroberfläche und Usability“), die wiederum in konkrete User Stories mit klaren Akzeptanzkriterien und technische
+Unteraufgaben ausdifferenziert werden. Dieser Top-down-Übersetzungsschritt folgt den Empfehlungen hybrider
+Vorgehensmodelle wie „Water-Scrum-Fall“ (vgl. ifm-business.de, o. D.), bei denen die klassische Strukturierung auf
+Projektebene mit agilen Backlogs und Sprints auf Umsetzungsebene verzahnt wird. Die Pflege des Product Backlogs und die
+Sprint-Planung stellen sicher, dass die im WBS definierten Ergebnisse schrittweise umgesetzt, regelmäßig priorisiert und
+bei Bedarf an neue Erkenntnisse (z. B. aus Usability-Tests oder Stakeholder-Feedback) angepasst werden können.
+
+Ein zentrales Prinzip des Vorgehens ist die konzentrierte Ausrichtung auf ein Minimal Viable Product (MVP), das die
+wesentlichen Kernfunktionen der Blitzer-App (Anzeige relevanter Gefahrenstellen, performante Standortbestimmung,
+verständliche Warnungen) frühzeitig in nutzbarer Form bereitstellt. Um technische und fachliche Risiken gezielt zu
+adressieren, werden in den frühen Sprints bewusst Spikes, d. h. explorative Kurzprojekte, eingeplant. Diese dienen etwa
+der Untersuchung von Geofencing-Strategien, der Performance-Optimierung bei hoher Datenlast oder dem Prototyping
+verschiedener UI-Konzepte. Parallel dazu werden Datenschutz, rechtliche Anforderungen und Qualitätsaspekte systematisch
+in das hybride Vorgehen integriert: Bereits in der Vorbereitungsphase werden Datenschutz-Folgenabschätzung und
+rechtliche Rahmenbedingungen analysiert und als nicht-funktionale Anforderungen in Backlog-Einträge überführt; in den
+Sprints werden diese Aspekte in Definition-of-Done-Kriterien (z. B. Datenminimierung, Transparenz der Einwilligung,
+Antwortzeiten, Bedienbarkeit im Fahrzeugkontext) verankert. So wird sichergestellt, dass rechtliche Konformität,
+Performance und Usability nicht nachgelagert „hinzugefügt“, sondern von Beginn an integraler Bestandteil des
+Planungsvorgehens sind.
 

@@ -26,7 +26,7 @@ festgelegt und können sich abhängig von Priorisierung und Kapazität verschieb
 
 | Phase                            | Geplante Dauer           | Geschätzte Anzahl Sprints | Inhaltlicher Schwerpunkt                                                 |
 |----------------------------------|--------------------------|---------------------------|--------------------------------------------------------------------------|
-| Preparation                      | ca. 2–4 Wochen           | 1–2 Sprints               | Verfeinerung Anforderungen, Architekturklärung, Projekt-Setup            |
+| Preparation                      | ca. 4 Wochen             | 2 Sprints                 | Verfeinerung Anforderungen, Architekturklärung, Projekt-Setup            |
 | MVP-Kern                         | ca. 6–10 Wochen          | 4–5 Sprints               | Umsetzung der Must-have-Funktionalität (MVP)                             |
 | AppStore-Release & Qualität      | ca. 4 Wochen             | 2 Sprints                 | Testautomatisierung, Beta-Phase, Store-Vorbereitung, Release-Kandidat    |
 | Erweiterungszyklen (fortlaufend) | je ca. 4 Wochen          | je 2 Sprints (iterativ)   | Priorisierte Erweiterungen in Zyklen auf Basis von Feedback & Monitoring |

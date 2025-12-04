@@ -11,26 +11,26 @@ seiner verfügbaren Arbeitszeit für das Projekt eingeplant, um Kontextwechsel u
 Rollen & grobe Kapazitäten (Annahme kleines Kernteam, 1 Sprint = 2 Wochen, ca. 18–20 Wochen Projektlaufzeit für den
 initialen Zyklus):
 
-- Product Owner (ca. 0,4 FTE):
+- Product Owner (1,0 FTE):
     - Verantwortlich für Produktvision, Priorisierung des Product Backlogs und Abnahme der Inkremente im Sprint Review.
     - Kapazitätsschwerpunkt: durchgängig, mit erhöhter Auslastung in Preparation (Anforderungs-Refinement),
       AppStore-Release (Store-Vorbereitung) und beim Management von Erweiterungswünschen.
 - Mobile Entwickler:
-    - Dev1 (Flutter Lead, ca. 1,0 FTE):
+    - Dev1 (Flutter Lead, 1,0 FTE):
         - Technische Gesamtverantwortung (Architektur, Build, CI), Implementierung Kernfunktionen (AP-A2, AP-B1–B4,
           AP-B6, AP-R1–R4, zentrale Erweiterungen).
-    - Dev2 (Flutter/Testing, ca. 0,8 FTE ab Phase MVP):
+    - Dev2 (Flutter/Testing, 1,0 FTE):
         - Unterstützung bei Implementierung, Tests und speziell bei Overpass-Integration, Performance-Optimierung und
           OSM Notes (AP-B2, AP-E2, AP-E4).
-- UX/Design (ca. 0,3 FTE):
+- UX/Design (1,0 FTE):
     - Gestaltung der UI, Onboarding, Konzeption des Warn-HUDs, Unterstützung bei Accessibility (AP-B3, AP-B4,
       AP-E3, AP-E7).
-- QA/Tester (ca. 0,5 FTE ab Release-/Qualitätsphase):
-    - Testplanung, manuelle Tests, Begleitung der Beta-Phase, Unterstützung bei Testautomatisierung (AP-R1, AP-R2,
+- QA/Tester (ca. 1,0 FTE):
+    - Testplanung, manuelle Tests, Unterstützung bei Testautomatisierung (AP-R1, AP-R2,
       Performance-/Energieprofiling in AP-E4).
 - Privacy/Compliance Beratung (ca. 0,1 FTE ad hoc):
     - Prüfung der Datenschutztexte, rechtlicher Hinweise und Disclaimer (AP-B5, AP-R3, AP-E3).
-- Community Liaison (ggf. mit Product Owner kombiniert, ca. 0,1 FTE):
+- Community Liaison (ggf. mit Product Owner kombiniert, ca. 0,5 FTE):
     - Zuständig für Guidelines und Prozesse rund um Community-Funktionen (z. B. OSM Notes), sowie strukturierte
       Auswertung von Nutzerfeedback und Monitoringdaten (AP-E2, AP-W3).
 
@@ -111,7 +111,7 @@ insbesondere bei kritischen Querschnittsthemen wie Architektur, Testautomatisier
 
 In kritischen Phasen (z. B. kurz vor AppStore-Release oder beim Einführen neuer Community-Funktionen) kann auf Basis
 dieser Skill-Matrix entschieden werden, welche Arbeitspakete priorisiert und welche gegebenenfalls in spätere
-Erweiterungszyklen verschoben werden. Die Skills bestimmen damit nicht nur, _wer_ welche Aufgaben übernehmen kann,
+Erweiterungszyklen verschoben werden. Die Skills bestimmen damit nicht nur, wer welche Aufgaben übernehmen kann,
 sondern auch, welche Themen aus Risikosicht frühzeitig adressiert werden sollten.
 
 Zur besseren Übersicht fasst Tabelle 4‑x die zentralen Skillbereiche, die primär verantwortlichen Rollen sowie die

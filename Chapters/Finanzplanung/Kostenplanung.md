@@ -2,11 +2,13 @@
 
 Dieses Kapitel schätzt die zu erwartenden Kosten, beschreibt Mechanismen zur Kostenkontrolle und skizziert mögliche
 Finanzierungsquellen für die BlitzerApp. Es baut auf dem in Kapitel 4 beschriebenen Produktplan (Arbeitspakete,
-Zeitplan, Ressourcen) auf und überführt dessen Annahmen in Kostenschätzungen. Fokus: Client-only Architektur (kein eigenes
+Zeitplan, Ressourcen) auf und überführt dessen Annahmen in Kostenschätzungen. Fokus: Client-only Architektur (kein
+eigenes
 Backend), Nutzung offener Schnittstellen (Overpass/OSM), Datenschutz als Wertversprechen.
 
 Die Finanzplanung ist eng mit dem agilen Vorgehen nach Scrum verknüpft. Anstatt die Gesamtkosten einmalig und starr
-vorab festzulegen, erfolgt die Freigabe von Mitteln inkrementell entlang der definierten Phasen und Releases. Ergebnisse aus
+vorab festzulegen, erfolgt die Freigabe von Mitteln inkrementell entlang der definierten Phasen und Releases. Ergebnisse
+aus
 abgeschlossenen Sprints und Meilensteinen dienen als Grundlage für fundierte Entscheidungen über die weitere Mittel-
 verwendung.
 
@@ -15,18 +17,37 @@ Hinweis: Agile Kostensteuerung orientiert an Scrum-Grundlagen (Scrum Guide 2020)
 
 ## 5.1 Kostenplanung
 
-Die Kostenplanung erfolgt auf Basis von Personenaufwand (Personentage, PT), Sachkosten (Tools, Geräte, Dienste) und einem
-Risiko-/Reserveposten. Beispielhafte Annahmen (können angepasst werden):
+Die Kostenplanung erfolgt auf Basis von Personenaufwand (Personentage, PT), Sachkosten (Tools, Geräte, Dienste) und
+einem Risiko-/Reserveposten. Zentrale Idee ist, zunächst die Kosten pro Sprint (2 Wochen) auf Basis der FTE-Annahmen
+und Tagessätze abzuleiten und darauf aufbauend die Kosten je Phase über die geplante Anzahl von Sprints zu bestimmen.
 
-- interner Tagessatz Entwicklung: 600 € / PT
-- UX/Design: 550 € / PT
-- QA/Testing: 500 € / PT
-- Beratung (Privacy/Compliance): 800 € / PT (punktuell)
+Dabei werden diese Schätzwerte für die PT-Kosten je Rolle angenommen:
 
-Die genannten Tagessätze sind als Vollkostenansätze für die Entwicklung in Deutschland zu verstehen. Sie beinhalten neben
-dem Bruttolohn auch typische Arbeitgebernebenkosten (Sozialabgaben, Versicherungen) sowie einen pauschalen Anteil für
-interne Overheads (z. B. Infrastruktur, Verwaltung). Etwaige Umsatzsteuer auf extern bezogene Leistungen wird in dieser
-internen Kostenbetrachtung nicht gesondert ausgewiesen.
+- (interner) Produkt Owner: 750 € / PT
+- (interner) Entwicklung: 700 € / PT
+- (interner) UX/Design: 650 € / PT
+- (interner) QA/Testing: 600 € / PT
+- (extern) Beratung (Privacy/Compliance): 800 € / PT (punktuell)
+- (intern) Community Management: 500 € / PT (ab Release-Phase)
+
+Die genannten Tagessätze sind als Vollkostenansätze für die Entwicklung in Deutschland zu verstehen. Sie beinhalten
+neben dem Lohn auch typische Arbeitgebernebenkosten (Sozialabgaben, Versicherungen) sowie einen pauschalen Anteil
+für interne Overheads (z. B. Infrastruktur, Verwaltung). Etwaige Umsatzsteuer auf extern bezogene Leistungen wird in
+dieser internen Kostenbetrachtung nicht gesondert ausgewiesen.
+
+Die Tagessätze orientieren sich an branchenüblichen Werten für Festangestellte in vergleichbaren Rollen (vgl.
+Quellenverzeichnis) und berücksichtigen die projektbezogene Spezialisierung (Mobile Development, UX für mobile Apps,
+QA in agilen Projekten). Für externe Beratungsleistungen (z. B. Datenschutz, Recht) wird ein marktüblicher Tagessatz
+angenommen, der die Expertise und den punktuellen Einsatz widerspiegelt.
+
+Für die Umrechnung von Kapazitäten in Personentage wird folgende FTE-Logik verwendet (vgl. Kapitel 4.4.1):
+
+- 1,0 FTE = Vollzeit, entspricht ca. 5 Personentagen (PT) pro Woche.
+- 0,5 FTE = Halbstelle, entspricht ca. 2,5 PT pro Woche.
+
+Auf Basis des in Kapitel 4.3 beschriebenen zweiwöchigen Sprint-Rhythmus ergibt sich damit für 1,0 FTE eine Kapazität
+von ca. 10 PT pro Sprint. Die in Kapitel 4.4.1 skizzierten FTE-Werte (z. B. 1,0 FTE für Dev, UX, QA) beschreiben die
+maximale theoretische Verfügbarkeit des Kernteams für die BlitzerApp.
 
 Die folgenden Berechnungen sind als grobe, plausible Planwerte zu verstehen und können projektspezifisch justiert
 werden.
@@ -40,37 +61,66 @@ Story Points) und über die Sprints verteilt; zur Finanzplanung werden diese agi
 Personentage pro Rolle verdichtet. Damit bleibt die Budgetierung eng an die tatsächliche Teamverfügbarkeit gekoppelt,
 ist aber dennoch in klassischen Budgetgrößen ausdrückbar.
 
-Nach jedem wesentlichen Meilenstein (M1–M6, vgl. Kapitel 4.3.4) kann auf Basis der gelieferten Inkremente, der
+Die in 4.4.1 beschriebenen FTE-Kapazitäten bilden dabei den Rahmen, innerhalb dessen die effektive Belegung pro Phase
+modelliert wird: Ein Wert von 1,0 FTE für eine Rolle bedeutet nicht zwangsläufig, dass diese Rolle in jeder Phase und
+jedem Sprint voll ausgelastet ist. Für die Kostenplanung werden daher phasenabhängige Schwerpunkte gesetzt (z. B. mehr
+QA in der Release-Phase, mehr UX zu Beginn des MVP-Kerns). Zunächst wird auf Basis einer typischen Sprintbelegung eine
+Orientierung für die Sprintkosten abgeleitet, anschließend werden die Kosten je Phase über die Anzahl der Sprints in
+dieser Phase heraufskaliert und mit den phasenspezifischen Schwerpunkten abgeglichen.
+
+Nach jedem wesentlichen Meilenstein (M1–M6, vgl. Kapitel 4.3.4) kann auf Basis der gelieferten Ergebnisse, der
 Kostenentwicklung und der Projektziele entschieden werden, ob und in welchem Umfang die nächste Phase finanziert wird.
-Zu Projektstart werden verbindlich nur Mittel für die Grundlagen- und MVP-Phase (Preparation und MVP-Kern) reserviert.
-Nach Abschluss des MVP-Meilensteins (M3) erfolgt auf Basis der Sprint-Reviews, der erreichten Qualität und der
-Rückmeldungen der Stakeholder eine Stop/Go-Entscheidung für die Release- und Erweiterungsphasen. Ein weiterer
-wesentlicher Entscheidungspunkt ist der Beta-Meilenstein (M4): Hier wird anhand der Testabdeckung, der Stabilität und
-des Nutzerfeedbacks geprüft, ob zusätzliche Mittel in Erweiterungszyklen und Nachrelease-Aktivitäten fließen oder ob der
-Fokus auf Stabilisierung innerhalb des bestehenden Rahmens bleibt. Dadurch wird das finanzielle Risiko reduziert, und
-weitere Investitionen erfolgen nur, wenn der bisherige Projektverlauf und der sichtbare Produktnutzen dies
-rechtfertigen.
 
-### 5.1.2 Personenaufwand
 
-Die folgende Übersicht fasst die geschätzten Personentage je Rolle und Phase zusammen und leitet daraus die erwarteten
-Personalkosten ab. Sie bildet den größten Block der Gesamtkosten und ist direkt an die in Kapitel 4 beschriebenen
-Phasen, Releases und Kapazitäten gekoppelt (vgl. Ressourcenplanung 4.4). Hierbei handelt es sich um eine grobe
-Schätzung; die tatsächlichen Aufwände werden im Rahmen der Sprint Plannings bzw. bei der Planung der nächsten Phase
-im Team ermittelt und können im Projektverlauf angepasst werden.
+### 5.1.2 Sprintkosten
 
-| Phase                                    | Geschätzte PT Dev | PT UX | PT QA | PT Beratung | Summe PT | Kosten (€)                                                             |
-|------------------------------------------|-------------------|-------|-------|-------------|----------|------------------------------------------------------------------------|
-| Preparation (Grundlagen & Architektur)   | 8                 | 2     | 0     | 2           | 12       | 8*600 + 2*550 + 2*800 = 4.800 + 1.100 + 1.600 = 7.500                  |
-| MVP-Kern (AP-B1–B7)                      | 32                | 6     | 4     | 0           | 42       | 32*600 + 6*550 + 4*500 = 19.200 + 3.300 + 2.000 = 24.500               |
-| AppStore-Release & Qualität              | 16                | 2     | 12    | 1           | 31       | 16*600 + 2*550 + 12*500 + 1*800 = 9.600 + 1.100 + 6.000 + 800 = 17.500 |
-| Erweiterungszyklen (erster Zyklus)       | 20                | 4     | 6     | 1           | 31       | 20*600 + 4*550 + 6*500 + 1*800 = 12.000 + 2.200 + 3.000 + 800 = 18.000 |
-| Nachrelease / Wartung (erste 4–6 Wochen) | 10                | 1     | 4     | 0           | 15       | 10*600 + 1*550 + 4*500 = 6.000 + 550 + 2.000 = 8.550                   |
-| Gesamtsumme                              | 86                | 15    | 26    | 4           | 131      | ≈ 76.000 €                                                             |
+Aus der FTE-Definition und den Tagessätzen ergeben sich Orientierungsgrößen für die Kosten pro Sprint bei voller
+bzw. teilweiser Belegung:
 
-Hinweis: Rundungsdifferenzen sind möglich; Reserven siehe Abschnitt 5.1.4.
+- 1,0 FTE Produkt Owner pro Sprint → ca. 10 PT × 650 €/PT = 7.500 €
+- 1,0 FTE Entwicklung pro Sprint → ca. 10 PT × 600 €/PT = 7.000 €
+- 1,0 FTE Entwicklung pro Sprint → ca. 10 PT × 600 €/PT = 7.000 €
+- 1,0 FTE UX/Design pro Sprint → ca. 10 PT × 550 €/PT = 6.500 €
+- 1,0 FTE QA/Testing pro Sprint → ca. 10 PT × 550 €/PT = 6.000 €
+  Gesamtkosten pro Sprint: ≈ 34.000 € bei voller Belegung
 
-### 5.1.3 Sachkosten / Dienste
+Ab der Release-Phase (ab M4) wird zusätzlich Community Management eingeplant:
+
+- 0,5 FTE Community Management pro Sprint → ca. 5 PT × 500 €/PT = 2.500 €
+  Gesamtkosten pro Sprint ab Release-Phase: ≈ 36.500 € bei voller Belegung
+
+Externe Beratung (Privacy/Compliance) wird nicht als fester Bestandteil der allgemeinen Sprintkosten modelliert,
+sondern bewusst als punktueller Posten betrachtet. Für die initiale Entwicklung bis zur Version 1.0 wird ein Bedarf
+von insgesamt ca. 4 Personentagen Beratung angenommen. Bei einem Tagessatz von 800 €/PT ergibt dies zusätzliche
+Beratungskosten von rund 3.200 € über den gesamten betrachteten Zeitraum.
+
+### 5.1.3 Personenaufwand nach Phasen
+
+Die folgende Übersicht fasst die geschätzten Kosten bis zum 1.0 Release je Phase zusammen und leitet diese aus der
+Anzahl der Sprints und
+der vorher beschriebenen Kosten pro Sprint ab. Sie bildet den größten Block der Gesamtkosten und ist direkt an die in
+Kapitel 4 beschriebenen Phasen, Releases und Kapazitäten gekoppelt (vgl. Ressourcenplanung 4.4 und Zeitplan 4.3.1).
+
+Detaillierte PT-Werte pro Rolle werden hier nicht ausgewiesen, sondern sind implizit in den sprintbasierten
+Kostenschätzungen enthalten. Die folgende Tabelle zeigt daher pro Phase nur noch die Sprintanzahl und die daraus
+abgeleiteten geschätzten Personalkosten.
+
+| Phase                                  | Geschätzte Anzahl Sprints | Kostenansatz (Personalkosten, auf Basis typischer Sprintbelegung) |
+|----------------------------------------|---------------------------|-------------------------------------------------------------------|
+| Preparation (Grundlagen & Architektur) | 2 Sprint                  | ≈ 2 · 34.000 € + (Berater) 4 · 800 € = 71.200 €                   |
+| MVP-Kern (AP-B1–B7)                    | 4–5 Sprints               | ≈ 5 · 34.000 € = 170.000 €                                        |
+| AppStore-Release & Qualität            | 2 Sprints                 | ≈ 2 · 36.500 € = 73.000 €                                         |
+| Gesamtsumme                            | ≈ 8–9 Sprints             | ≈ 314.200 €                                                       |
+
+Hinweis: Die Preparation-Phase umfasst neben den reinen Entwicklungssprints auch den punktuellen Einsatz externer
+Beratung (Privacy/Compliance) mit geschätzten 4 Personentagen.
+
+Für die Erweiterungszyklen nach dem ersten Release (ab M5) werden vorerst mit 2 Sprints kalkuliert und damit würde eine 
+Erweiterung (Inkrement) ca. 2 · 36.500 € = 73.000 € kosten. Diese Phasen werden inkrementell und auf Basis der verfügbaren 
+Mittel geplant. Dabei muss davon ausgegangen werden, dass das Kernteam in diesen Phasen nur noch eingeschränkt Kapazitäten 
+für die Weiterentwicklung bereitstellen kann, da es auch für Wartung und Support zuständig ist (DevOps-Aspekte).
+
+### 5.1.4 Sachkosten / Dienste
 
 Ergänzend zum Personenaufwand fallen Sachkosten für Infrastruktur, Geräte und Werkzeuge an. Aufgrund des gewählten
 Client-only-Ansatzes und des Einsatzes von Open-Source-Komponenten bleiben diese Kosten im Vergleich zu den
@@ -87,12 +137,12 @@ ordnet ihnen beispielhafte Kosten zu.
 | OAuth-App-Registrierung (OSM) | Kostenlos                       | 0                        | Verwaltungsaufwand intern                            |
 | Sonstige Lizenzen / SDKs      | Keine proprietären SDKs geplant | 0                        | Reiner Open-Source-Stack                             |
 
-### 5.1.4 Reserve / Risikopuffer
+### 5.1.5 Reserve / Risikopuffer
 
 Um auf Unsicherheiten im Projektverlauf reagieren zu können, wird zusätzlich ein Risikopuffer eingeplant. Dieser soll
 insbesondere technische Risiken und externe Abhängigkeiten abfedern.
 
-- Unerwartete Verzögerungen (Performance, Geofencing, Store-Review): +10–15 % der Personalkosten ≈ 8.000–11.500 €.
+- Unerwartete Verzögerungen (Performance, Geofencing, Store-Review): +10–15 % der Personalkosten ≈ 30.000–45.000 €.
 - Wechsel Tile-Provider (falls Limits erreicht oder Konditionen ungünstig): zusätzliche 300–500 €.
 - Rechtliche Beratung bei Länderrestriktionen oder geänderten Rahmenbedingungen: +1.500 € (Kontingent).
 
@@ -101,25 +151,61 @@ Die Höhe der Puffer orientiert sich an den in der Risikoanalyse beschriebenen t
 solcher Risiken werden zunächst Umfang und Priorität der Backlog-Items angepasst, bevor zusätzliche Mittel in Anspruch
 genommen werden.
 
-Geschätzte Gesamtkosten inkl. Puffer: ca. 90.000–95.000 € bis zum ersten Release (Version 1.0) und der ersten
-Stabilisierungsphase.
+Geschätzte Gesamtkosten bis zum Release 1.0 inkl. Puffer: ≈ mind. 350.000 €, max. 370.000 €.
 
-### 5.1.5 Kostentreiber & Einsparpotenziale
+### 5.1.6 Kostentreiber & Einsparpotenziale
 
-Die größten Kostentreiber und Einsparpotenziale ergeben sich aus Architekturentscheidungen und Qualitätsansprüchen:
+Auf Basis der sprintbasierten Kostenlogik (vgl. 5.1.2) und der phasenorientierten Planung (vgl. 4.3.1) lassen sich
+klar benennen, welche Faktoren die Gesamtkosten der BlitzerApp besonders stark beeinflussen – und an welchen Stellen
+gezielt Einsparungen möglich sind, ohne die Kernziele zu gefährden.
 
-- Kostentreiber:
-    - Geofencing-Optimierung und Performance-Tuning, insbesondere unter Energieaspekten.
-    - QA für Stabilität & Energieverbrauch (intensive Tests auf realen Geräten, Beta-Phase).
-    - AppStore-Review-Runden und Anpassungen aufgrund von Richtlinien (Zeit- und damit Kostenfaktor).
-- Einsparpotenziale:
-    - Verzicht auf eigenes Backend → keine Server-/Ops-Kosten; konsequentes Caching → niedrigere Tile-Kosten.
-    - Nutzung eines Open-Source-Stack und Community-Ressourcen → keine Lizenzgebühren für Karten-/Analyse-SDKs.
-    - Modulare Architektur → schnellere Iterationen, weniger Rework bei Erweiterungen.
+**Kostentreiber:**
 
-Bei Kostendruck wird der Projektumfang gezielt über das Product Backlog gesteuert. Zuerst werden optionale
-Erweiterungsfeatures mit geringerem unmittelbarem Nutzen für den MVP reduziert oder in spätere Phasen verschoben (z. B.
-Teile der Erweiterungszyklen oder ausgewählte Komfortfunktionen in der Wartungsphase). Demgegenüber gelten
-Kernfunktionalität, Stabilität, Datenschutz-Compliance und grundlegende Barrierefreiheit als nicht verhandelbar und
-werden auch bei Kostendruck nicht gekürzt. Die Priorisierung im Backlog stellt sicher, dass die verfügbaren Mittel
-konsequent in die wertvollsten Inkremente fließen.
+- **Anzahl Sprints bei voller Teambelegung:**
+  - Jeder zusätzlich geplante Sprint mit nahe voller Belegung der Kernrollen (PO, Dev, UX, QA) verursacht – je nach
+    tatsächlicher FTE – einen vierstelligen Mehrbetrag. Bei einem idealtypischen Vollteam (1,0 FTE je Rolle) liegen die
+    reinen Personalkosten pro Sprint im Bereich von deutlich über 20.000 €.
+  - Eine Verlängerung der MVP-Phase um einen weiteren Sprint kann sinnvoll sein, erhöht die Kosten aber unmittelbar.
+- **Qualitätssicherung und Release-Vorbereitung:**
+  - In der Phase „AppStore-Release & Qualität“ steigen QA-Anteil und Build-/Test-Aktivitäten an; jeder Sprint in dieser
+    Phase ist kostenintensiv, trägt aber direkt zur Stabilität und Review-Fähigkeit der App bei.
+  - Zusätzliche Testrunden oder wiederholte Review-Schleifen in den Stores können weitere Sprints nach sich ziehen.
+- **Architektur- und Performance-Themen:**
+  - Aufwendige Optimierungen (z. B. Geofencing, Energieprofiling, Caching) binden über mehrere Sprints hinweg
+    Entwicklung und QA. Werden sie spät adressiert, steigt das Risiko für Rework und zusätzliche Sprints.
+- **Erweiterungszyklen nach Release:**
+  - Jeder Erweiterungszyklus (typisch 2 Sprints) mit signifikanter Beteiligung des Kernteams führt zu einem klar
+    kalkulierbaren Aufwuchs der Gesamtkosten. Ohne klare Priorisierung können sich diese Zyklen schnell aufsummieren.
+
+**Einsparpotenziale:**
+
+- **Strikter Fokus auf den MVP-Umfang:**
+  - Durch eine enge Definition des MVP-Kerns (Kapitel 4.2) und konsequente Priorisierung im Product Backlog lässt sich
+    die Anzahl der Sprints bis M3 (MVP funktionsfähig) begrenzen. Optionale Features (z. B. Komfortfunktionen,
+    weitergehende Einstellungen) werden bewusst in spätere Erweiterungszyklen verschoben.
+- **Bewusster Zuschnitt der Teambelegung pro Sprint:**
+  - Rollen wie UX und QA müssen nicht in jeder Phase und in jedem Sprint mit 1,0 FTE eingeplant werden. Insbesondere
+    in frühen Architektur- und Setup-Phasen kann eine reduzierte Belegung (z. B. 0,5 FTE) ausreichend sein und die
+    Sprintkosten spürbar senken.
+  - Ab der Wartungs- und Erweiterungsphase kann die Entwicklungskapazität in einzelnen Sprints bewusst reduziert
+    werden, um Budget zu schonen und sich stärker auf Bugfixing und kleine Inkremente zu konzentrieren.
+- **Gezielter und begrenzter Einsatz externer Beratung:**
+  - Die geplanten 3–4 Personentage für Privacy/Compliance-Beratung (vgl. 5.1.2) werden möglichst gebündelt an
+    neuralgischen Punkten eingesetzt (z. B. vor Beta-Release, vor AppStore-Submission), um Mehrfacheinsätze zu
+    vermeiden.
+  - Weitere rechtliche Klärungen werden – soweit verantwortbar – in spätere Erweiterungszyklen oder in die laufende
+    Wartungsphase verschoben.
+- **Architekturentscheidungen zugunsten Einfachheit:**
+  - Der Verzicht auf ein eigenes Backend und die Konzentration auf einen Client-only-Ansatz mit Overpass/OSM reduziert
+    dauerhaft Infrastruktur- und Betriebsaufwände.
+  - Eine bewusst einfache erste Ausprägung mancher Features (z. B. Basis-Einstellungen statt komplexer Profile,
+    minimalistische Offline-Funktion) senkt die benötigte Anzahl Sprints in den Erweiterungszyklen.
+- **Nutzung von Open-Source-Tools und bestehenden Ressourcen:**
+  - Der starke Einsatz von Open-Source-Komponenten, vorhandenen Build-Pipelines und günstigen Developer-Plänen
+    (z. B. für Tile-Provider, CI/CD) hält die Sachkosten niedrig und vermeidet zusätzliche Sprint-Aufwände für
+    Evaluierung und Integration proprietärer Lösungen.
+
+Aus Sicht der Finanzplanung bedeutet dies: Die maßgebliche Stellgröße sind nicht einzelne Tage pro Person, sondern die
+Anzahl und Auslastung der Sprints pro Phase. Durch einen klaren MVP-Fokus, eine phasenbewusste Teambelegung und den
+gezielten Einsatz von Beratung und Erweiterungszyklen kann der Kostenrahmen (vgl. 5.1.3 und 5.1.5) aktiv gesteuert
+werden, ohne die zentralen Qualitäts- und Datenschutzanforderungen der BlitzerApp zu kompromittieren.
