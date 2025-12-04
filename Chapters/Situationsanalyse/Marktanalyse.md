@@ -6,7 +6,7 @@ Das Ziel der Marktanalyse ist es, die Ausgangslage für die Entwicklungen Applik
 Essentiell für die Projektplanung ist dabei eine realistische Einschätzung des Marktpotenzials, der Wettbewerbssituation sowie von Chancen und Risiken.
 Ein weiterer Schwerpunkt liegt auf einer Konkurrenzanalyse, durch die Vergleiche mit Wettbewerbern ermöglicht sowie Schwachstellen bestehender Blitzer-Apps identifiziert werden. 
 Zentral ist zudem die Bestimmung der Zielgruppe da hiermit Anforderungen für die App abgeleitet werden. Zusätzlich soll die rechtliche Situation umfassend analysiert werden, um die Umsetzbarkeit des Projekts zu einschätzen zu können. Eingeschlossen sind dabei insbesondere Fragen der Zulässigkeit sowie Anforderungen für den Datenschutz.
-Mit einer abschließenden Bewertung durch eine SWOT-Analyse soll zudem der Grad der Wettbewerbsfähigkeit identifiziert werden.
+
 
 ### 2.3.2 Marktabgrenzung & Marktprofil (https://www.marketinginstitut.biz/blog/marktanalyse/, Scheed, B., Scherer, P. (2021). MARKT – Strategische Markt- und Wettbewerbsanalyse und strategische Marktplanung. In: Strategisches Vertriebsmanagement . Springer Gabler, Wiesbaden. https://doi.org/10.1007/978-3-658-34548-8_2)
 
