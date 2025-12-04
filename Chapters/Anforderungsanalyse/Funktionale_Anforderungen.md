@@ -2,7 +2,7 @@
 
 ## 3.1 Funktionale Anforderungen
 
-Anforderungsanalyse:  (Quelle Methodik: Broy, M., Kuhrmann, M. (2021). Anforderungsanalyse und Anforderungsmanagement. In: Einführung in die Softwaretechnik. Xpert.press. Springer Vieweg, Berlin, Heidelberg. https://doi.org/10.1007/978-3-662-50263-1_5)
+Anforderungsanalyse:  (Quelle Methodik: Broy, M., Kuhrmann, M. (2021). Anforderungsanalyse und Anforderungsmanagement. In: Einführung in die Softwaretechnik. Xpert.press. Springer Vieweg, Berlin, Heidelberg. https://doi.org/10.1007/978-3-662-50263-1_5), https://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:32016R0679
 
 
 Die Anforderungsanalyse bildet die Grundlage für die zielgerichtete Entwicklung der Blitzer-App und stellt sicher, dass das System vor allem aus technischer Sicht klar definiert und realisierbar ist. Wichtig ist dabei eine klare Grundlage für die spätere Umsetzung zu schaffen. Dadurch werden insbesondere Entwicklungsrisiken minimiert und eine realistische Aufwandsschätzung sowie Priorisierung der Funktionen ermöglicht.
