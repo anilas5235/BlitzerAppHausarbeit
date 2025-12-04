@@ -40,7 +40,7 @@ Story Points) und über die Sprints verteilt; zur Finanzplanung werden diese agi
 Personentage pro Rolle verdichtet. Damit bleibt die Budgetierung eng an die tatsächliche Teamverfügbarkeit gekoppelt,
 ist aber dennoch in klassischen Budgetgrößen ausdrückbar.
 
-Nach jedem wesentlichen Meilenstein (M1–M6, vgl. Kapitel 4.2.4) kann auf Basis der gelieferten Inkremente, der
+Nach jedem wesentlichen Meilenstein (M1–M6, vgl. Kapitel 4.3.4) kann auf Basis der gelieferten Inkremente, der
 Kostenentwicklung und der Projektziele entschieden werden, ob und in welchem Umfang die nächste Phase finanziert wird.
 Zu Projektstart werden verbindlich nur Mittel für die Grundlagen- und MVP-Phase (Preparation und MVP-Kern) reserviert.
 Nach Abschluss des MVP-Meilensteins (M3) erfolgt auf Basis der Sprint-Reviews, der erreichten Qualität und der
@@ -55,7 +55,7 @@ rechtfertigen.
 
 Die folgende Übersicht fasst die geschätzten Personentage je Rolle und Phase zusammen und leitet daraus die erwarteten
 Personalkosten ab. Sie bildet den größten Block der Gesamtkosten und ist direkt an die in Kapitel 4 beschriebenen
-Phasen, Releases und Kapazitäten gekoppelt (vgl. Ressourcenplanung 4.3). Hierbei handelt es sich um eine grobe
+Phasen, Releases und Kapazitäten gekoppelt (vgl. Ressourcenplanung 4.4). Hierbei handelt es sich um eine grobe
 Schätzung; die tatsächlichen Aufwände werden im Rahmen der Sprint Plannings bzw. bei der Planung der nächsten Phase
 im Team ermittelt und können im Projektverlauf angepasst werden.
 
@@ -74,7 +74,7 @@ Hinweis: Rundungsdifferenzen sind möglich; Reserven siehe Abschnitt 5.1.4.
 
 Ergänzend zum Personenaufwand fallen Sachkosten für Infrastruktur, Geräte und Werkzeuge an. Aufgrund des gewählten
 Client-only-Ansatzes und des Einsatzes von Open-Source-Komponenten bleiben diese Kosten im Vergleich zu den
-Personalkosten moderat. Die folgende Tabelle basiert auf den in Kapitel 4.3.3 beschriebenen externen Ressourcen und
+Personalkosten moderat. Die folgende Tabelle basiert auf den in Kapitel 4.4.3 beschriebenen externen Ressourcen und
 ordnet ihnen beispielhafte Kosten zu.
 
 | Kostenquelle                  | Annahme                         | Kostenschätzung (€/Jahr) | Kommentar                                            |
