@@ -12,3 +12,4 @@ Zu Beginn des Projekts liegt nur sehr eingeschränktes Expertenwissen über den 
 
 Das Budget des Teams ist stark limitiert. Externe Entwickler oder Dienstleister könnten ohne Investoren nicht finanziert werden.
 
+

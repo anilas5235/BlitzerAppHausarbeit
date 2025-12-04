@@ -36,7 +36,7 @@ initialen Zyklus):
 
 Die hier skizzierten FTE-Kapazitäten werden über die in Abschnitt 4.2 beschriebenen Phasen und Sprints mit den in 4.1
 beschriebenen Arbeitspaketen verknüpft. Sie bilden damit die Grundlage für die weitere Kapazitäts- und
-Budgetplanung (vgl. Kapitel 5). Da das Kernteam für den Projektzeitraum voll auf die BlitzerApp allokiert ist, steht
+Kostenplanung (vgl. Kapitel 5). Da das Kernteam für den Projektzeitraum voll auf die BlitzerApp allokiert ist, steht
 nicht die Verteilung von Auslastungsgraden zwischen Projekten im Fokus, sondern vielmehr die inhaltliche Nutzung der
 verfügbaren Kapazität für die wichtigsten Backlog-Einträge pro Phase.
 
@@ -156,4 +156,4 @@ Diese Ressourcen werden über die Phasen hinweg unterschiedlich stark genutzt: W
 MVP- und Erweiterungsphasen (Performance-Optimierung) zum Einsatz kommen, gewinnt die CI/CD-Plattform in allen Phasen
 an Bedeutung, insbesondere jedoch in der Releasephase und im laufenden Betrieb (stabile Build-Pipelines, schnelle
 Fehlerbehebung). Dies ermöglicht eine effiziente und qualitativ hochwertige Umsetzung der BlitzerApp im Rahmen des
-verfügbaren Budgets und schafft gleichzeitig Transparenz für die in Kapitel 5 betrachteten Sachkosten.
+verfügbaren Kostenrahmens und schafft gleichzeitig Transparenz für die in Kapitel 5 betrachteten Sachkosten.

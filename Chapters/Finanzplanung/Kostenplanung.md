@@ -2,20 +2,20 @@
 
 Dieses Kapitel schätzt die zu erwartenden Kosten, beschreibt Mechanismen zur Kostenkontrolle und skizziert mögliche
 Finanzierungsquellen für die BlitzerApp. Es baut auf dem in Kapitel 4 beschriebenen Produktplan (Arbeitspakete,
-Zeitplan, Ressourcen) auf und überführt dessen Annahmen in Budgetgrößen. Fokus: Client-only Architektur (kein eigenes
+Zeitplan, Ressourcen) auf und überführt dessen Annahmen in Kostenschätzungen. Fokus: Client-only Architektur (kein eigenes
 Backend), Nutzung offener Schnittstellen (Overpass/OSM), Datenschutz als Wertversprechen.
 
-Die Finanzplanung ist eng mit dem agilen Vorgehen nach Scrum verknüpft. Anstatt das Gesamtbudget einmalig und starr
-vorab festzulegen, erfolgt die Budgetfreigabe inkrementell entlang der definierten Phasen und Releases. Ergebnisse aus
+Die Finanzplanung ist eng mit dem agilen Vorgehen nach Scrum verknüpft. Anstatt die Gesamtkosten einmalig und starr
+vorab festzulegen, erfolgt die Freigabe von Mitteln inkrementell entlang der definierten Phasen und Releases. Ergebnisse aus
 abgeschlossenen Sprints und Meilensteinen dienen als Grundlage für fundierte Entscheidungen über die weitere Mittel-
 verwendung.
 
-Hinweis: Agile Budgetsteuerung orientiert an Scrum-Grundlagen (Scrum Guide 2020) und den Prinzipien des Agile Manifests
+Hinweis: Agile Kostensteuerung orientiert an Scrum-Grundlagen (Scrum Guide 2020) und den Prinzipien des Agile Manifests
 (siehe Quellenverzeichnis).
 
-## 5.1 Budgetierung
+## 5.1 Kostenplanung
 
-Die Budgetierung erfolgt auf Basis von Personenaufwand (Personentage, PT), Sachkosten (Tools, Geräte, Dienste) und einem
+Die Kostenplanung erfolgt auf Basis von Personenaufwand (Personentage, PT), Sachkosten (Tools, Geräte, Dienste) und einem
 Risiko-/Reserveposten. Beispielhafte Annahmen (können angepasst werden):
 
 - interner Tagessatz Entwicklung: 600 € / PT
@@ -26,7 +26,7 @@ Risiko-/Reserveposten. Beispielhafte Annahmen (können angepasst werden):
 Die genannten Tagessätze sind als Vollkostenansätze für die Entwicklung in Deutschland zu verstehen. Sie beinhalten neben
 dem Bruttolohn auch typische Arbeitgebernebenkosten (Sozialabgaben, Versicherungen) sowie einen pauschalen Anteil für
 interne Overheads (z. B. Infrastruktur, Verwaltung). Etwaige Umsatzsteuer auf extern bezogene Leistungen wird in dieser
-internen Budgetbetrachtung nicht gesondert ausgewiesen.
+internen Kostenbetrachtung nicht gesondert ausgewiesen.
 
 Die folgenden Berechnungen sind als grobe, plausible Planwerte zu verstehen und können projektspezifisch justiert
 werden.
@@ -37,13 +37,13 @@ Die geschätzten Personentage leiten sich aus dem in Kapitel 4.2 beschriebenen Z
 Kapazitäten (FTE je Rolle), dem Umfang der im Produktplan (Kapitel 4.1) beschriebenen Arbeitspakete (Epics) sowie
 der Anzahl geplanter Sprints pro Phase ab. Die Arbeitspakete werden hierfür im Product Backlog grob geschätzt (z. B. in
 Story Points) und über die Sprints verteilt; zur Finanzplanung werden diese agilen Schätzwerte anschließend in
-Personentage pro Rolle verdichtet. Damit bleibt die Budgetierung eng an die tatsächliche Teamverfügbarkeit gekoppelt,
+Personentage pro Rolle verdichtet. Damit bleibt die Kostenplanung eng an die tatsächliche Teamverfügbarkeit gekoppelt,
 ist
-aber dennoch in klassischen Budgetgrößen ausdrückbar.
+aber dennoch in klassischen Kostenangaben ausdrückbar.
 
 Nach jedem wesentlichen Meilenstein (M1–M6, vgl. Kapitel 4.2.4) kann auf Basis der gelieferten Inkremente, der
 Kostenentwicklung und der Projektziele entschieden werden, ob und in welchem Umfang die nächste Phase finanziert wird.
-Zu Projektstart wird verbindlich nur das Budget für die Grundlagen- und MVP-Phase (Preparation und MVP-Kern) reserviert.
+Zu Projektstart werden verbindlich nur Mittel für die Grundlagen- und MVP-Phase (Preparation und MVP-Kern) reserviert.
 Nach Abschluss des MVP-Meilensteins (M3) erfolgt auf Basis der Sprint-Reviews, der erreichten Qualität und der
 Rückmeldungen der Stakeholder eine Stop/Go-Entscheidung für die Release- und Erweiterungsphasen. Ein weiterer
 wesentlicher Entscheidungspunkt ist der Beta-Meilenstein (M4): Hier wird anhand der Testabdeckung, der Stabilität und
@@ -55,7 +55,7 @@ rechtfertigen.
 ### 5.1.2 Personenaufwand
 
 Die folgende Übersicht fasst die geschätzten Personentage je Rolle und Phase zusammen und leitet daraus die erwarteten
-Personalkosten ab. Sie bildet den größten Block des Gesamtbudgets und ist direkt an die in Kapitel 4 beschriebenen
+Personalkosten ab. Sie bildet den größten Block der Gesamtkosten und ist direkt an die in Kapitel 4 beschriebenen
 Phasen, Releases und Kapazitäten gekoppelt (vgl. Ressourcenplanung 4.3). Hierbei handelt es sich um eine grobe
 Schätzung; die tatsächlichen Aufwände werden im Rahmen der Sprint Plannings bzw. bei der Planung der nächsten Phase
 im Team ermittelt und können im Projektverlauf angepasst werden.
@@ -74,8 +74,8 @@ Hinweis: Rundungsdifferenzen sind möglich; Reserven siehe Abschnitt 5.1.4.
 ### 5.1.3 Sachkosten / Dienste
 
 Ergänzend zum Personenaufwand fallen Sachkosten für Infrastruktur, Geräte und Werkzeuge an. Aufgrund des gewählten
-Client-only-Ansatzes und des Einsatzes von Open-Source-Komponenten bleiben diese Kosten im Vergleich zum
-Personenbudget moderat. Die folgende Tabelle basiert auf den in Kapitel 4.3.3 beschriebenen externen Ressourcen und
+Client-only-Ansatzes und des Einsatzes von Open-Source-Komponenten bleiben diese Kosten im Vergleich zu den
+Personalkosten moderat. Die folgende Tabelle basiert auf den in Kapitel 4.3.3 beschriebenen externen Ressourcen und
 ordnet ihnen beispielhafte Kosten zu.
 
 | Kostenquelle                  | Annahme                         | Kostenschätzung (€/Jahr) | Kommentar                                            |
@@ -93,7 +93,7 @@ ordnet ihnen beispielhafte Kosten zu.
 Um auf Unsicherheiten im Projektverlauf reagieren zu können, wird zusätzlich ein Risikopuffer eingeplant. Dieser soll
 insbesondere technische Risiken und externe Abhängigkeiten abfedern.
 
-- Unerwartete Verzögerungen (Performance, Geofencing, Store-Review): +10–15 % Personenbudget ≈ 8.000–11.500 €.
+- Unerwartete Verzögerungen (Performance, Geofencing, Store-Review): +10–15 % der Personalkosten ≈ 8.000–11.500 €.
 - Wechsel Tile-Provider (falls Limits erreicht oder Konditionen ungünstig): zusätzliche 300–500 €.
 - Rechtliche Beratung bei Länderrestriktionen oder geänderten Rahmenbedingungen: +1.500 € (Kontingent).
 
@@ -102,7 +102,7 @@ Die Höhe der Puffer orientiert sich an den in der Risikoanalyse beschriebenen t
 solcher Risiken werden zunächst Umfang und Priorität der Backlog-Items angepasst, bevor zusätzliche Mittel in Anspruch
 genommen werden.
 
-Geschätztes Gesamtbudget inkl. Puffer: ca. 90.000–95.000 € bis zum ersten Release (Version 1.0) und der ersten
+Geschätzte Gesamtkosten inkl. Puffer: ca. 90.000–95.000 € bis zum ersten Release (Version 1.0) und der ersten
 Stabilisierungsphase.
 
 ### 5.1.5 Kostentreiber & Einsparpotenziale
@@ -115,12 +115,13 @@ Die größten Kostentreiber und Einsparpotenziale ergeben sich aus Architekturen
     - AppStore-Review-Runden und Anpassungen aufgrund von Richtlinien (Zeit- und damit Kostenfaktor).
 - Einsparpotenziale:
     - Verzicht auf eigenes Backend → keine Server-/Ops-Kosten; konsequentes Caching → niedrigere Tile-Kosten.
-    - Nutzung eines Open-Source-Stacks und Community-Ressourcen → keine Lizenzgebühren für Karten-/Analyse-SDKs.
+    - Nutzung eines Open-Source-Stack und Community-Ressourcen → keine Lizenzgebühren für Karten-/Analyse-SDKs.
     - Modulare Architektur → schnellere Iterationen, weniger Rework bei Erweiterungen.
 
-Bei Budgetdruck wird der Projektumfang gezielt über das Product Backlog gesteuert. Zuerst werden optionale
+Bei Kostendruck wird der Projektumfang gezielt über das Product Backlog gesteuert. Zuerst werden optionale
 Erweiterungsfeatures mit geringerem unmittelbarem Nutzen für den MVP reduziert oder in spätere Phasen verschoben (z. B.
 Teile der Erweiterungszyklen oder ausgewählte Komfortfunktionen in der Wartungsphase). Demgegenüber gelten
 Kernfunktionalität, Stabilität, Datenschutz-Compliance und grundlegende Barrierefreiheit als nicht verhandelbar und
-werden auch bei Kostendruck nicht gekürzt. Die Priorisierung im Backlog stellt sicher, dass das verfügbare Budget
-konsequent in die wertvollsten Inkremente fließt.
+werden auch bei Kostendruck nicht gekürzt. Die Priorisierung im Backlog stellt sicher, dass die verfügbaren Mittel
+konsequent in die wertvollsten Inkremente fließen.
+

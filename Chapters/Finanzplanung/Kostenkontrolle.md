@@ -1,6 +1,6 @@
 ﻿# 5.2 Kostenkontrolle
 
-Dieses Kapitel beschreibt, wie die in 5.1 geplanten Budgets während des Projekts überwacht und gesteuert werden. Ziel
+Dieses Kapitel beschreibt, wie die in 5.1 geplanten Kostenrahmen während des Projekts überwacht und gesteuert werden. Ziel
 ist es, Transparenz über den Mittelverbrauch zu schaffen, Abweichungen frühzeitig zu erkennen und fundierte
 Entscheidungen über den weiteren Projektverlauf zu ermöglichen. Die Kostenkontrolle ist eng mit dem agilen
 Vorgehensmodell verknüpft und orientiert sich an den Phasen und Meilensteinen aus Kapitel 4.
@@ -9,22 +9,22 @@ Vorgehensmodell verknüpft und orientiert sich an den Phasen und Meilensteinen a
 
 Die zentralen Instrumente zur Kostenkontrolle sind:
 
-- Phasenbezogene Budgetrahmen (vgl. 5.1.2):
+- Phasenbezogene Kostenrahmen (vgl. 5.1.2):
   - Für jede Phase (Preparation, MVP-Kern, AppStore-Release & Qualität, erster Erweiterungszyklus, initiale
-    Nachrelease-/Wartungsphase) wird ein Budgetrahmen in Personentagen und Euro definiert.
+    Nachrelease-/Wartungsphase) wird ein Kostenrahmen in Personentagen und Euro definiert.
   - Diese Rahmen dienen als Orientierung für die Sprintplanung und werden nach jedem Meilenstein überprüft.
-- Budget-Burn vs. Fortschritt:
+- Kosten-Burn vs. Fortschritt:
   - In regelmäßigen Abständen (z. B. pro Sprint-Review) wird gegenübergestellt, wie viele Personentage je Rolle bereits
     verbraucht sind und welche Arbeitspakete/Meilensteine erreicht wurden.
-  - Dies ermöglicht eine einfache Kontrolle, ob der „Burn“ des Budgets im erwarteten Verhältnis zu den gelieferten
+  - Dies ermöglicht eine einfache Kontrolle, ob der „Burn“ der Kosten im erwarteten Verhältnis zu den gelieferten
     Inkrementen steht.
 - Velocity- und Forecast-Betrachtung:
   - Auf Basis der in den Sprints tatsächlich umgesetzten Story Points (Velocity) kann abgeschätzt werden, ob der
-    verbleibende Budgetrahmen ausreicht, um die noch offenen, priorisierten Backlog-Einträge zu realisieren.
+    verbleibende Kostenrahmen ausreicht, um die noch offenen, priorisierten Backlog-Einträge zu realisieren.
   - Bei deutlichen Abweichungen (z. B. deutlich geringerer Velocity als geplant) werden frühzeitig Anpassungen
-    eingeleitet (Scope-Anpassung, Verschiebung von Erweiterungsfeatures, Nachjustierung des Budgets).
+    eingeleitet (Scope-Anpassung, Verschiebung von Erweiterungsfeatures, Nachjustierung der Kostenplanung).
 - Meilensteinbezogene Reviews:
-  - Zu den Meilensteinen M1–M6 (vgl. 4.2.4) wird neben dem fachlichen Fortschritt auch die Budgetseite betrachtet
+  - Zu den Meilensteinen M1–M6 (vgl. 4.2.4) wird neben dem fachlichen Fortschritt auch die Kostenseite betrachtet
     (Ist-Kosten vs. geplante Kosten je Phase).
   - Diese Meilenstein-Reviews bilden die Grundlage für Stop/Go-Entscheidungen und ggf. eine Re-Priorisierung des
     Backlogs.
@@ -57,8 +57,8 @@ Personalkostenentwicklung betrachtet.
 Um Kostensteigerungen frühzeitig zu adressieren und das Projekt zielgerichtet zu steuern, werden klare
 Entscheidungs-Trigger definiert. Beispiele:
 
-- Budgetüberlauf in einer Phase:
-  - Wenn absehbar ist, dass der Budgetrahmen einer Phase (vgl. 5.1.2) um mehr als 10–15 % überschritten wird, wird im
+- Kostenüberlauf in einer Phase:
+  - Wenn absehbar ist, dass der Kostenrahmen einer Phase (vgl. 5.1.2) um mehr als 10–15 % überschritten wird, wird im
     Projektteam gemeinsam mit dem Product Owner eine Scope-Anpassung diskutiert.
   - Mögliche Reaktionen: Verschieben optionaler Features in spätere Erweiterungszyklen, Reduktion des Umfangs einzelner
     Arbeitspakete, gezielter Fokus auf die für den Meilenstein kritischen Funktionen.
@@ -85,14 +85,14 @@ mittragen und Prioritäten im Backlog nachvollziehen können. Vorgesehen ist dah
 
 - Sprintbasiertes Kurz-Reporting:
   - Im Rahmen der Sprint Reviews werden neben fachlichen Ergebnissen auch Kennzahlen zum Ressourcenverbrauch
-    vorgestellt (z. B. „verbrauchte PT je Rolle in dieser Phase“, „verbleibender Budgetrahmen der aktuellen Phase“).
+    vorgestellt (z. B. „verbrauchte PT je Rolle in dieser Phase“, „verbleibender Kostenrahmen der aktuellen Phase").
 - Phasen- bzw. Meilensteinberichte:
   - Zu den Meilensteinen (M1–M6) wird ein komprimierter Bericht erstellt, der geplante vs. tatsächliche Personentage
     und Sachkosten gegenüberstellt und die wesentlichen Abweichungsgründe dokumentiert.
 - Visualisierung:
-  - Einfache Diagramme (z. B. kumulativer Budget-Burn vs. Fortschritt nach Meilensteinen) unterstützen die schnelle
+  - Einfache Diagramme (z. B. kumulativer Kosten-Burn vs. Fortschritt nach Meilensteinen) unterstützen die schnelle
     Erfassung des Projektstatus für Management und externe Stakeholder.
 
 Das Reporting orientiert sich am Prinzip der „information radiators“ aus der agilen Praxis: Relevante Informationen
 sollen für alle Beteiligten leicht zugänglich und verständlich sein, ohne unnötige Bürokratie zu erzeugen. Auf dieser
-Basis kann die in 5.1 skizzierte Budgetierung kontinuierlich überprüft und bei Bedarf angepasst werden.
+Basis kann die in 5.1 skizzierte Kostenplanung kontinuierlich überprüft und bei Bedarf angepasst werden.
