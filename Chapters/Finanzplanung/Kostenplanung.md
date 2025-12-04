@@ -33,13 +33,12 @@ werden.
 
 ### 5.1.1 Einordnung und agile Herleitung
 
-Die geschätzten Personentage leiten sich aus dem in Kapitel 4.2 beschriebenen Zeitplan, den in Kapitel 4.3 dargestellten
-Kapazitäten (FTE je Rolle), dem Umfang der im Produktplan (Kapitel 4.1) beschriebenen Arbeitspakete (Epics) sowie
+Die geschätzten Personentage leiten sich aus dem in Kapitel 4.3 beschriebenen Zeitplan, den in Kapitel 4.4 dargestellten
+Kapazitäten (FTE je Rolle), dem Umfang der im Produktplan (Kapitel 4.2) beschriebenen Arbeitspakete (Epics) sowie
 der Anzahl geplanter Sprints pro Phase ab. Die Arbeitspakete werden hierfür im Product Backlog grob geschätzt (z. B. in
 Story Points) und über die Sprints verteilt; zur Finanzplanung werden diese agilen Schätzwerte anschließend in
-Personentage pro Rolle verdichtet. Damit bleibt die Kostenplanung eng an die tatsächliche Teamverfügbarkeit gekoppelt,
-ist
-aber dennoch in klassischen Kostenangaben ausdrückbar.
+Personentage pro Rolle verdichtet. Damit bleibt die Budgetierung eng an die tatsächliche Teamverfügbarkeit gekoppelt,
+ist aber dennoch in klassischen Budgetgrößen ausdrückbar.
 
 Nach jedem wesentlichen Meilenstein (M1–M6, vgl. Kapitel 4.2.4) kann auf Basis der gelieferten Inkremente, der
 Kostenentwicklung und der Projektziele entschieden werden, ob und in welchem Umfang die nächste Phase finanziert wird.
@@ -124,4 +123,3 @@ Teile der Erweiterungszyklen oder ausgewählte Komfortfunktionen in der Wartungs
 Kernfunktionalität, Stabilität, Datenschutz-Compliance und grundlegende Barrierefreiheit als nicht verhandelbar und
 werden auch bei Kostendruck nicht gekürzt. Die Priorisierung im Backlog stellt sicher, dass die verfügbaren Mittel
 konsequent in die wertvollsten Inkremente fließen.
-

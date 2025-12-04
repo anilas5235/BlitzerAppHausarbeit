@@ -9,7 +9,7 @@
 - Testabdeckung kritischer Logik ≥ 70% Branch Coverage
 
 Das Qualitätsmanagement ist in den Scrum-Zyklus eingebettet: Tests, Reviews und Retrospektiven finden sprintweise statt
-und die Definition of Done (vgl. Kapitel 4.1) stellt sicher, dass jedes Inkrement tatsächlich release-fähig ist.
+und die Definition of Done (vgl. Kapitel 4.2) stellt sicher, dass jedes Inkrement tatsächlich release-fähig ist.
 
 ### Teststrategie
 
@@ -41,7 +41,7 @@ Vor jedem Meilenstein-Release (vgl. Produktplan):
 5. Energie: Feldmessung Hintergrundbetrieb im Zielkorridor.
 6. Datenschutz: Code-Scan bestätigt keine Standortübermittlung; Privacy-Text aktuell.
 7. Accessibility: Checkliste (Kontrast, Labels) ohne kritische Mängel.
-8. DoD erfüllt: Definition of Done gemäß Kapitel 4.1 eingehalten (inkl. Dokumentationsupdate und Review durch PO).
+8. DoD erfüllt: Definition of Done gemäß Kapitel 4.2 eingehalten (inkl. Dokumentationsupdate und Review durch PO).
 
 ### Fehler- & Incident-Handling
 

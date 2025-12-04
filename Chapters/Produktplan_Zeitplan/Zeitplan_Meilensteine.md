@@ -1,6 +1,6 @@
-﻿# 4.2 Zeitplan und Meilensteine
+﻿# 4.3 Zeitplan und Meilensteine
 
-Dieses Kapitel beschreibt den zeitlichen Ablauf der Umsetzung der BlitzerApp auf Basis der in Kapitel 4.1
+Dieses Kapitel beschreibt den zeitlichen Ablauf der Umsetzung der BlitzerApp auf Basis der in Kapitel 4.2
 beschriebenen Arbeitspakete. Der Fokus liegt auf einem agilen Vorgehen mit festen Timeboxen (Sprints) und einer
 phasenorientierten Planung. Der Zeitplan ist bewusst grob gehalten und versteht sich als Orientierung, die im Rahmen
 von Backlog Refinements und Sprint-Planungen iterativ geschärft und angepasst wird.
@@ -9,7 +9,7 @@ Im Gegensatz zu einem klassischen Projektplan werden keine einzelnen Arbeitspake
 zugeordnet. Stattdessen wird für jede Phase eine realistische Anzahl von Sprints geplant. Innerhalb einer Phase
 werden die priorisierten Arbeitspakete inkrementell aus dem Product Backlog gezogen.
 
-Zur Strukturierung werden folgende Phasen angesetzt (vgl. Kapitel 4.1):
+Zur Strukturierung werden folgende Phasen angesetzt (vgl. Kapitel 4.2):
 
 - Preparation
 - MVP-Kern
@@ -17,7 +17,7 @@ Zur Strukturierung werden folgende Phasen angesetzt (vgl. Kapitel 4.1):
 - Betrieb / Wartung (laufend)
 - Erweiterungen
 
-## 4.2.1 Phasen und geplante Sprintanzahl
+## 4.3.1 Phasen und geplante Sprintanzahl
 
 Für das Projekt wird von einem zweiwöchigen Sprint-Rhythmus ausgegangen. Insgesamt wird ein Zeitraum von rund
 18–20 Wochen angenommen. Die folgende Übersicht ordnet den Phasen eine typische Anzahl von Sprints zu und zeigt den
@@ -39,7 +39,7 @@ markiert. Die Erweiterungszyklen können je nach Bedarf und Ressourcenplanung me
 Funktionsumfang der App schrittweise zu erhöhen. Jede Erweiterungsphase sollte mindestens ein neues Release (z. B. 1.1,
 1.2) ermöglichen. Die Anzahl der Erweiterungszyklen hängt von den verfügbaren Ressourcen und dem Nutzerfeedback ab.
 
-## 4.2.2 Meilensteine
+## 4.3.2 Meilensteine
 
 Die Meilensteine werden im Folgenden nicht einzelnen Sprints, sondern den Phasen und groben Kalenderwochen
 zugeordnet. Sie markieren jeweils einen klar definierten Produktzustand, der für Stakeholder nachvollziehbar ist.
@@ -107,10 +107,10 @@ zugeordnet. Sie markieren jeweils einen klar definierten Produktzustand, der fü
   die Nutzer:innen (Release 1.1). Auf Basis von Monitoring- und Feedback-Daten werden nächste Ausbaustufen vorbereitet.
 
 Durch die Verortung der Meilensteine auf Phasen- und Zeitachsen-Ebene wird ein klarer Rahmen geschaffen, ohne die
-agile Flexibilität der Sprintplanung einzuschränken. Die Verbindung zu den in Kapitel 4.1 definierten Arbeitspaketen
+agile Flexibilität der Sprintplanung einzuschränken. Die Verbindung zu den in Kapitel 4.2 definierten Arbeitspaketen
 bleibt dabei transparent und nachvollziehbar.
 
-## 4.2.3 Puffer und Gesamtdauer
+## 4.3.3 Puffer und Gesamtdauer
 
 Die geplante Gesamtdauer des initialen Umsetzungszyklus (Preparation bis erster Erweiterungszyklus) beträgt
 ungefähr 18 Wochen. Dabei werden Puffer explizit auf Phasenebene und nicht auf Ebene einzelner Arbeitspakete
@@ -136,7 +136,7 @@ modelliert.
 Damit ergibt sich ein realistischer, aber bewusst nicht überdeterminierter Zeitplan. Er bildet einen klaren Rahmen
 für die Hausarbeit, lässt aber genügend Flexibilität für eine agile Umsetzung mit sich verändernder Backlog-Priorität.
 
-## 4.2.4 Zeitliche Roadmap
+## 4.3.4 Zeitliche Roadmap
 
 Anstelle eines detaillierten Gantt-Diagramms mit Sprint- und Paketzuordnung wird eine vereinfachte zeitliche Roadmap
 verwendet. Diese stellt dar, zu welchem ungefähren Zeitpunkt die einzelnen Phasen und Meilensteine liegen. Grundlage

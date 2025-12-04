@@ -1,12 +1,12 @@
-﻿## 4.3 Ressourcenplanung
+﻿## 4.4 Ressourcenplanung
 
-Die Ressourcenplanung verknüpft die in Kapitel 4.1 definierten Arbeitspakete mit dem zeitlichen Rahmen aus Kapitel 4.2
+Die Ressourcenplanung verknüpft die in Kapitel 4.2 definierten Arbeitspakete mit dem zeitlichen Rahmen aus Kapitel 4.3
 und ordnet ihnen die benötigten Rollen, Kapazitäten und Skills zu. Im Fokus steht ein kleines, cross-funktionales
 Kernteam, das über die Phasen hinweg möglichst stabil bleibt. Zusätzliche Rollen werden punktuell, vor allem in
 Qualitäts- und Erweiterungsphasen, eingebunden. Für die Dauer des Projekts wird das Kernteam idealerweise mit 100 %
 seiner verfügbaren Arbeitszeit für das Projekt eingeplant, um Kontextwechsel und Koordinationsaufwand zu minimieren.
 
-### 4.3.1 Rollen und Kapazitäten
+### 4.4.1 Rollen und Kapazitäten
 
 Rollen & grobe Kapazitäten (Annahme kleines Kernteam, 1 Sprint = 2 Wochen, ca. 18–20 Wochen Projektlaufzeit für den
 initialen Zyklus):
@@ -34,7 +34,7 @@ initialen Zyklus):
     - Zuständig für Guidelines und Prozesse rund um Community-Funktionen (z. B. OSM Notes), sowie strukturierte
       Auswertung von Nutzerfeedback und Monitoringdaten (AP-E2, AP-W3).
 
-Die hier skizzierten FTE-Kapazitäten werden über die in Abschnitt 4.2 beschriebenen Phasen und Sprints mit den in 4.1
+Die hier skizzierten FTE-Kapazitäten werden über die in Abschnitt 4.3 beschriebenen Phasen und Sprints mit den in 4.2
 beschriebenen Arbeitspaketen verknüpft. Sie bilden damit die Grundlage für die weitere Kapazitäts- und
 Kostenplanung (vgl. Kapitel 5). Da das Kernteam für den Projektzeitraum voll auf die BlitzerApp allokiert ist, steht
 nicht die Verteilung von Auslastungsgraden zwischen Projekten im Fokus, sondern vielmehr die inhaltliche Nutzung der
@@ -46,7 +46,7 @@ Vision und Priorisierung des Product Backlogs sowie die Abnahme der Inkremente i
 Privacy/Compliance sowie Community Liaison werden bedarfsgerecht in Sprints eingebunden, insbesondere bei
 Datenschutzthemen und Community-Funktionen.
 
-### 4.3.2 Skills und Spezialisierungen
+### 4.4.2 Skills und Spezialisierungen
 
 Die folgende Skill-Übersicht zeigt, welche Kernthemen im Team abgedeckt sind und welche Arbeitspaket-Gruppen davon
 besonders profitieren. Sie wird bei der Zuordnung komplexerer Arbeitspakete (z. B. Geofencing, Performance-Optimierung
@@ -54,7 +54,7 @@ oder OSM Notes) zu Phasen genutzt und dient als Grundlage für die Einschätzung
 Engpässe. Neben domänenspezifischen Fähigkeiten (z. B. Geodaten, OSM) werden auch allgemeine agile und
 qualitätsorientierte Kompetenzen betrachtet.
 
-#### 4.3.2.1 Technische und domänenspezifische Skills
+#### 4.4.2.1 Technische und domänenspezifische Skills
 
 - Geodaten / Overpass / OSM-Basis (Dev1 Lead, Dev2)
     - Relevanz insbesondere für: AP-B2 (Overpass-Abfrage), AP-B6 (POI-Overlay & Cache), AP-E2 (OSM Notes), AP-E5
@@ -82,7 +82,7 @@ qualitätsorientierte Kompetenzen betrachtet.
     - Relevanz insbesondere für: AP-B1 (Standortbestimmung), AP-B4 (Warnlogik/Benachrichtigungen), AP-B7 (Geofencing),
       AP-E4 (Performance/Energie), AP-R3/AP-R4 (Store‑Vorbereitung/Release).
 
-#### 4.3.2.2 Agile und qualitätsorientierte Skills
+#### 4.4.2.2 Agile und qualitätsorientierte Skills
 
 - Agile Produktentwicklung / Scrum (Product Owner, gesamtes Team)
     - Fähigkeit, Anforderungen inkrementell zu verfeinern, ein priorisiertes Product Backlog zu pflegen und in kurzen
@@ -102,7 +102,7 @@ qualitätsorientierte Kompetenzen betrachtet.
     - Verständnis für rechtliche Rahmenbedingungen (insb. Datenschutz und rechtliche Situation von Blitzer-Apps) und
       deren Übersetzung in klare Hinweise und UI-Elemente (AP-B5, AP-R3, AP-E3).
 
-#### 4.3.2.3 Teamübergreifende Aspekte
+#### 4.4.2.3 Teamübergreifende Aspekte
 
 Aus dieser Skill-Matrix lässt sich ableiten, dass bestimmte Themen (z. B. Overpass/OSM, Performanceoptimierung,
 Datenschutz) klaren "Ownern" im Team zugeordnet sind. Gleichzeitig wird darauf geachtet, dass Rollen breit genug
@@ -128,7 +128,7 @@ zugehörigen Arbeitspaket-Gruppen und unterstützenden Tools zusammen:
 | Datenschutz & Compliance  | Privacy/Compliance, PO | B5, R3, E3 (MVP, Release, Erweiterungen)                 | Rechtsquellen, interne Guidelines          |
 | DevOps / CI/CD            | Dev1, QA               | A3, R1, laufende Wartung (Preparation, Release, Betrieb) | CI/CD-Plattform, Repo-Hosting, Monitoring  |
 
-### 4.3.3 Externe Ressourcen und Tools
+### 4.4.3 Externe Ressourcen und Tools
 
 Zusätzlich zu den personellen Kapazitäten werden einige externe Ressourcen und Werkzeuge benötigt, die vor allem die
 Qualitätssicherung, Performance-Optimierung und den Release-Prozess unterstützen und in die Sachkostenplanung

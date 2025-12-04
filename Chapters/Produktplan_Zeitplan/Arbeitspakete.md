@@ -10,7 +10,7 @@ denen jeweils ein potenziell auslieferbares Inkrement entsteht.
 
 Hinweis: Vorgehen gemäß Scrum-Grundlagen; vgl. Scrum Guide (2020) und Agile Manifest (siehe Quellenverzeichnis).
 
-## 4.1 Arbeitspakete (WBS)
+## 4.2 Arbeitspakete (WBS)
 
 Die Arbeitspakete beschreiben die fachlichen und technischen Bausteine, die zur Umsetzung der BlitzerApp erforderlich
 sind. Jedes Arbeitspaket enthält eine kurze Beschreibung, die Ziele, erwarteten Ergebnisse (Deliverables), User Value, geschätzten
@@ -21,7 +21,7 @@ erfolgt dynamisch im Product Backlog. Wichtig ist, dass die Arbeitspakete als le
 im Projektverlauf angepasst und erweitert werden können, nach Absprache mit den Stakeholdern, dem Product Owner und dem
 Entwicklungsteam (z. B. bei neuen Erkenntnissen, geänderten Anforderungen oder technischen Herausforderungen).
 
-### 4.1.1 Grundlagen & MVP
+### 4.2.1 Grundlagen & MVP
 
 #### Phase: Preparation – Grundlagen & Refinement
 
@@ -108,7 +108,7 @@ den Entwicklungen einbezogen werden (z.B. im Review), um frühes Feedback zu Fun
     - Abhängigkeiten: AP-B4.
     - Aufwand: L
 
-### 4.1.2 AppStore-Release & Betrieb
+### 4.2.2 AppStore-Release & Betrieb
 
 Nach Fertigstellung des MVP-Kerns (Phase MVP) und Validierung der Grundfunktionalität folgt die Phase R, die auf
 Qualitätssicherung, Release-Vorbereitung und den eigentlichen Launch abzielt. Diese Phase stellt sicher, dass die App
@@ -171,7 +171,7 @@ laufend und wird über die gesamte Lebensdauer der App fortgesetzt.
       gezielt auf deren Bedürfnisse eingehen und die App verbessern kann.
     - Aufwand: laufend.
 
-### 4.1.3 Erweiterungs-Backlog
+### 4.2.3 Erweiterungs-Backlog
 
 Das Erweiterungs-Backlog (Phase E) enthält optionale Features und Verbesserungen, die über den MVP-Kern hinausgehen.
 Diese Features sind nicht zwingend erforderlich, bieten jedoch zusätzlichen Nutzen für dieNutzer:innen und sollten in
