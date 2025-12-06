@@ -32,8 +32,7 @@ Dabei werden diese Schätzwerte für die PT-Kosten je Rolle angenommen:
 
 Die genannten Tagessätze sind als Vollkostenansätze für die Entwicklung in Deutschland zu verstehen. Sie beinhalten
 neben dem Lohn auch typische Arbeitgebernebenkosten (Sozialabgaben, Versicherungen) sowie einen pauschalen Anteil
-für interne Overheads (z. B. Infrastruktur, Verwaltung). Etwaige Umsatzsteuer auf extern bezogene Leistungen wird in
-dieser internen Kostenbetrachtung nicht gesondert ausgewiesen.
+für interne Overheads (z. B. Infrastruktur, Verwaltung), so wie etwaige Steuern.
 
 Die Tagessätze orientieren sich an branchenüblichen Werten für Festangestellte in vergleichbaren Rollen (vgl.
 Quellenverzeichnis) und berücksichtigen die projektbezogene Spezialisierung (Mobile Development, UX für mobile Apps,
@@ -54,23 +53,32 @@ werden.
 
 ### 5.1.1 Einordnung und agile Herleitung
 
-Die geschätzten Personentage leiten sich aus dem in Kapitel 4.3 beschriebenen Zeitplan, den in Kapitel 4.4 dargestellten
-Kapazitäten (FTE je Rolle), dem Umfang der im Produktplan (Kapitel 4.2) beschriebenen Arbeitspakete (Epics) sowie
-der Anzahl geplanter Sprints pro Phase ab. Die Arbeitspakete werden hierfür im Product Backlog grob geschätzt (z. B. in
-Story Points) und über die Sprints verteilt; zur Finanzplanung werden diese agilen Schätzwerte anschließend in
-Personentage pro Rolle verdichtet. Damit bleibt die Budgetierung eng an die tatsächliche Teamverfügbarkeit gekoppelt,
-ist aber dennoch in klassischen Budgetgrößen ausdrückbar.
+Die Kostenplanung der BlitzerApp orientiert sich bewusst am gewählten hybriden Vorgehensmodell und den in Kapitel 4
+beschriebenen Phasen, Arbeitspaketen und Kapazitäten. Ziel dieses Abschnitts ist es, transparent darzustellen, wie aus
+agilen Annahmen (Sprints, FTE, Rollen) klassische Kostengrößen (Personentage und Euro) abgeleitet werden und wie sich
+darauf aufbauend die geplanten Gesamtkosten bis zum ersten Release ergeben.
 
-Die in 4.4.1 beschriebenen FTE-Kapazitäten bilden dabei den Rahmen, innerhalb dessen die effektive Belegung pro Phase
-modelliert wird: Ein Wert von 1,0 FTE für eine Rolle bedeutet nicht zwangsläufig, dass diese Rolle in jeder Phase und
-jedem Sprint voll ausgelastet ist. Für die Kostenplanung werden daher phasenabhängige Schwerpunkte gesetzt (z. B. mehr
-QA in der Release-Phase, mehr UX zu Beginn des MVP-Kerns). Zunächst wird auf Basis einer typischen Sprintbelegung eine
-Orientierung für die Sprintkosten abgeleitet, anschließend werden die Kosten je Phase über die Anzahl der Sprints in
-dieser Phase heraufskaliert und mit den phasenspezifischen Schwerpunkten abgeglichen.
+Ausgangspunkt sind der in Kapitel 4.3 definierte zweiwöchige Sprint-Rhythmus, die in Kapitel 4.4 beschriebenen Rollen
+und FTE-Kapazitäten (Product Owner, Entwicklung, UX/Design, QA/Testing sowie punktuell Community Management und
+Privacy/Compliance) sowie die oben aufgeführten Tagessätze. Für eine typische Sprintbelegung wird zunächst
+abgeschätzt, wie viele Personentage pro Rolle in einem Sprint realistisch genutzt werden können und welche
+Sprintkosten sich daraus ergeben. Anschließend werden die Sprints den Phasen Preparation, MVP-Kern sowie
+AppStore-Release & Qualität zugeordnet und über die geplante Anzahl von Sprints pro Phase aufsummiert.
 
-Nach jedem wesentlichen Meilenstein (M1–M6, vgl. Kapitel 4.3.4) kann auf Basis der gelieferten Ergebnisse, der
-Kostenentwicklung und der Projektziele entschieden werden, ob und in welchem Umfang die nächste Phase finanziert wird.
+Die Herleitung folgt dabei einem agilen Grundgedanken:
 
+- Es wird nicht versucht, alle Detailaufwände frühzeitig und auf Task-Ebene exakt zu bestimmen.
+- Stattdessen werden die Kapazitäten eines stabilen Kernteams pro Sprint als Rahmen angesetzt und mit den geplanten
+  Phasenlängen (Anzahl Sprints) multipliziert.
+- Nach jedem wesentlichen Meilenstein (vgl. M1–M5 in Kapitel 4.3) kann auf Basis der tatsächlich verbrauchten Sprints
+  und der erreichten Ergebnisse entschieden werden, ob Umfang und Budget für die nächsten Phasen angepasst werden.
+
+Für den Business Case (Kapitel 5.3) ist insbesondere die Kostenobergrenze bis zum ersten produktiven Release (Version
+1.0) relevant. Diese setzt sich zusammen aus:
+
+- den aufsummierten Personalkosten der Sprints in den Phasen Preparation, MVP-Kern und AppStore-Release & Qualität
+- sowie einem ergänzenden Risiko- und Planungspuffer, der Unsicherheiten in Velocity, Schätzung und externen
+  Abhängigkeiten (z. B. Overpass-Verfügbarkeit, App-Store-Review-Dauer) adressiert.
 
 ### 5.1.2 Sprintkosten
 
