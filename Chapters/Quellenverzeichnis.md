@@ -39,10 +39,12 @@ Hinweis: Alle Links zuletzt abgerufen am 2025-11-08.
 ## Sonstiges / Referenztexte (Stand: 2025-11-08)
 - OSM API (Allgemein): https://wiki.openstreetmap.org/wiki/API
 - OSM Community – Hilfe/Wiki Start: https://wiki.openstreetmap.org/wiki/DE:Main_Page
+
+## Agiles Projektmanagement (Stand: 2025-12-04)
 - Scrum Guide (offiziell, DE): https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-German.pdf
 - Agile Manifesto (DE): https://agilemanifesto.org/iso/de/manifesto.html
-
-## Hybrides Projektmanagement (Stand: 2025-12-04)
+- Project Management Institute, A Guide to the Project Management Body of Knowledge (PMBOK® Guide) – Seventh Edition and The Standard for Project Management, Newtown Square, PA: Project Management Institute, 2021.
+- C.Tristancho, „Project Management Body of Knowledge– A Quick Guide“ ProjectManager.com, Feb.26,2025. [Online]. Available: https://www.projectmanager.com/blog/project-management-body-of-knowledge-pmbok-a-quick-guide (accessed: 06.12.2025)
 - Baum, C. (2024). Hybrides Projektmanagement. Springer Gabler. https://link.springer.com/book/10.1007/978-3-658-46536-0
 - ifm-business.de (o. D.). Hybrides Projektmanagement: Definition und Methoden. https://ifm-business.de/aktuelles/business-news/hybrides-projektmanagement-definition-und-methoden-von-traditionell-ueber-agil-bis-hybrid.html
 - Staudter, C. (2019). Hybrides Projektmanagement – Einbindung agiler Arbeitsweisen im Rahmen der fortschreitenden Digitalisierung. ResearchGate. https://www.researchgate.net/publication/331947942_Hybrides_Projektmanagement_-_Einbindung_agiler_Arbeitsweisen_im_Rahmen_der_fortschreitenden_Digitalisierung

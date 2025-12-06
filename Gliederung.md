@@ -71,11 +71,15 @@
     - [5.2.2 Überwachung externer Nutzung](Chapters/Finanzplanung/Kostenkontrolle.md)
     - [5.2.3 Entscheidungs-Trigger](Chapters/Finanzplanung/Kostenkontrolle.md)
     - [5.2.4 Reporting & Transparenz](Chapters/Finanzplanung/Kostenkontrolle.md)
-- [5.3 Finanzierungsquellen](Chapters/Finanzplanung/Finanzierungsquellen.md)
-    - [5.3.1 Primäre Quellen](Chapters/Finanzplanung/Finanzierungsquellen.md)
-    - [5.3.2 Sekundäre Monetarisierungsoptionen (datenschutzfreundlich)](Chapters/Finanzplanung/Finanzierungsquellen.md)
-    - [5.3.3 Open-Source Ansatz](Chapters/Finanzplanung/Finanzierungsquellen.md)
-    - [5.3.4 Nachhaltigkeit & Kosten-Nutzen](Chapters/Finanzplanung/Finanzierungsquellen.md)
+- [5.3 Business Case](Chapters/Finanzplanung/BusinessCase.md)
+    - [5.3.1 Management Summary](Chapters/Finanzplanung/BusinessCase.md)
+    - [5.3.2 Problemstellung und strategische Ausrichtung](Chapters/Finanzplanung/BusinessCase.md)
+    - [5.3.3 Machbarkeitsstudie (Feasibility Study)](Chapters/Finanzplanung/BusinessCase.md)
+    - [5.3.4 Kosten-Nutzen-Analyse](Chapters/Finanzplanung/BusinessCase.md)
+    - [5.3.5 Risikobewertung](Chapters/Finanzplanung/BusinessCase.md)
+    - [5.3.6 Key Performance Indicators (KPIs) zur Erfolgsmessung](Chapters/Finanzplanung/BusinessCase.md)
+    - [5.3.7 Fazit und Empfehlung](Chapters/Finanzplanung/BusinessCase.md)
+    
 
 ### 6 Risikoanalyse
 #### komplett auf unser Projekt bezogen (Was verändern wir darauf basierend bzw. Worauf müssen wir besonders aufpassen) (Robin) (im Moment noch dummy)
