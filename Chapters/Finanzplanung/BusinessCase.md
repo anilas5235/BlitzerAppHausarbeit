@@ -8,11 +8,12 @@ Nutzen und Risiken, um eine fundierte Entscheidungsgrundlage für die Durchführ
 Das Projekt zielt auf die Entwicklung einer mobilen App, die Autofahrer in Echtzeit vor Geschwindigkeitskontrollen
 warnt. Trotz eines etablierten Marktes besteht eine Lücke für eine datenschutzfreundliche, zuverlässige und
 nutzerzentrierte Anwendung, wie in der Marktanalyse festgestellt wurde. Die App wird als Einmalkauf für 4,99 €
-angeboten. Die geschätzten Entwicklungskosten bis zum Release belaufen sich auf ca. 310.000 €. Basierend auf
-konservativen Absatzprognosen, die davon ausgehen, dass die App zunächst nur einen sehr kleinen Teil des bestehenden
-Blitzer-App-Markts erreicht, wird ein positiver Return on Investment (ROI) im dritten Jahr erwartet. Das Projekt steht
-im Einklang mit dem Ziel des Teams, praktische Erfahrung in der App-Entwicklung zu sammeln und ein marktfähiges Produkt
-zu schaffen. Die Durchführung des Projekts wird empfohlen.
+angeboten. Die geschätzten Entwicklungskosten bis zum Release belaufen sich auf ca. 350.000 €. Auf Basis einer
+Szenario-Betrachtung (Worst-, Realistic- und Best-Case) zeigt die Umsatzprognose, dass im Worst-Case die
+Entwicklungskosten in den ersten drei Jahren nicht vollständig gedeckt werden, im realistischen Szenario die
+Gewinnschwelle innerhalb dieses Zeitraums erreichbar ist und im Best-Case ein deutlicher Überschuss erzielt werden
+kann. Das Projekt steht im Einklang mit dem Ziel des Teams, praktische Erfahrung in der App-Entwicklung zu sammeln und
+ein marktfähiges Produkt zu schaffen. Die Durchführung des Projekts wird empfohlen.
 
 ### 5.3.2 Problemstellung und strategische Ausrichtung
 
@@ -42,9 +43,10 @@ Die Machbarkeit des Projekts wurde anhand technischer, wirtschaftlicher und orga
 
 **Finanzierungsbedarf (Kosten):**
 Die Gesamtkosten für die Entwicklung bis zum Release (Version 1.0) werden auf Basis der Kostenplanung geschätzt. Sie
-umfassen 9 Sprints (2 Prep + 5 MVP + 2 Release) à ca. 34.000 € sowie ca. 4.000 € für externe Beratung.
+umfassen 9 Sprints (2 Prep + 5 MVP + 2 Release) à ca. 34.000 € sowie ca. 4.000 € für externe Beratung und einen
+Risikopuffer.
 
-* **Gesamtkosten (bis Release 1.0):** 9 * 34.000 € + 4.000 € = **310.000 €**
+* **Gesamtkosten (bis Release 1.0):** 9 * 34.000 € + 4.000 € + 40.000 € (Puffer) = **350.000 €** (siehe Kostenplanung 5.1)
 
 **Nutzen (Umsatzprognose):**
 Der Umsatz wird durch einen Einmalkaufpreis von 4,99 € generiert. Die Absatzprognose basiert auf den Daten der
@@ -54,14 +56,30 @@ Marktanalyse, berücksichtigt aber eine konservative Markteintrittsphase für ei
     * Preis pro Einheit: 4,99 €
     * Plattformgebühr (Apple/Google): ca. 30%
     * Nettoerlös pro Einheit: ca. 3,50 €
-* **Absatzprognose:**
-    * Jahr 1: 10.000 Verkäufe -> **35.000 €** Umsatz
-    * Jahr 2: 25.000 Verkäufe -> **87.500 €** Umsatz
-    * Jahr 3: 50.000 Verkäufe -> **175.000 €** Umsatz
 
-Über die ersten drei Jahre summieren sich die Gesamtumsätze damit auf rund 297.500 € und liegen knapp unter den
-initialen Entwicklungskosten. Ab dem vierten Jahr wird bei vergleichbarer Absatzentwicklung die Gewinnschwelle
-voraussichtlich überschritten.
+Zur besseren Einordnung werden drei Szenarien betrachtet:
+
+1. **Worst-Case-Szenario (sehr zurückhaltende Adoption):**
+    * Jahr 1: 10.000 Verkäufe → **35.000 €** Umsatz
+    * Jahr 2: 25.000 Verkäufe → **87.500 €** Umsatz
+    * Jahr 3: 50.000 Verkäufe → **175.000 €** Umsatz
+    * **Summe 3 Jahre:** 297.500 €
+
+2. **Realistic-Case-Szenario (moderate, aber erfolgreiche Etablierung):**
+    * Jahr 1: 20.000 Verkäufe → **70.000 €** Umsatz
+    * Jahr 2: 40.000 Verkäufe → **140.000 €** Umsatz
+    * Jahr 3: 60.000 Verkäufe → **210.000 €** Umsatz
+    * **Summe 3 Jahre:** 420.000 €
+
+3. **Best-Case-Szenario (sehr erfolgreiche Marktetablierung):**
+    * Jahr 1: 30.000 Verkäufe → **105.000 €** Umsatz
+    * Jahr 2: 60.000 Verkäufe → **210.000 €** Umsatz
+    * Jahr 3: 100.000 Verkäufe → **350.000 €** Umsatz
+    * **Summe 3 Jahre:** 665.000 €
+
+Im Worst-Case-Szenario summieren sich die Gesamtumsätze über die ersten drei Jahre damit auf rund 297.500 € und liegen
+unter den initialen Entwicklungskosten von 350.000 €. Im realistischen Szenario wird die Gewinnschwelle innerhalb der
+ersten drei Jahre überschritten, während im Best-Case-Szenario bereits ein deutlicher Überschuss möglich ist.
 
 **Finanzkennzahlen:**
 
@@ -107,4 +125,4 @@ Dieses Fazit bezieht sich speziell auf die wirtschaftliche und strategische Bewe
 Finanzplanung. Eine übergreifende Bewertung des Projekts erfolgt in Kapitel 10 (Fazit und Ausblick).
 
 **Empfehlung:** Die Durchführung des Projekts wird empfohlen, vorausgesetzt, die Finanzierung der initialen
-Entwicklungskosten in Höhe von ca. 310.000 € kann sichergestellt werden.
+Entwicklungskosten in Höhe von ca. 350.000 € kann sichergestellt werden.
