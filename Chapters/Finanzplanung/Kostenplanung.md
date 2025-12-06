@@ -94,7 +94,7 @@ sondern bewusst als punktueller Posten betrachtet. Für die initiale Entwicklung
 von insgesamt ca. 4 Personentagen Beratung angenommen. Bei einem Tagessatz von 800 €/PT ergibt dies zusätzliche
 Beratungskosten von rund 3.200 € über den gesamten betrachteten Zeitraum.
 
-### 5.1.3 Personenaufwand nach Phasen
+### 5.1.3 Personenkosten nach Phasen
 
 Die folgende Übersicht fasst die geschätzten Kosten bis zum 1.0 Release je Phase zusammen und leitet diese aus der
 Anzahl der Sprints und

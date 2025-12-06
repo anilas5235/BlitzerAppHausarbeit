@@ -62,7 +62,7 @@
 - [5.1 Kostenplanung](Chapters/Finanzplanung/Kostenplanung.md)
     - [5.1.1 Einordnung und agile Herleitung](Chapters/Finanzplanung/Kostenplanung.md)
     - [5.1.2 Sprintkosten](Chapters/Finanzplanung/Kostenplanung.md)
-    - [5.1.3 Personenaufwand nach Phasen](Chapters/Finanzplanung/Kostenplanung.md)
+    - [5.1.3 Personenkosten nach Phasen](Chapters/Finanzplanung/Kostenplanung.md)
     - [5.1.4 Sachkosten / Dienste](Chapters/Finanzplanung/Kostenplanung.md)
     - [5.1.5 Reserve / Risikopuffer](Chapters/Finanzplanung/Kostenplanung.md)
     - [5.1.6 Kostentreiber & Einsparpotenziale](Chapters/Finanzplanung/Kostenplanung.md)
