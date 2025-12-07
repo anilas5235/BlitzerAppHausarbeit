@@ -7,6 +7,9 @@
 
 ### Positive Auswirkungen
 <img width="1304" height="291" alt="image" src="https://github.com/user-attachments/assets/92771a7b-9ab7-4690-b586-481ecd0cecb6" />
+Quelle für "Unfälle verursachen hohe sozio-ökonomische Kosten": https://road-safety.transport.ec.europa.eu/european-road-safety-observatory/statistics-and-analysis-archive/post-impact-care/socio-economic-costs-and-value-prevention_en
+
+Quelle für "Open-Data/Open-Source hat wirtschaftlichen Nutzen": https://digital-strategy.ec.europa.eu/en/policies/open-data
 
 ### Negative Auswirkungen / Risiken
 <img width="1303" height="232" alt="image" src="https://github.com/user-attachments/assets/ea9b6fd5-73fc-490c-b4dd-abdf8feddde8" />
