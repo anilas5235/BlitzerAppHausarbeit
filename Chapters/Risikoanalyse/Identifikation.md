@@ -1,76 +1,37 @@
-﻿# 6 Risikoanalyse
+# 6 Risikoanalyse
 
-Dieses Kapitel identifiziert wesentliche Risiken für die BlitzerApp (rein clientseitige Architektur, Nutzung offener
-Schnittstellen), bewertet sie strukturiert und leitet präventive sowie reaktive Maßnahmen ab.
+Dieses Kapitel umfasst die systematische Identifikation, Bewertung und Steuerung potenzieller Risiken für das Softwareprojekt. Besonderes Augenmerk liegt auf der spezifischen Architektur: Da die Anwendung rein clientseitig operiert („Serverless“ im Kontext eigener Backend-Infrastruktur) und direkt auf öffentliche Schnittstellen (OpenStreetMap Overpass API, Tile-Server) zugreift, entstehen spezifische Abhängigkeiten und Lastszenarien, die sich von servergestützten Architekturen unterscheiden.
+
+Die Analyse orientiert sich methodisch an gängigen Standards wie der ISO 31000 und gliedert sich in Identifikation, Bewertung sowie Maßnahmenplanung.
 
 ## 6.1 Identifikation von Risiken
 
-Die Risiken sind thematisch gruppiert (Regulatorik, Technik, Daten, Nutzer/Produkt, Betrieb/Qualität,
-Sicherheit/Privatsphäre).
+Die Risiken werden thematisch in die Bereiche Regulatorik, Technische Infrastruktur, Datenqualität, Betriebswirtschaft sowie Sicherheit/Privatsphäre kategorisiert.
 
-1. Rechtliche Restriktionen in einzelnen Ländern (Verbot oder Einschränkung von Blitzerwarnungen).
-2. App-Store Ablehnung (Hintergrundortung, fehlende oder unklare Disclaimer).
-3. API-Rate-Limits / Overpass-Verfügbarkeit (Timeouts, Instanz-Ausfälle).
-4. Tile-Provider Limit-/Kostenüberschreitung durch hohe Abrufzahlen.
-5. Unvollständige / inkonsistente OSM-Daten (stationäre Blitzer fehlen oder falsch).
-6. Falsch-positive Warnungen (Fehltrigger durch Distanz-/Richtungsberechnung).
-7. Performance-/Latenzprobleme (Startzeit > Ziel, Warnung verzögert).
-8. Hoher Energieverbrauch im Hintergrund (Geofencing ineffizient).
-9. Geofencing technische Komplexität / Plattformrestriktionen (iOS/Android Unterschiede).
-10. Datenschutz-Wahrnehmung (Misstrauen trotz Privacy-by-Design – UI unklar).
-11. Accessibility-Mängel (Kontraste, Screenreader, resultiert in Ausschluss bestimmter Nutzergruppen).
-12. Security-Schwachstellen (unsichere Speicherung von Settings, mögliche Man-in-the-Middle bei falscher
-    TLS-Konfiguration).
-13. Community-Missbrauch von OSM Notes (Spam, unpräzise Meldungen).
-14. Abhängigkeit von externen Open-Source-Libraries (Breaking Changes / fehlende Wartung).
-15. Monetarisierung unzureichend (fehlende Einnahmen nach Release → eingeschränkte Wartung).
-16. Fehlende Skalierbarkeit von Offline-Caching (Speicherplatz knapp, langsame Updates).
-17. Nutzerfehler / Ablenkung (Übermäßige Interaktion während Fahrt → Sicherheitsrisiko).
-18. Unklare Kommunikation von Datenaktualität (Nutzer nimmt veraltete Daten als aktuell an).
-19. Fehlschlag OAuth-Flow (OSM Notes) → geringere Nutzungsbereitschaft für Meldungen.
-20. Reputationsschaden durch fehlerhafte Warnmeldungen in sensiblen Bereichen (z. B. Schulzonen falsche Limits).
+### 6.1.1 Regulatorische und rechtliche Risiken
+Aufgrund der Funktionalität der Anwendung (Warnung vor Verkehrsüberwachung) besteht ein inhärentes rechtliches Spannungsfeld.
 
-### Risiken die aus andern Kapiteln stammen, die hier einfließen sollten
+* **Länderrestriktionen & Rechtslage:** In verschiedenen europäischen Jurisdiktionen (z. B. Deutschland, Schweiz, Frankreich) unterliegen Blitzerwarn-Apps unterschiedlichen Verboten oder rechtlichen Grauzonen (z. B. § 23 Abs. 1c StVO in Deutschland). Eine Verschärfung der Rechtssprechung kann die legale Nutzbarkeit der App in Kernmärkten ad hoc beenden.
+* **App-Store-Konformität:** Apple und Google prüfen Apps mit Bezug zu Verkehrsüberwachung restriktiv. Unklare Formulierungen in der Store-Beschreibung oder fehlende Disclaimer bezüglich der Hintergrundortung führen häufig zur Ablehnung („Rejection“) oder Entfernung („Takedown“).
+* **Haftungsrisiken:** Trotz Disclaimer besteht das Risiko, dass Nutzer Bußgelder oder Unfälle auf die Nutzung der App zurückführen und Regressansprüche stellen oder negative Publicity erzeugen.
 
-### 4.3.5 Ressourcenrisiken und Skalierung
+### 6.1.2 Technische Infrastruktur & Abhängigkeiten (Client-Side Only)
+Da kein eigener Proxy-Server existiert, kommuniziert jede App-Instanz direkt mit Drittanbietern.
 
-Die Ressourcenplanung ist mit spezifischen Risiken verbunden. Einige zentrale Risiken und die vorgesehenen
-Gegenmaßnahmen sind:
+* **API-Verfügbarkeit & Rate Limits (Overpass API):** Die Overpass API ist eine öffentliche, gemeinschaftlich finanzierte Ressource. Exzessive Abfragen durch schlecht optimierte Clients können zu IP-Sperren seitens der API-Betreiber führen oder die öffentliche Instanz überlasten (Timeouts). Da keine Middleware existiert, fehlt eine zentrale Pufferung.
+* **Tile-Server Kosten & Limits:** Die direkte Einbindung von Kartenkacheln (Tiles) erzeugt bei hohen Nutzerzahlen signifikanten Traffic. Bei Überschreitung der Free-Tier-Limits externer Provider (z. B. Mapbox, OSM-Standard) drohen Dienstabschaltung oder hohe Kosten.
+* **Plattform-Fragmentierung (Geofencing):** Unterschiede im Energiemanagement von Android („Doze Mode“, „App Standby Buckets“) und iOS (strikte Background Execution Limits) erschweren ein zuverlässiges Geofencing. Es besteht das Risiko, dass Warnungen im Standby-Modus vom Betriebssystem unterdrückt werden.
+* **Breaking Changes in Libraries:** Die Abhängigkeit von Open-Source-Bibliotheken (z. B. `osmdroid`, `retrofit`) birgt das Risiko unangekündigter Schnittstellenänderungen oder der Einstellung der Wartung („Abandonware“).
 
-Risikofaktoren Ressourcen:
+### 6.1.3 Datenqualität und Funktionalität
+Die App verlässt sich auf Crowdsourcing-Daten der OpenStreetMap.
 
-- Engpass Geofencing-Spezialwissen → frühzeitige Spike in Phase B.
-- Verzögerung durch Performance-Probleme → gezieltes Profiling in AP-D2 statt zu spät.
-- i18n/A11y unterschätzt → separate kleine Meilensteine (C2/C3) statt „am Ende“.
+* **Datenlücken & Inkonsistenz:** Nicht kartierte Blitzer oder falsch getaggte Objekte (z. B. `traffic_calming` statt `speed_camera`) führen zu fehlenden Warnungen (False Negatives).
+* **Falsch-Positive Warnungen:** Ungenaue GPS-Signale oder komplexe Straßenführungen (z. B. Blitzer auf parallel verlaufender Autobahn, Tunnel) können Fehlalarme auslösen, was das Nutzervertrauen erodiert.
+* **Veraltete Datenanzeige:** Da Daten lokal gecacht werden müssen (Offline-First-Ansatz), besteht die Gefahr, dass Änderungen (z. B. Abbau eines Blitzers) nicht zeitnah auf dem Endgerät reflektiert werden.
 
-Diese Risiken werden in der Risikoanalyse vertieft betrachtet und als Backlog-Items in die Sprintplanung integriert.
+### 6.1.4 Betriebswirtschaftliche und Ressourcen-Risiken
+Diese Risiken ergeben sich aus der Projektplanung und dem gewählten Geschäftsmodell.
 
-Strategie für Skalierung (falls mehr Nutzer/Feature-Wünsche oder höherer Änderungsdruck):
-
-- Add-On weiterer Dev für Feature-Phase D/E.
-- Separater Support/Community-Manager bei steigendem Meldungsvolumen.
-
-### 5.2.5 Kostenrisiken & Gegenmaßnahmen
-
-| Risiko                             | Auswirkung                       | Gegenmaßnahme                                 |
-|------------------------------------|----------------------------------|-----------------------------------------------|
-| Geofencing komplexer als erwartet  | Mehr Entwicklungs-PT             | Früher Spike (Prototyp) in Phase B            |
-| Übernutzung Overpass → Rate-Limits | Verzögerung, Re-Engineering      | Caching, kleinere BBox, Backoff, Mirrors      |
-| Energieverbrauch zu hoch           | Ablehnung durch Nutzer/App Store | Profiling früh, iterative Optimierung (AP-D2) |
-| Verzögerte Store-Freigabe          | Release verschoben               | Frühe Prüfung Richtlinien, Beta Testlauf      |
-| Zugänglichkeit (A11y) unterschätzt | Nacharbeit, Image-Risiko         | Früh AP-C3, Checklisten etablieren            |
-| Datenqualität unzureichend lokal   | Geringer Nutzen                  | OSM Notes Integration zur Verbesserung        |
-
-Die hier beschriebenen Kostenrisiken stehen in engem Zusammenhang mit der Risikoanalyse in Kapitel 6. Relevante
-Maßnahmen werden im Backlog abgebildet und in Sprints eingeplant, sodass Risiken und Kosteneffekte frühzeitig adressiert
-werden können.
-
-### 5.3.5 Bewertung Monetarisierungs-Risiken
-(mus evtl. angepasst werden je nach Monetarisierungsmodell für das wir uns entscheiden)
-
-| Option                    | Risiko                   | Mitigation                                    |
-|---------------------------|--------------------------|-----------------------------------------------|
-| Classic Ads               | Datenschutz-Imageverlust | Nicht einsetzen                               |
-| Verkauf Standortdaten     | Widerspricht Kernwerten  | Ausschließen                                  |
-| Zu hohe Abo-Preise        | Geringe Adoption         | Moderate Preisstrategie, Mehrwert klar zeigen |
-| Reine Spendenabhängigkeit | Unsichere Planung        | Mischmodell, transparente Roadmap             |
+* **Monetarisierungsdefizit:** Ein Scheitern der Strategie (z. B. geringe Conversion-Rate bei Spenden/Premium) gefährdet die langfristige Wartung. Zwar fallen kaum Serverkosten an, jedoch müssen Weiterentwicklung und API-Sponsoring gedeckt werden.
+* **Ressourcenengpass:** Spezialwissen (z. B. für energieeffizientes Geofencing oder Accessibility-Standards nach WCAG) könnte im Team fehlen, was zu Verzögerungen in der Entwicklung führt.

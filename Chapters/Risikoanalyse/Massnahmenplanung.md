@@ -1,67 +1,45 @@
-﻿## 6.3 Maßnahmenplanung
+## 6.3 Maßnahmenplanung
 
-Maßnahmen gegliedert nach Prävention (vor Eintritt), Monitoring (laufend), Reaktion (bei Eintritt). Fokus auf
-Top-Risiken zuerst.
+Die Risikobehandlung folgt dem Ansatz der Risikovermeidung (Prevention), der frühzeitigen Erkennung (Monitoring) und der planvollen Reaktion (Contingency).
 
-### 6.3.1 Prävention (Auswahl)
+### 6.3.1 Präventive Maßnahmen (Risikominimierung)
+Diese Maßnahmen fließen direkt in das Architekturdesign und das Backlog ein.
 
-| Risiko                | Präventive Maßnahmen                                                                                                                         |
-|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| 1 Länderrestriktionen | Länder-Liste + Disclaimer beim ersten Start; Feature-Deaktivierung per Geofencing/Locale falls untersagt; klare Rechtsquellen dokumentieren. |
-| 2 App-Store Ablehnung | Frühzeitige Prüfung Store-Guidelines; Testbuilds/Pre-Review; klare Nutzungserklärung für Hintergrundortung und Datenschutz-Text.             |
-| 3 Overpass Rate/Down  | Caching (TTL), kleinere Bounding Boxes, Exponential Backoff, Fallback Mirror-Liste; User-Agent Kennzeichnung.                                |
-| 5 OSM Datenlücken     | Nutzerfreundliche OSM Notes Einbindung; Datenqualität-Tooltips; Distanzfilter und Tag-Validierung; FAQ Transparenz zu Grenzen.               |
-| 7 Performance-Latenz  | Profiling früh (Prototyp), Lazy Loading, effiziente Rendering-Pipeline (Cluster / minimal Rebuilds), Code Reviews.                           |
-| 8 Energieverbrauch    | Geofencing statt Polling; Standort-Update Throttling; Nutzung Plattform APIs (significant changes).                                          |
-| 15 Monetarisierung    | Früh Monetarisierungsstrategie definieren (Freemium/Spenden); Kosten-/Wertkommunikation im Beta-Test validieren.                             |
-| 12 Security           | TLS-only, sichere Storage APIs (Keystore/Keychain); Dependency Audit; kein sensibler Klartext; automatisierte Dependency Scans.              |
-| 11 Accessibility      | Checklisten ab MVP, Design-Kontraste prüfen, Screenreader-Labels sofort setzen.                                                              |
+| Risiko-Ref. | Maßnahme | Umsetzung / Detail |
+| :--- | :--- | :--- |
+| **1, 2 (Legal)** | **Dynamisches Feature-Toggling & Compliance** | Implementierung eines Geofencing-Checks beim Start: In Verbotszonen (z. B. Schweiz) deaktiviert sich die Warnfunktion automatisch. Anzeige juristischer Disclaimer beim ersten App-Start (Terms of Use). |
+| **3 (API)** | **Intelligentes Caching & Backoff** | Nutzung lokaler Datenbanken (z. B. Room/SQLite) zur Speicherung von Kartendaten (TTL-Strategie: z. B. 7 Tage). Implementierung von *Exponential Backoff* bei HTTP-Fehlern, um Server-Bans zu vermeiden. Nutzung kleiner Bounding-Boxes statt großer Gebietsabfragen. |
+| **5 (Daten)** | **Community Integration & Filter** | Implementierung eines „Datenqualitäts-Layers“: Anzeige, wann Daten zuletzt aktualisiert wurden. Einfache UI zur Meldung von Fehlern via OSM Notes API, um die Datenbasis organisch zu verbessern. |
+| **7 (Perf.)** | **Asynchrone Verarbeitung** | Strikte Trennung von UI-Thread und Datenverarbeitung. Einsatz von *Kotlin Coroutines* für Netzwerk/DB-Operationen. Lazy Loading von Kartenelementen nur im sichtbaren Bereich (Viewport). |
+| **8 (Energie)** | **Fused Location Provider** | Verwendung der OS-eigenen optimierten Standort-APIs (Google Fused Location / iOS Core Location) statt rohem GPS, wo möglich. Reduktion der Polling-Frequenz bei Stillstand oder langsamer Bewegung. |
+| **12 (Sec)** | **Transport Security & Storage** | Erzwingung von HTTPS für alle Verbindungen (Network Security Config). Keine Speicherung sensibler Daten im Klartext; Nutzung der `EncryptedSharedPreferences` bzw. iOS Keychain. |
+| **15 (Geld)** | **Lean Monetization** | MVP-Start mit Spendenmodell oder optionalem „Pro“-Feature (z. B. Dark Mode, Offline-Karten) statt aggressiver Werbung, um Nutzerbasis nicht zu verschrecken. Validierung der Zahlungsbereitschaft in Beta-Phase. |
 
-### 6.3.2 Monitoring
+### 6.3.2 Monitoring und Risiko-Indikatoren
+Da keine zentrale Server-Infrastruktur für Logging zur Verfügung steht, muss das Monitoring dezentral oder über anonymisierte Telemetrie (opt-in) erfolgen.
 
-| Risiko               | Monitoring-Indikator             | Schwellenwert            | Tool/Mechanismus                       |
-|----------------------|----------------------------------|--------------------------|----------------------------------------|
-| 3 Overpass Rate/Down | Fehlerrate (%)                   | >20% Fehler in 1 Tag     | Lokales Log + Analyse Skript           |
-| 7 Performance        | Startzeit (s)                    | >2.2 s Ø                 | Profiling / automatisierte Messung     |
-| 8 Energie            | Akku-Verbrauch (%/h)             | >3.5%                    | Feldtests / Geräteprofile              |
-| 5 Datenlücken        | % POI-Abdeckung Testregion       | < definiertem Basiswert  | Vergleich mit Referenz-Export          |
-| 15 Monetarisierung   | Conversion (%)                   | < Zielwert (2%)          | Release-Bewertungen/Interne Auswertung |
-| 12 Security          | Anzahl offene kritische Findings | >0                       | Dependency Scan Report                 |
-| 11 Accessibility     | Anzahl WCAG Verstöße (kritisch)  | >5                       | A11y-Scanner / man. Tests              |
-| 18 Datenaktualität   | Zeit seit letztem Update (min)   | >30 (Stadt), >120 (Land) | Timestamp Anzeige + Log                |
+| Risiko | Indikator | Messmethode / Tool | Schwellenwert (Alert) |
+| :--- | :--- | :--- | :--- |
+| **Overpass** | Fehlerrate (HTTP 429/50x) | Client-seitiges Error-Reporting (z. B. via Sentry - DSGVO-konform). | > 5 % aller Requests fehlgeschlagen |
+| **Performance** | App-Startzeit (Cold Start) | Automatisiertes Profiling in CI/CD Pipeline & Beta-Telemetrie. | Ø > 2.0 Sekunden |
+| **Energie** | „Battery Drain“ Meldungen | Auswertung von App-Store-Rezensionen und Support-Mails (Keyword-Analyse). | Häufung nach Release (> 3 Nennungen/Woche) |
+| **Daten** | Abdeckungsgrad | Stichprobenartiger manueller Vergleich von OSM-Daten mit Referenzstrecken. | Signifikante Lücken in Großstädten |
+| **Legal** | Store-Status | Überwachung des App-Store-Status und der Policy-Updates von Apple/Google. | Änderung Status „Rejected“ / Policy Change |
 
-### 6.3.3 Reaktion (Contingency)
+### 6.3.3 Reaktive Maßnahmen (Contingency Plans)
+Strategien für den Fall, dass ein Risiko trotz Prävention eintritt.
 
-| Risiko                       | Reaktionsstrategie bei Eintritt                                                                           |
-|------------------------------|-----------------------------------------------------------------------------------------------------------|
-| 3 Overpass Down              | Umschalten auf Mirror; Reduktion Query-Frequenz; Nutzerhinweis „Datenstand alt“.                          |
-| 1 Länderrestriktion entdeckt | Sofortige Deaktivierung kritischer Warnfunktionen; Info-Dialog; Prüfung zukünftiger Feature-Limits.       |
-| 2 Store Ablehnung            | Analyse der Reviewer-Kommentare; Anpassung Texte/Berechtigungen; erneute Einreichung ≤ 1 Woche.           |
-| 7 Performanceverzug          | Fokus-Sprint Optimierung (Profiling → Code Hotspots); ggf. Feature-Freeze.                                |
-| 8 Energie zu hoch            | Reduktion Update-Frequenz, optimieren Distanzberechnung, Deaktivierung nicht-kritischer Hintergrundtasks. |
-| 5 Datenlücken gravierend     | Kommunikationshinweis („Region unvollständig“); gezielte Community-Aufruf via Notes Anleitung.            |
-| 15 Monetarisierung verfehlt  | Anpassung Preis/Mehrwert, Launch Spendenkampagne, Evaluierung Fördermittel.                               |
-| 12 Security Finding          | Patch/Update innerhalb definierter SLA (kritisch ≤72h); Security Review nach Fix.                         |
-| 11 Accessibility Kritik      | Priorisierte UI-Anpassung nächster Sprint; Nutzerfeedback einholen zur Lösung.                            |
-| 18 Veraltete Daten           | Erzwungenes Refresh bei Überschreitung Schwelle; visuelle Warnung.                                        |
+* **Bei API-Ausfall (Overpass Down):** Automatischer Wechsel auf definierte Mirror-Server (Fallback-URL-Liste in der App hinterlegt). Sollten alle Mirror ausfallen: Anzeige „Offline-Modus / Datenstand [Datum]“ und Deaktivierung der Live-Update-Versuche für einen definierten Zeitraum (Backoff).
+* **Bei App-Store Ablehnung:** Sofortige Analyse der Ablehnungsgründe. Bereithaltung einer „Lite-Version“ ohne kritische Funktionen (nur Kartenanzeige, keine Warnung) als Fallback, um zumindest im Store präsent zu sein, während rechtliche Klärung erfolgt.
+* **Bei kritischen Sicherheitslücken:** Etablierter „Hotfix-Prozess“: Umgehung des regulären Sprint-Zyklus, Fix innerhalb von 48h, Beantragung eines „Expedited Review“ bei Apple/Google.
+* **Bei Monetarisierungsproblemen:** Pivotierung des Modells (z. B. Wechsel von Einmalkauf zu Abo oder Einführung von Sponsoring durch lokale Partner), begleitet von Nutzerumfragen zur Preissensitivität.
 
-### 6.3.4 Risiko-Review Zyklus
+## 6.4 Review-Zyklus und Residualrisiken
 
-- Frequenz: alle 4 Wochen + zu Meilensteinen.
-- Verantwortlich: Produkt + Tech Lead (Abstimmung mit QA & Privacy).
-- Aktualisierung: Scores anpassen anhand realer Monitoring-Daten; Neue Risiken ergänzen (z. B. Abhängigkeit von
-  zusätzlicher Library für Geofencing).
-- Dokumentation: Änderungsprotokoll in separatem Risiko-Register (anhängbar an Repo-Dokumentation).
+Die Risikoanalyse ist ein lebendes Dokument und erfordert regelmäßige Überprüfung:
+1.  Am Ende jeder Entwicklungsphase (Meilenstein).
+2.  Bei Einführung neuer externer Bibliotheken.
+3.  Bei signifikanten Änderungen der OSM-Datenstruktur oder Store-Guidelines.
 
-### 6.3.5 Residualrisiken
-
-Auch nach Maßnahmen verbleiben Restunsicherheiten (z. B. rechtliche Änderungen plötzlich, Overpass längere Ausfälle).
-Akzeptanz begründet durch Fokus auf Transparenz (Disclaimer, Datenstand-Anzeige) und Alternativstrategien (Mirror,
-Feature-Deaktivierung).
-
-## Zusammenfassung
-
-Die Risikoanalyse priorisiert besonders regulatorische, technische Infrastruktur- und Qualitätsrisiken. Klare präventive
-Maßnahmen (Caching, Disclaimer, Architektur-Optimierung) und definierte Monitoring-Indikatoren minimieren
-Eintrittswahrscheinlichkeit und Impact. Ein strukturierter Review-Zyklus schafft Anpassungsfähigkeit und unterstützt die
-nachhaltige Pflege ohne eigenes Backend.
+**Residualrisiken (Restrisiken):**
+Trotz umfassender Maßnahmen verbleiben Restrisiken, insbesondere die **Abhängigkeit von Dritten** (OSM-Community für Daten, Overpass-Betreiber für API). Da die App keine eigene Datenhoheit besitzt, muss akzeptiert werden, dass die Datenqualität schwanken kann. Dieses Risiko wird durch Transparenz gegenüber dem Nutzer (Disclaimer: „Daten basieren auf OpenStreetMap“) mitigiert, aber nicht eliminiert. Ebenso bleibt das **rechtliche Restrisiko** bestehen, da sich Gesetze schneller ändern können, als Software-Updates verteilt werden.
