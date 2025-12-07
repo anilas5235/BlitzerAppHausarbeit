@@ -1,40 +1,36 @@
 ﻿## 7.3 Wirtschaftliche Auswirkungen
 
-### Positive Effekte
+### Ausgangslage & Relevanz
+* Verkehrsunfälle, Reparaturen und Bußgelder verursachen jedes Jahr Kosten für Fahrer, Versicherer & Staat
+* Digitale Dienste im Verkehrsbereich können diese Kosten beeinflussen: positiv (z.B. weniger Unfälle) oder negativ (z.B. zusätzliche Infrastrukturkosten)
+* Die geplante App setzt auf offene Daten & verzichtet auf ein eigenes Backend, wodurch sich ihr Kostenprofil deutlich von klassischen, stark serverbasierten Lösungen unterscheidet
 
-- Potenzielle Kosteneinsparungen für Nutzer*innen durch Vermeidung von Bußgeldern (Geschwindigkeitsüberschreitungen).
-- Geringe Betriebskosten (kein eigenes Backend) → niedrigere Eintrittsbarriere für langfristige Wartung.
-- Nutzung offener Daten reduziert Lizenzkosten und erhöht Flexibilität.
-- Verbesserte Datenqualität (Community Feedback) steigert langfristig Nutzen → kann Nutzerbindung fördern.
-- Möglichkeit freier / günstiger Basisversion steigert Adoption (Skalierung über positive Mundpropaganda).
+### Positive Auswirkungen
+<img width="1304" height="291" alt="image" src="https://github.com/user-attachments/assets/92771a7b-9ab7-4690-b586-481ecd0cecb6" />
 
-### Negative / Kritische Aspekte
+### Negative Auswirkungen / Risiken
+<img width="1303" height="232" alt="image" src="https://github.com/user-attachments/assets/ea9b6fd5-73fc-490c-b4dd-abdf8feddde8" />
 
-- Geringe Monetarisierung kann nachhaltige Pflege gefährden (Feature-Stagnation, Qualitätsabfall).
-- Abhängigkeit von externen Open-Source-Komponenten (Risiko für zukünftige Migrationskosten bei Obsoleszenz).
-- Potenzieller Konflikt mit Einnahmeinteressen lokaler Behörden (Bußgelder sinken) → indirekter politischer Widerstand (
-  gering bis moderat).
-- Unkalkulierbare langfristige Pflegekosten bei starkem Nutzerwachstum (Support, Gerätevielfalt).
+### Betroffene Stakeholder
+* Nutzer der App
+  * Sparen im Idealfall Bußgelder, Reparaturkosten & Zeit durch weniger Vorfälle
+* Betreiber der App
+  * Tragen Entwicklungs- & Wartungsaufwand, profitieren aber von niedrigen Infrastrukturkosten & Wiederverwendbarkeit offener Komponenten
+* Staat, Kommunen und Polizei
+  * Haben potenziell geringere Einnahmen aus Bußgeldern, profitieren aber von weniger Unfällen & geringeren Folgekosten
+* Versicherungen
+  * Profitieren von weniger Schäden, geringeren Regulierungskosten & stabileren Risiken
+* Anbieter konkurrierender Blitzer- oder Navi-Apps
+  * Stehen in direkter Konkurrenz zu einer datenschutzfreundlichen, möglicherweise günstigeren Alternative
+* OpenStreetMap- und Open-Source-Community
+  * Gewinnt durch höhere Nutzung & mögliche Beiträge, trägt aber mittelbar den Aufwand für Datenpflege und Infrastruktur mit
 
-### Kennzahlen / Indikatoren
-
-| KPI                                                    | Ziel / Interpretation   | Messansatz                                             |
-|--------------------------------------------------------|-------------------------|--------------------------------------------------------|
-| Durchschnittliche Kosten pro aktiver Nutzer (jährlich) | Niedrig                 | Aufteilung geplante Kosten / aktive Nutzer (Schätzung) |
-| Freemium → Paid/Spenden Conversion (%)                 | Stabiler Anteil (≥2%)   | Interne Auswertung Einnahmen (anonym aggregiert)       |
-| Pflegeaufwand (PT/Quartal)                             | Prognose ±15%           | Zeittracking intern                                    |
-| Abhängigkeit kritischer Libraries (# kritische Libs)   | ≤ definiertem Grenzwert | Audit Paketliste                                       |
-
-### Maßnahmen zur Maximierung positiver wirtschaftlicher Effekte
-
-- Früh transparente Kostenkommunikation → fördert Spenden/Abo-Bereitschaft.
-- Modularer Code reduziert Migrationskosten bei Library-Wechsel.
-- Automatisierte Tests minimieren Aufwand für Regressionen.
-- Fokus auf stabile Kernfeatures statt kostenintensiver Nischenfunktionen.
-
-### Maßnahmen zur Minimierung negativer Effekte
-
-- Regelmäßige Dependency-Audits und Versions-Strategie (SemVer Monitoring).
-- Diversifikation Einnahmequellen (Freemium + Spenden + Fördermittel) zur Risikoabsicherung.
-- Lean-Backlog Pflege: Abbruch wenig genutzter Features, Priorisierung Wartbarkeit.
-- Frühzeitiger Performance-/Energie-Optimierungszyklus, um spätere teure Refaktorierungen zu vermeiden.
+### Maßnahmen & Empfehlungen
+* Nachhaltiges Geschäftsmodell definieren
+  * Früh klären, ob die App z. B. über einmalige Käufe, freiwillige Beiträge/Spenden, Förderprojekte oder Kooperationen finanziert werden soll, ohne den Datenschutzansatz zu untergraben
+* Transparenz über Kosten & Nutzen
+  * Gegenüber Nutzern klar kommunizieren, dass der Fokus auf Sicherheit, Transparenz und Datenschutz liegt, nicht auf maximaler Monetarisierung
+* Offene Ökosysteme stärken
+  * Wo möglich Beiträge an z.B. OSM leisten (Code, Dokumentation, Datenqualität, ...), um die Basis, von der man profitiert, langfristig zu stabilisieren
+* Kooperationen prüfen
+  * Mögliche Zusammenarbeit mit Akteuren, die von höherer Verkehrssicherheit wirtschaftlich profitieren (z. B. Versicherer, Kommunen, Verkehrsinitiativen)
