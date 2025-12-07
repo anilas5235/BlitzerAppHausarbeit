@@ -8,7 +8,7 @@
   * Pluspunkte: mehr Transparenz, potentiell höheres Sicherheitsgefühl, datenschutzfreundliche Alternative für vorsichtige Nutzer
   * Risiken: möglicher „Freifahrtschein“-Effekt (schneller außerhalb von Blitzerzonen)
   * Können durch bewusste Kommunikation, UI-Design & klare Hinweise reduziert werden
-* Wirtschaftliche Bilanz:
+* Ökonomische Bilanz:
   * Für einzelne Nutzer: Ersparnis von Bußgeldern, evtl. weniger Unfallkosten → eher gering bis mittel
   * Für Betreiber: niedrige Betriebskosten durch schlanke Architektur → deutlicher positiver Effekt
   * Für Staat/Kommunen: möglicher Rückgang von Bußgeldeinnahmen, aber langfristig Entlastung durch weniger Unfälle
