@@ -56,6 +56,13 @@ Hinweis: Alle Links zuletzt abgerufen am 2025-11-08.
 - “Consultant Gehälter in Deutschland 2025”, StepStone.de, [Online]. Available: https://www.stepstone.de/gehalt/Consultant.html (accessed: 04. 12. 2025)
 - S. Tretter, S. Diefenbach, D. Ullrich und N. Gerber, Branchenreport UX/Usability 2022, German UPA, 2022. [Online]. Available: https://germanupa.de/sites/default/files/2023-10/ux_branchenreport_2022.pdf (accessed: 04. 12. 2025)
 
+## Risikoquellen
+- **ISO 31000:2018** – *Risk management — Guidelines*. (Grundlage für den methodischen Ansatz der Identifikation und Bewertung).
+- **OpenStreetMap Foundation:** *API Usage Policy*. Abgerufen unter: `https://operations.osmfoundation.org/policies/api/` (Grundlage für technische Maßnahmen bzgl. Rate Limiting).
+- **Apple Inc.:** *App Store Review Guidelines*, insb. Sektion 5 (Legal) und 2.5 (Software Requirements).
+- **Google:** *Google Play Developer Policy Center*, Bereich „Inappropriate Content“ und „Location Permissions“.
+- **DSGVO (Datenschutz-Grundverordnung):** Art. 25 (Datenschutz durch Technikgestaltung und durch datenschutzfreundliche Voreinstellungen).
+
 ## Vermarktungsquellen
 - **Blue Ocean Strategy (W. Chan Kim & Renée Mauborgne):** Erschließung eines neuen Marktraums durch das Attribut „Absolute Datensouveränität“ abseits des reinen Feature-Wettbewerbs.
 - **The Long Tail (Chris Anderson):** Fokussierung auf Nischen-Keywords im ASO, um datenschutzbewusste Nutzer kosteneffizient zu erreichen.
