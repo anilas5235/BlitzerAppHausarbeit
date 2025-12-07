@@ -1,40 +1,32 @@
 ﻿## 7.2 Soziale Auswirkungen
 
-### Positive Effekte
+### Ausgangslage & Relevanz
+* Blitzer & Tempolimits werden als Mischung aus Sicherheitsmaßnahme & "Abkassieren" gesehen → Transparenz spielt dabei eine große Rolle
+* Fahrassistenz-Apps beeinflussen Fahrweise, Sicherheitsgefühl & Fairnessgefühl von Menschen
+* Standortbasierte Dienste greifen in sensible Bereiche ein (Bewegungsprofile, Überwachung) & hängen stark von Vertrauen in den Umgang mit Daten ab
 
-- Erhöhte Einhaltung von Geschwindigkeitsbegrenzungen → potenziell weniger Unfälle und gesteigerte Verkehrssicherheit (
-  indirekt, keine Garantie).
-- Bewusstsein für lokale Regeln (maxspeed) fördert verantwortungsvolles Fahrverhalten.
-- Offene Daten (OSM) stärken Community-Beteiligung: Nutzer verbessern Datenqualität durch Notes.
-- Datenschutzfreundliche Umsetzung (kein Tracking) unterstützt gesellschaftliches Vertrauen in digitale Assistenz.
-- Barrierefreiheit (Kontraste, Screenreader) ermöglicht inklusiven Zugang für mehr Nutzergruppen.
+### Positive Auswirkungen
+<img width="1310" height="257" alt="image" src="https://github.com/user-attachments/assets/73e06f73-3d01-4c01-b04a-1549e86f84db" />
 
-### Negative / Kritische Aspekte
+### Negative Auswirkungen / Risiken
+<img width="1310" height="185" alt="image" src="https://github.com/user-attachments/assets/e9273f9a-53ad-4c04-a907-7801f1ec20d2" />
 
-- Ablenkungsrisiko durch zusätzliche App (Bedienung während Fahrt, falls nicht optimal gestaltet).
-- Fehlende oder unvollständige Daten könnten falsches Sicherheitsgefühl vermitteln (User glaubt alle Blitzer seien
-  abgedeckt).
-- Community-Missbrauch (Spam-Meldungen) kann Moderationsaufwand in OSM erhöhen.
-- Rechtliche Grauzonen in Ländern mit restriktiver Gesetzgebung können zu sozialer Kontroverse führen.
+### Betroffene Stakeholder
+* Fahrer im privaten Pkw-Verkehr
+  * Sicherheitsempfinden, Stresslevel, Fahrverhalten, Bußgelder
+* Mitfahrer & andere Verkehrsteilnehmer
+  * Indirekt betroffen durch veränderte Fahrweise (vorsichtiger oder riskanter)
+* Behörden/Polizei/Kommunen
+  * Veränderung der Unfall- und Bußgeldstatistik → Akzeptanz von Verkehrsüberwachung
+* Datenschutzbewusste Nutzergruppen
+  * Bekommen erstmals eine Alternative ohne starkes Tracking
 
-### Kennzahlen / Indikatoren
-
-| KPI                                                      | Ziel / Interpretation   | Messansatz                                     |
-|----------------------------------------------------------|-------------------------|------------------------------------------------|
-| Nutzerfeedback zur Warnklarheit (% positiv)              | >80% Zufriedenheit      | Beta-Umfrage                                   |
-| Anzahl fehlerhafter Meldungen (Spam/ungenau)             | Niedrig                 | Manuelle Stichprobe OSM Notes (Opt-in Nutzer)  |
-| Accessibility-Abdeckungsgrad (Checklistenpunkte erfüllt) | ≥90%                    | A11y-Review                                    |
-| Opt-in Rate für Community Notes                          | Moderat (zeigt Nutzung) | App-intern (lokal gezählt, ohne Profilbildung) |
-
-### Maßnahmen zur Förderung positiver sozialer Effekte
-
-- Einfache, nicht-intrusive Warn-UI (Audio + kurzes visuelles Signal) statt komplexer Interaktionen.
-- Klarer Hinweis: „Nicht alle Blitzer garantiert erfasst“ → fördert realistische Erwartung.
-- Community-Guidelines für Notes direkt in der Meldemaske.
-- Frühe Accessibility-Tests mit Screenreader.
-
-### Maßnahmen zur Reduktion negativer Effekte
-
-- Sperre komplexer Einstellungen während Fahrt (Detection: Geschwindigkeit > X km/h → UI „Lesemodus“).
-- Validierung von Meldetexten (Mindestlänge, keine Copy-Spam) + Rate-Limit pro Zeitfenster.
-- Dynamische Einblendung von Disclaimer in Regionen mit bekannter Rechtsrestriktion.
+### Maßnahmen & Empfehlungen
+* Klares Framing der App
+  * In Texten & Onboarding deutlich machen, dass das Ziel die Sicherheit & Transparenz ist und es kein "Blitzerwarner zum Ausreizen der Limits" ist
+* Ablenkung minimieren
+  * Große, einfache Hinweise, wenig Interaktion während der Fahrt & sinnvolle Defaults
+* Datenschutz einfach erklären
+  * Kurz und verständlich zeigen, welche Daten lokal bleiben und was alles nicht getrackt wird
+* Hinweise auf Verantwortung
+  * Erinnerungen, dass App nur unterstützt & die Verantwortung für angepasstes Fahren aber beim Menschen bleibt
