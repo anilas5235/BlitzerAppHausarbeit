@@ -17,6 +17,7 @@
   * Qualitative Einschätzung, keine exakten Zahlen
   * Stärke der Effekte grob: "gering"/"mittel"/"hoch"
   * Einordnung immer als zusätzlicher Effekt zu existierenden Lösungen, nicht als komplette Neudefinition des Verkehrssystems
+  * Quelle: https://commission.europa.eu/system/files/2023-09/BRT-2023-Chapter%202-How%20to%20carry%20out%20an%20impact%20assessment_0.pdf?
 
 ## 7.1 Ökologische Auswirkungen
 
