@@ -38,7 +38,7 @@ Entwicklungsteam (z. B. bei neuen Erkenntnissen, geänderten Anforderungen oder 
     - User Value: Als Entwickler:in möchte ich eine validierte Architektur und Technologie-Stack haben,
       damit ich mit der Implementierung des MVP beginnen kann.
     - Abhängigkeiten: AP-A1.
-    - Aufwand: M
+    - Aufwand: L
 3. AP-A3: Setup Entwicklungsumgebung & Projektgerüst
     - Ziel: Repo-Struktur, CI-Basis, Linter, erste Build-Konfiguration.
     - Deliverables: Grundgerüst, README, CI-Status „grün“.

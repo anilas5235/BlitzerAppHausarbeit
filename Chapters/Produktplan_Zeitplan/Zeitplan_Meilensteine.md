@@ -5,9 +5,15 @@ beschriebenen Arbeitspakete. Der Fokus liegt auf einem agilen Vorgehen mit feste
 phasenorientierten Planung. Der Zeitplan ist bewusst grob gehalten und versteht sich als Orientierung, die im Rahmen
 von Backlog Refinements und Sprint-Planungen iterativ geschärft und angepasst wird.
 
+Für alle weiteren Überlegungen wird von einem kleinen, cross-funktionalen Kernteam ausgegangen, das über die Phasen
+hinweg möglichst stabil bleibt. Dieses Team umfasst einen Product Owner, zwei mobile Entwickler, eine UX/Design-Rolle 
+sowie eine QA-/Tester-Rolle. Ergänzend werden eine Privacy/Compliance-Beratung und eine
+Community-Liaison-Funktion bedarfsorientiert eingebunden.
+
 Im Gegensatz zu einem klassischen Projektplan werden keine einzelnen Arbeitspakete fest bestimmten Sprints
-zugeordnet. Stattdessen wird für jede Phase eine realistische Anzahl von Sprints geplant. Innerhalb einer Phase
-werden die priorisierten Arbeitspakete inkrementell aus dem Product Backlog gezogen.
+zugeordnet. Stattdessen wird für jede Phase auf Basis des erwarteten Durchsatzes dieses Kernteams eine realistische
+Anzahl von Sprints geplant. Innerhalb einer Phase werden die priorisierten Arbeitspakete inkrementell aus dem
+Product Backlog gezogen.
 
 Zur Strukturierung werden folgende Phasen angesetzt (vgl. Kapitel 4.2):
 
@@ -19,10 +25,21 @@ Zur Strukturierung werden folgende Phasen angesetzt (vgl. Kapitel 4.2):
 
 ## 4.3.1 Phasen und geplante Sprintanzahl
 
-Für das Projekt wird von einem zweiwöchigen Sprint-Rhythmus ausgegangen. Insgesamt wird ein Zeitraum von rund
-18–20 Wochen angenommen. Die folgende Übersicht ordnet den Phasen eine typische Anzahl von Sprints zu und zeigt den
-jeweiligen inhaltlichen Schwerpunkt. Konkrete Arbeitspakete werden im agilen Sinne erst in den Sprint-Planungen
-festgelegt und können sich abhängig von Priorisierung und Kapazität verschieben.
+Für die zeitliche Planung der BlitzerApp wird ein zweiwöchiger Sprint-Rhythmus angesetzt, in dem das oben
+beschriebene Scrum-Team mit stabilen Kapazitäten arbeitet. Die in der nachfolgenden Übersicht genannten
+Sprintzahlen je Phase leiten sich aus den geschätzten Aufwänden der in Kapitel 4.2 beschriebenen Arbeitspakete
+sowie dem erwarteten Durchsatz dieses Teams pro Sprint ab. Es wird bewusst keine fixe Gesamtzahl an
+Projektwochen vorab unterstellt; vielmehr ergibt sich die Dauer der Phasen indirekt aus der Anzahl der benötigten
+Sprints und deren inhaltlicher Füllung. Auf dieser Grundlage ergibt sich insgesamt ein Zeitraum von rund 18–20
+Wochen für den initialen Umsetzungszyklus bis einschließlich des ersten Erweiterungszyklus.
+
+Zur Konkretisierung der Sprintplanung werden die in Kapitel 4.2 aufgeführten Arbeitspakete mit ihren
+Aufwandsklassen (S, M, L) auf eine einfache Punkteskala abgebildet (z. B. S ≈ 3 Punkte, M ≈ 5 Punkte, L ≈ 8 Punkte).
+Auf Basis vergleichbarer Projektkonstellationen wird für das hier betrachtete Kernteam ein Durchsatz von etwa
+18–22 dieser Aufwandspunkte pro zweiwöchigem Sprint angenommen. Summiert man die so bewerteten
+Arbeitspakete je Phase, ergeben sich gerundet die in der folgenden Tabelle
+angegebenen Sprintzahlen. Die Abweichung zwischen rechnerischem Minimum und geplanter Sprintanzahl dient bewusst als 
+Puffer für Schätzunsicherheiten, Integrationsaufwände und Feedbackschleifen aus Tests und Beta-Phase.
 
 | Phase                            | Geplante Dauer           | Geschätzte Anzahl Sprints | Inhaltlicher Schwerpunkt                                                 |
 |----------------------------------|--------------------------|---------------------------|--------------------------------------------------------------------------|
@@ -34,19 +51,22 @@ festgelegt und können sich abhängig von Priorisierung und Kapazität verschieb
 
 Die Phase „Betrieb / Wartung“ wird nicht in eine feste Sprintanzahl überführt, da sie im Sinne eines lebenden
 Produkts als kontinuierlicher Prozess verstanden wird. In der Praxis findet auch Wartung in Sprints statt, im Rahmen
-kongruenter Team-Sprints; für die hier betrachtete Planung wird sie jedoch nur grob als laufender Post-Release-Prozess
-markiert. Die Erweiterungszyklen können je nach Bedarf und Ressourcenplanung mehrfach wiederholt werden, um den
-Funktionsumfang der App schrittweise zu erhöhen. Jede Erweiterungsphase sollte mindestens ein neues Release (z. B. 1.1,
-1.2) ermöglichen. Die Anzahl der Erweiterungszyklen hängt von den verfügbaren Ressourcen und dem Nutzerfeedback ab.
+kongruenter Team-Sprints; für die hier betrachtete Planung wird sie jedoch nur grob als laufender Post-Release-
+Prozess markiert. Die Erweiterungszyklen können je nach Bedarf und Ressourcenplanung mehrfach wiederholt werden,
+um den Funktionsumfang der App schrittweise zu erhöhen. Jede Erweiterungsphase sollte mindestens ein neues
+Release (z. B. 1.1, 1.2) ermöglichen. Die Anzahl der Erweiterungszyklen hängt von den verfügbaren Ressourcen und
+dem Nutzerfeedback ab.
 
 ## 4.3.2 Meilensteine
 
 Die Meilensteine werden im Folgenden nicht einzelnen Sprints, sondern den Phasen und groben Kalenderwochen
-zugeordnet. Sie markieren jeweils einen klar definierten Produktzustand, der für Stakeholder nachvollziehbar ist.
+zugeordnet. Sie markieren jeweils einen klar definierten Produktzustand, der für Stakeholder nachvollziehbar ist. Ihre
+zeitliche Einordnung orientiert sich an der in Abschnitt 4.3.1 beschriebenen Sprintanzahl pro Phase und dem dort
+angenommenen Durchsatz des Kernteams.
 
 **M1: Grundlagen & Architektur abgeschlossen**
 
-- Voraussichtlicher Zeitraum: Ende Preparation (Woche 2–4)
+- Voraussichtlicher Zeitraum: Ende der Phase Preparation (ca. Ende Woche 4; nach 2 Sprints)
 - Zuordnung zu Arbeitspaketen:
     - AP-A1 (Refinement der MVP-Anforderungen)
     - AP-A2 (Architektur-Validierung)
@@ -56,7 +76,7 @@ zugeordnet. Sie markieren jeweils einen klar definierten Produktzustand, der fü
 
 **M2: Technischer MVP-Kern steht**
 
-- Voraussichtlicher Zeitraum: 1/3 der MVP-Phase (Woche 5–6)
+- Voraussichtlicher Zeitraum: erstes Drittel der MVP-Phase (ca. Mitte bis Ende Woche 6; nach 1–2 MVP-Sprints)
 - Schwerpunkt-Arbeitspakete:
     - AP-B1 (Standortbestimmung)
     - AP-B2 (Overpass-Abfrage + Parser)
@@ -66,7 +86,7 @@ zugeordnet. Sie markieren jeweils einen klar definierten Produktzustand, der fü
 
 **M3: MVP funktionsfähig (intern nutzbar)**
 
-- Voraussichtlicher Zeitraum: Ende MVP-Phase (Woche 9–10)
+- Voraussichtlicher Zeitraum: Ende der MVP-Phase (ca. Woche 10; nach 4–5 MVP-Sprints)
 - Schwerpunkt-Arbeitspakete:
     - AP-B4 (Warnlogik)
     - AP-B5 (Disclaimer & Datenschutzinfo)
@@ -77,7 +97,7 @@ zugeordnet. Sie markieren jeweils einen klar definierten Produktzustand, der fü
 
 **M4: Beta-Release & Qualitätssicherung**
 
-- Voraussichtlicher Zeitraum: Mitte der Phase AppStore-Release & Qualität (Woche 11–12)
+- Voraussichtlicher Zeitraum: Mitte der Phase AppStore-Release & Qualität (ca. Woche 12; nach 1 Sprint in dieser Phase)
 - Schwerpunkt-Arbeitspakete:
     - AP-R1 (Testautomatisierung Ausbau)
     - AP-R2 (Beta-Test & Feedback-Auswertung)
@@ -87,7 +107,7 @@ zugeordnet. Sie markieren jeweils einen klar definierten Produktzustand, der fü
 
 **M5: AppStore-Release 1.0**
 
-- Voraussichtlicher Zeitraum: Ende der Phase AppStore-Release & Qualität (Woche 13–14)
+- Voraussichtlicher Zeitraum: Ende der Phase AppStore-Release & Qualität (ca. Ende Woche 14; nach 2 Sprints in dieser Phase)
 - Schwerpunkt-Arbeitspakete:
     - AP-R3 (App-Store Vorbereitung)
     - AP-R4 (Release-Kandidaten & Final Review)
@@ -97,7 +117,7 @@ zugeordnet. Sie markieren jeweils einen klar definierten Produktzustand, der fü
 
 **M6: Stabilisierung & erste Erweiterungen**
 
-- Voraussichtlicher Zeitraum: Ende des ersten Erweiterungszyklus (Woche 17–18)
+- Voraussichtlicher Zeitraum: Ende des ersten Erweiterungszyklus (ca. Woche 18; nach 2 Erweiterungssprints)
 - Schwerpunkt-Arbeitspakete (je nach Priorisierung):
     - AP-W1–W3 (Wartung, Monitoring, Feedback-Auswertung)
     - AP-E1 (Offline-Grundfunktion)
@@ -112,41 +132,48 @@ bleibt dabei transparent und nachvollziehbar.
 
 ## 4.3.3 Puffer und Gesamtdauer
 
-Die geplante Gesamtdauer des initialen Umsetzungszyklus (Preparation bis erster Erweiterungszyklus) beträgt
-ungefähr 18 Wochen. Dabei werden Puffer explizit auf Phasenebene und nicht auf Ebene einzelner Arbeitspakete
-modelliert.
+Die geplante Gesamtdauer des initialen Umsetzungszyklus im engeren Sinn (Preparation bis AppStore-Release 1.0)
+beträgt ungefähr 14–16 Wochen. Die darüber hinausgehenden Erweiterungszyklen werden bewusst nur grob
+skizziert und nicht mehr als Teil der initialen Umsetzung gewertet. Puffer werden explizit auf Phasenebene und nicht
+auf Ebene einzelner Arbeitspakete modelliert.
 
 **Pufferannahmen:**
 
-- Innerhalb der Phase MVP-Kern wird ein Sprint als impliziter Puffer verstanden (z. B. 3–4 statt exakt 3 Sprints), um
-  mit Schätzunsicherheiten umgehen zu können.
+- Innerhalb der Phase MVP-Kern wird ein Sprint als impliziter Puffer verstanden (d. h. Planung mit 4–5 statt exakt 4
+  Sprints), um mit Schätzunsicherheiten und variierendem Durchsatz umgehen zu können.
 - Die Phase AppStore-Release & Qualität enthält zeitlichen Spielraum für unvorhergesehene Verzögerungen im
-  App-Store-Prozess oder bei der Behebung kritischer Befunde aus dem Beta-Test.
-- Der erste Erweiterungszyklus ist bewusst zeitlich etwas einen Sprint nach dem initialen Release angesetzt, um auf
-  Nutzerfeedback und Monitoring-Daten reagieren zu können. Dies dient als Puffer für unvorhergesehene
-  Nacharbeiten oder Anpassungen.
+  App-Store-Prozess oder bei der Behebung kritischer Befunde aus dem Beta-Test. Die zwei hierfür vorgesehenen
+  Sprints werden bewusst nicht auf Kante mit Arbeitspaketen gefüllt, um auf Durchsatzschwankungen reagieren zu
+  können.
+- Erweiterungszyklen nach Release 1.0 (z. B. für Version 1.1, 1.2) werden jeweils in eigenen, zweiwöchigen
+  Sprint-Zyklen geplant. Sie dienen als zusätzlicher zeitlicher Puffer für nachgelagerte Anpassungen und neue
+  Funktionalität, sind aber nicht Bestandteil der hier betrachteten initialen Umsetzung bis Version 1.0.
 
-**Gesamtbetrachtung:**
+**Gesamtbetrachtung (initiale Umsetzung bis Release 1.0):**
 
 - Preparation: ca. 2–4 Wochen (1–2 Sprints)
 - MVP-Kern: ca. 6–10 Wochen (4–5 Sprints)
 - AppStore-Release & Qualität: ca. 4 Wochen (2 Sprints)
-- Erweiterungen (1. Zyklus): ca. 4 Wochen (2 Sprints)
 
-Damit ergibt sich ein realistischer, aber bewusst nicht überdeterminierter Zeitplan. Er bildet einen klaren Rahmen
-für die Hausarbeit, lässt aber genügend Flexibilität für eine agile Umsetzung mit sich verändernder Backlog-Priorität.
+Damit ergibt sich für die initiale Umsetzung bis zur Veröffentlichung der Version 1.0 ein realistischer, aber bewusst
+nicht überdeterminierter Zeitplan im Rahmen von etwa 14–16 Wochen. Er bildet einen klaren Rahmen für die
+Hausarbeit, lässt aber genügend Flexibilität für eine agile Umsetzung mit sich verändernder Backlog-Priorität. Die
+anschließenden Erweiterungszyklen werden ergänzend betrachtet, um die langfristige Weiterentwicklung der App
+aufzuzeigen, ohne den Kernzeitplan künstlich zu verlängern.
 
 ## 4.3.4 Zeitliche Roadmap
 
 Anstelle eines detaillierten Gantt-Diagramms mit Sprint- und Paketzuordnung wird eine vereinfachte zeitliche Roadmap
 verwendet. Diese stellt dar, zu welchem ungefähren Zeitpunkt die einzelnen Phasen und Meilensteine liegen. Grundlage
-ist ein Projektstart in Woche 1 und ein zweiwöchiger Sprint-Rhythmus.
+ist ein Projektstart in Woche 1 und ein zweiwöchiger Sprint-Rhythmus. Im Fokus der Darstellung steht die initiale
+Umsetzung bis zum AppStore-Release 1.0; der erste Erweiterungszyklus wird ergänzend als möglicher nächster Schritt
+skizziert.
 
 ```text
 Kalenderwochen (relativ):   1-2        3-4        5-6       7-8      9-10       11-12      13-14      15-16      17-18       19+ 
 Phasen:
 Preparation                 [======]
-MVP-Kern                              [============|=========================]
+MVP-Kern                              [============|=============]
 AppStore-Release & Qualität                                                             [========]
 Erweiterungen (1. Zyklus)                                                                                           [========]
 Betrieb / Wartung                                                                                         [----------------------->
@@ -165,17 +192,24 @@ Erläuterung:
 - **Preparation (Woche 1–4, 1–2 Sprints):** Abschluss des Anforderungs-Refinements, Architektur-Entscheidungen und
   Setup (AP-A1–AP-A3). Abschließend liegt eine tragfähige Grundlage für die Umsetzung vor (Meilenstein M1).
 - **MVP-Kern (Woche 3–10, 4–5 Sprints):** Überlappend mit dem Ende der Preparation beginnt die Umsetzung des
-  MVP-Kerns (AP-B1–AP-B7). Ziel ist ein intern nutzbarer MVP, der schrittweise entsteht. In der ersten Hälfte werden
-  vor allem technische Kernfunktionen realisiert (M2), in der zweiten Hälfte wird der MVP vervollständigt (M3).
+  MVP-Kerns (AP-B1–AP-B7). Dieser fließende Übergang nutzt die stabilen Teamkapazitäten und vermeidet Leerlauf
+  zwischen den Sprints. Ziel ist ein intern nutzbarer MVP, der schrittweise entsteht. In der ersten Hälfte (ca. 2–3
+  Sprints) werden vor allem technische Kernfunktionen realisiert (M2), in der zweiten Hälfte (weitere 2 Sprints) wird
+  der MVP vervollständigt (M3).
 - **AppStore-Release & Qualität (Woche 11–14, 2 Sprints):** Aufbauend auf dem MVP erfolgt der Ausbau der
   Testautomatisierung, eine Beta-Phase und die Vorbereitung des Store-Listings (AP-R1–AP-R4). Am Ende dieser Phase
-  steht der AppStore-Release 1.0 (M5), häufig nach einem vorgelagerten Beta-Meilenstein (M4).
-- **Erweiterungen (erster Zyklus, Woche 15–18, 2 Sprints):** Nach dem ersten Release werden ausgewählte
-  Erweiterungen (z. B. Offline-Grundfunktion, Einstellungen, erste OSM-Integration) umgesetzt. Am Ende steht ein
-  erster Erweiterungs-Meilenstein (M6), der den Funktionsumfang gegenüber Version 1.0 erhöht.
+  steht der AppStore-Release 1.0 (M5), häufig nach einem vorgelagerten Beta-Meilenstein (M4). Die Phase umfasst zwei
+  Sprints, deren Umfang in 4.3.1 auf Basis des erwarteten Durchsatzes kalkuliert wurde.
+- **Erweiterungen (erster Zyklus, Woche 15–18, 2 Sprints, optional):** Nach dem ersten Release können ausgewählte
+  Erweiterungen (z. B. Offline-Grundfunktion, Einstellungen, erste OSM-Integration) in weiteren Sprints umgesetzt
+  werden. Am Ende stünde ein erster Erweiterungs-Meilenstein (M6), der den Funktionsumfang gegenüber Version 1.0
+  erhöht. Diese Phase wird hier als möglicher Ausblick beschrieben und ist nicht Teil der initialen Umsetzung.
 - **Betrieb / Wartung (ab Woche 15, laufend):** Wartung, Monitoring und Fehlerbehebungen werden als kontinuierliche
-  Aktivität betrachtet. Sie wird parallel zur Erweiterungsphase stattfinden und setzen sich auch nach dem hier
+  Aktivität betrachtet. Sie wird parallel zu möglichen Erweiterungsphasen stattfinden und setzt sich auch nach dem hier
   betrachteten Zeitraum fort.
 
 Bei der Darstellung steht die agile Idee im Vordergrund, dass pro Phase jeweils die aktuell wichtigsten, priorisierten
-Backlog-Einträge gezogen werden, solange die übergeordneten Zeitboxen und Meilensteine eingehalten werden.
+Backlog-Einträge gezogen werden, solange die übergeordneten Zeitboxen (Sprints und Phasen) und Meilensteine im
+Rahmen des angenommenen Durchsatzes eingehalten werden. Die initiale Umsetzung wird dabei klar bis zur
+Veröffentlichung der Version 1.0 abgegrenzt; darüber hinausgehende Erweiterungen werden als optionale, nachgelagerte
+Ausbaustufen verstanden.
