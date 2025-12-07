@@ -1,4 +1,4 @@
-﻿## 7.3 Wirtschaftliche Auswirkungen
+﻿## 7.3 Ökonomische Auswirkungen
 
 ### Ausgangslage & Relevanz
 * Verkehrsunfälle, Reparaturen und Bußgelder verursachen jedes Jahr Kosten für Fahrer, Versicherer & Staat
