@@ -10,6 +10,7 @@
 
 ### Negative Auswirkungen / Risiken
 <img width="1310" height="185" alt="image" src="https://github.com/user-attachments/assets/e9273f9a-53ad-4c04-a907-7801f1ec20d2" />
+Quelle für "4800 feste Blitzer in Deutschland (Stand Dezember 2025) + Mehr Stellen ohne Blitzer, wo schneller gefahren wird": https://www.blitzer.de/land/blitzer-in-Deutschland
 
 ### Betroffene Stakeholder
 * Fahrer im privaten Pkw-Verkehr
