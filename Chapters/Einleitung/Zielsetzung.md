@@ -1,16 +1,15 @@
 ﻿## 1.2 Zielsetzung
 
-Die BlitzerApp soll Verkehrsteilnehmende dabei unterstützen, Geschwindigkeitsbegrenzungen einzuhalten und frühzeitig auf
-bekannte stationäre Blitzerstandorte sowie relevante kontextuelle Hinweise (z. B. Limitwechsel) aufmerksam werden zu
-lassen. Sie verfolgt drei Kernziele:
-
-1. Bereitstellung einer plattformübergreifenden, datenschutzfreundlichen mobilen Anwendung für iOS und Android ohne
-   eigenes zentrales Backend.
-2. Nutzung ausschließlich offener, bestehender Schnittstellen (insbesondere Overpass für OSM-Daten) zur Anzeige
-   stationärer Blitzer und optional zugehöriger Verkehrsattribute (maxspeed, POIs, relevante Hinweise).
-3. Einbindung von Community-Mechanismen über bestehende offene Systeme (z. B. OSM Notes) zur Verbesserung der
-   Datenqualität – ohne Aufbau eines separaten Melde- oder Moderationsservers.
-
-Ergänzend verfolgt das Projekt qualitative Ziele wie Verständlichkeit der Warnungen, energieeffiziente
-Hintergrundverarbeitung (Geofencing statt Dauer-GPS), hohe Transparenz über Datenquellen und Einhaltung rechtlicher
-Rahmenbedingungen in zulässigen Ländern.
+* Entwicklung einer mobilen Blitzer-App, die Autofahrer dabei unterstützt, Geschwindigkeitsbegrenzungen einzuhalten und frühzeitig auf bekannte stationäre Blitzer sowie relevante Geschwindigkeitswechsel hinzuweisen
+* Abgrenzung des Funktionsumfangs:
+   * kein vollwertiges Navigationssystem
+   * keine eigene Infrastruktur für Live-Meldungen mobiler Blitzer
+   * keine rechtliche Beratung, sondern nur Hinweise auf Rahmenbedingungen
+   * Fokus auf privaten Pkw-Verkehr (Pendler, Vielfahrer, datenschutzbewusste Nutzer)
+* Zentrale Ziele:
+   * Regelkonformes Fahren unterstützen = Frühzeitige Warnungen vor stationären Blitzern und Zonen mit häufigen Limitwechseln, damit Fahrende bewusster und vorausschauender unterwegs sind
+   * Plattformübergreifende & schlanke Lösung = Bereitstellung einer nativen App für iOS & Android, die ohne eigenes zentrales Backend auskommt und auf dem Gerät so viel wie möglich selbst erledigt
+   * Datenschutz und Transparenz = Verzicht auf Nutzerkonten und Tracking, Daten werden, soweit wie möglich, nur lokal verarbeitet & Datenquelle wird transparent gemacht
+   * Nutzung offener Daten und offener Schnittstellen = Verwendung öffentlich zugänglicher Geodaten (z. B. OpenStreetMap/Overpass) und offener Community-Mechanismen (z. B. OSM Notes), um die Datenlage kontinuierlich zu verbessern, ohne eine eigene Melde-Infrastruktur aufzubauen
+   * Alltagstauglichkeit im Fahrzeug = Klare, reduzierte Bedienoberfläche mit Fokus auf schneller Erfassung während der Fahrt
+   * Rechtlich sensibler Betrieb = Auslegung der App so, dass sie in Ländern mit erlaubter Nutzung von Blitzerwarnungen eingesetzt werden kann
