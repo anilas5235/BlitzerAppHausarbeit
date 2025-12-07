@@ -16,7 +16,7 @@ Kapiteln klar erkennbar zu machen und eine konsistente wissenschaftliche Argumen
 
 | **Stärken**                                      | **Schwächen**                                          | **Chancen**                                        | **Risiken**                                          |
 |--------------------------------------------------|--------------------------------------------------------|----------------------------------------------------|------------------------------------------------------|
-| Fokus nur Blitzerwarnung, kein Navi              | Weniger Funktionen als All-in-one-Navi-Apps            | Großes Marktpotenzial, viele Nicht-Nutzer          | Heterogene, teils restriktive Rechtslage in der EU   |
+| Fokus nur Blitzerwarnung, kein Navigation        | Weniger Funktionen als All-in-one-Navi-Apps            | Großes Marktpotenzial, viele Nicht-Nutzer          | Heterogene, teils restriktive Rechtslage in der EU   |
 | Sehr datensparsam, kein Tracking                 | Hohe Abhängigkeit von offenen Datenquellen             | Qualitäts- und Vertrauensdefizite bestehender Apps | Starker Wettbewerb durch etablierte Apps             |
 | Offene Datenbasis (OSM, Overpass, OSM Notes)     | Eingeschränkte Monetarisierungsmöglichkeiten           | Mehr Verkehrsüberwachung & höhere Bußgelder        | Abhängigkeit von App-Store-Richtlinien               |
 | Native Apps für iOS & Android                    | Mehraufwand durch zwei native Plattformen              | Trend zu Datenschutz & Datensouveränität           | Schwankende Datenqualität offener Quellen            |
