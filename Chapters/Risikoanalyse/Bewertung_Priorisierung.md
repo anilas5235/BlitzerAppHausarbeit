@@ -1,3 +1,7 @@
+## 6.2 Bewertung und Priorisierung
+
+Die Bewertung erfolgt quantitativ durch Multiplikation von Eintrittswahrscheinlichkeit (Wahrsch.) und Schadensausmaß (Impact) auf einer Skala von 1 bis 5.
+
 **Priorisierungs-Matrix:**
 * **Score ≥ 12:** Hoch (Sofortiger Handlungsbedarf, Mitigation zwingend)
 * **Score 8–11:** Mittel (Beobachtung und Einplanung von Maßnahmen)
