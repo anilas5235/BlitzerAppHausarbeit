@@ -1,4 +1,4 @@
-## 9.3 Vermarktung & Go-to-Market
+## 9.4 Vermarktung & Go-to-Market
 
 Die Vermarktungsstrategie positioniert die Applikation nicht als herkömmliches Warntool, sondern als datenschutzkonformen Assistenten für den modernen Kraftverkehr. Ein zentraler Wettbewerbsvorteil liegt in der technischen Architektur: Da die Anwendung rein lokal operiert (Client-Side-Only) und externe APIs direkt vom Endgerät angesprochen werden, entfällt die Speicherung sensibler Bewegungsdaten auf zentralen Servern. Dieser „Privacy-First“-Ansatz dient als primäres Differenzierungsmerkmal in einem gesättigten Markt.
 
