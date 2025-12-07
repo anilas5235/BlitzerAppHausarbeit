@@ -28,11 +28,12 @@
 
 ### Positive Auswirkungen
 <img width="1377" height="243" alt="image" src="https://github.com/user-attachments/assets/2f68fb28-72a2-44fc-b0da-0fa036414d12" />
-
+Quelle für "Rechenzentren & Netze brauchen viel Strom": https://interactdc.com/static/images/documents/JRC135926_01.pdf
+Quelle für "Höheres Tempo = Mehr Emissionen": https://www.sciencedirect.com/science/article/pii/S2095756424000709
 
 ### Negative Auswirkungen / Risiken
 <img width="1373" height="390" alt="image" src="https://github.com/user-attachments/assets/3b622b78-cc00-401f-af1c-c637d7ccf843" />
-
+Quelle für "Höheres Tempo = Mehr Emissionen": https://www.sciencedirect.com/science/article/pii/S2095756424000709
 
 ### Betroffene Stakeholder
 * Nutzer der App
