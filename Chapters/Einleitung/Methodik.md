@@ -3,8 +3,8 @@
 Die vorliegende Arbeit verfolgt einen konzeptionellen Ansatz und basiert vollständig auf Desk Research bzw. der
 Sekundäranalyse vorhandener Fachliteratur, Praxisberichte und technischer Dokumentationen. Dabei werden
 öffentlich verfügbare Quellen zu Grundlagen des agilen Projektmanagements (Scrum Guide, Agile Manifesto [1],[2]) sowie
-etablierten Standards des Projektmanagements (u. a. PMBOK, ergänzende Übersichten, hybride Modelle nach Mayrhofer und 
-Schneikart [3]–[8]) ausgewertet. Ergänzend werden kartografische Dienste und offene Geodatenquellen (u. a. OpenStreetMap,
+etablierten Standards des Projektmanagements (u. a. PMBOK, ergänzende Übersichten, hybride Modelle nach Mayrhofer und
+Dechange [3]–[8]) ausgewertet. Ergänzend werden kartografische Dienste und offene Geodatenquellen (u. a. OpenStreetMap,
 Overpass API [9]–[16]) sowie Plattformrichtlinien von Apple und Google (u. a. App Store Review Guidelines, Google
 Play-Richtlinien [17]–[22]) systematisch herangezogen.
 
@@ -24,6 +24,6 @@ Schema: Situationsanalyse → Anforderungen → Planung → Risiko-/Impactbetrac
 
 Das Projekt selbst wird entlang eines hybriden Projektmanagement-Ansatzes konzipiert, der Elemente agiler
 Vorgehensmodelle (insbesondere Scrum) mit klassischen Projektmanagement-Standards (u. a. PMBOK sowie hybriden Modellen
-nach Mayrhofer und Schneikart) kombiniert [1]–[8]. Die konkrete Ausgestaltung dieses hybriden Vorgehens, einschließlich der
+nach Mayrhofer und Dechange) kombiniert [1]–[8]. Die konkrete Ausgestaltung dieses hybriden Vorgehens, einschließlich der
 verwendeten Rollen, Artefakte, Planungs- und Steuerungsmechanismen, wird im Planungsteil näher erläutert und in
 Beziehung zur Entwicklung und Einführung der Blitzer-App gesetzt.
