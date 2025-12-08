@@ -112,14 +112,19 @@ aufzuzeigen, ohne den Kernzeitplan künstlich zu verlängern.
 
 Anstelle eines detaillierten Gantt-Diagramms mit Sprint- und Paketzuordnung wird eine vereinfachte zeitliche Roadmap
 verwendet. Diese stellt dar, zu welchem ungefähren Zeitpunkt die einzelnen Phasen und Meilensteine liegen. Grundlage
-ist ein Projektstart in Woche 1 und ein zweiwöchiger Sprint-Rhythmus. Im Fokus der Darstellung steht die initiale
-Umsetzung bis zum AppStore-Release 1.0; der erste Erweiterungszyklus wird ergänzend als möglicher nächster Schritt
-skizziert.
+ist ein Projektstart in Woche 1 und ein zweiwöchiger Sprint-Rhythmus.
 
 ![Roadmap.png](assets/Roadmap.png)
 
 Bei der Darstellung steht die agile Idee im Vordergrund, dass pro Phase jeweils die aktuell wichtigsten, priorisierten
 Backlog-Einträge gezogen werden, solange die übergeordneten Zeitboxen (Sprints und Phasen) und Meilensteine im
-Rahmen des angenommenen Durchsatzes eingehalten werden. Die initiale Umsetzung wird dabei klar bis zur
-Veröffentlichung der Version 1.0 abgegrenzt; darüber hinausgehende Erweiterungen werden als optionale, nachgelagerte
-Ausbaustufen verstanden.
+Rahmen des angenommenen Durchsatzes eingehalten werden.
+
+Nach Abschluss der Veröffentlichung der Version 1.0 wird die Roadmap im Rahmen der laufenden Phase Betrieb/Wartung
+und Erweiterungen kontinuierlich aktualisiert. Auf Basis der realen Nutzungsdaten, des Monitorings und der systematischen
+Auswertung von Community‑Feedback werden weitere Erweiterungszyklen geplant, in denen ausgewählte Arbeitspakete
+aus dem Erweiterungs‑Backlog iterativ umgesetzt werden. Zum jetzigen Zeitpunkt ist eine detailliertere Planung dieser Zyklen
+nicht sinnvoll, da Umfang und Priorität der Erweiterungen wesentlich vom späteren Nutzerfeedback und den im
+Betrieb sichtbaren Nutzungsmustern abhängen. Die Roadmap bleibt damit ein lebendes Artefakt, das den groben Rahmen der
+Phasen und Meilensteine aus Abschnitt 4.3 abbildet, ohne die für das agile Vorgehen erforderliche Flexibilität in der
+inhaltlichen Ausgestaltung der Sprints einzuschränken.
