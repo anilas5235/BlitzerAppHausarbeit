@@ -74,7 +74,7 @@ Hinweis: Alle Links zuletzt abgerufen am 2025-11-08.
 [2] Agile Manifesto (DE): https://agilemanifesto.org/iso/de/manifesto.html
 [3] Project Management Institute, A Guide to the Project Management Body of Knowledge (PMBOK® Guide) – Seventh Edition and The Standard for Project Management, Newtown Square, PA: Project Management Institute, 2021.
 [4] C.Tristancho, „Project Management Body of Knowledge– A Quick Guide“ ProjectManager.com, Feb.26,2025. [Online]. Available: https://www.projectmanager.com/blog/project-management-body-of-knowledge-pmbok-a-quick-guide (accessed: 06.12.2025)
-[5] Baum, C. (2024). Hybrides Projektmanagement. Springer Gabler. https://link.springer.com/book/10.1007/978-3-658-46536-0
+[5] W. Mayrhofer und G. Schneikart(2024). Hybrides Projektmanagement. Springer Gabler. https://link.springer.com/book/10.1007/978-3-658-46536-0
 [6] ifm-business.de (o. D.). Hybrides Projektmanagement: Definition und Methoden. https://ifm-business.de/aktuelles/business-news/hybrides-projektmanagement-definition-und-methoden-von-traditionell-ueber-agil-bis-hybrid.html
 [7] Staudter, C. (2019). Hybrides Projektmanagement – Einbindung agiler Arbeitsweisen im Rahmen der fortschreitenden Digitalisierung. ResearchGate. https://www.researchgate.net/publication/331947942_Hybrides_Projektmanagement_-_Einbindung_agiler_Arbeitsweisen_im_Rahmen_der_fortschreitenden_Digitalisierung
 [8] Springer Professional (o. D.). Hybrides Projektmanagement. https://www.springerprofessional.de/hybrides-projektmanagement/27641324
