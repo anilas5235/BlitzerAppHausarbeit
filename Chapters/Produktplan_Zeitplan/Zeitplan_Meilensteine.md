@@ -41,14 +41,13 @@ Arbeitspakete je Phase, ergeben sich gerundet die in der folgenden Tabelle
 angegebenen Sprintzahlen. Die Abweichung zwischen rechnerischem Minimum und geplanter Sprintanzahl dient bewusst als
 Puffer für Schätzunsicherheiten, Integrationsaufwände und Feedbackschleifen aus Tests und Beta-Phase.
 
-
 | Phase                            | Geplante Dauer           | Geschätzte Anzahl Sprints | Inhaltlicher Schwerpunkt                                                 |
-| -------------------------------- | ------------------------ | -------------------------- | ------------------------------------------------------------------------ |
-| Preparation                      | ca. 4 Wochen             | 2 Sprints                  | Verfeinerung Anforderungen, Architekturklärung, Projekt-Setup           |
-| MVP-Kern                         | ca. 6–10 Wochen         | 4–5 Sprints               | Umsetzung der Must-have-Funktionalität (MVP)                            |
-| AppStore-Release & Qualität     | ca. 4 Wochen             | 2 Sprints                  | Testautomatisierung, Beta-Phase, Store-Vorbereitung, Release-Kandidat    |
-| Erweiterungszyklen (fortlaufend) | je ca. 4 Wochen          | je 2 Sprints (iterativ)    | Priorisierte Erweiterungen in Zyklen auf Basis von Feedback & Monitoring |
-| Betrieb / Wartung (laufend)      | fortlaufend nach Release | nicht fest begrenzt        | Fehlerbehebung, Monitoring, kontinuierliche Verbesserungen               |
+|----------------------------------|--------------------------|---------------------------|--------------------------------------------------------------------------|
+| Preparation                      | ca. 4 Wochen             | 2 Sprints                 | Verfeinerung Anforderungen, Architekturklärung, Projekt-Setup            |
+| MVP-Kern                         | ca. 6–10 Wochen          | 4–5 Sprints               | Umsetzung der Must-have-Funktionalität (MVP)                             |
+| AppStore-Release & Qualität      | ca. 4 Wochen             | 2 Sprints                 | Testautomatisierung, Beta-Phase, Store-Vorbereitung, Release-Kandidat    |
+| Erweiterungszyklen (fortlaufend) | je ca. 4 Wochen          | je 2 Sprints (iterativ)   | Priorisierte Erweiterungen in Zyklen auf Basis von Feedback & Monitoring |
+| Betrieb / Wartung (laufend)      | fortlaufend nach Release | nicht fest begrenzt       | Fehlerbehebung, Monitoring, kontinuierliche Verbesserungen               |
 
 Die Phase „Betrieb / Wartung“ wird nicht in eine feste Sprintanzahl überführt, da sie im Sinne eines lebenden
 Produkts als kontinuierlicher Prozess verstanden wird. In der Praxis findet auch Wartung in Sprints statt, im Rahmen
@@ -65,67 +64,14 @@ zugeordnet. Sie markieren jeweils einen klar definierten Produktzustand, der fü
 zeitliche Einordnung orientiert sich an der in Abschnitt 4.3.1 beschriebenen Sprintanzahl pro Phase und dem dort
 angenommenen Durchsatz des Kernteams.
 
-**M1: Grundlagen & Architektur abgeschlossen**
-
-- Voraussichtlicher Zeitraum: Ende der Phase Preparation (ca. Ende Woche 4; nach 2 Sprints)
-- Zuordnung zu Arbeitspaketen:
-  - AP-A1 (Refinement der MVP-Anforderungen)
-  - AP-A2 (Architektur-Validierung)
-  - AP-A3 (Setup Entwicklungsumgebung & Projektgerüst)
-- Ergebnis: Abgenommene, priorisierte Anforderungsliste, validierte Architektur und funktionsfähiges Projektgerüst.
-  Das Team kann mit der Umsetzung des MVP-Kerns beginnen.
-
-**M2: Technischer MVP-Kern steht**
-
-- Voraussichtlicher Zeitraum: erstes Drittel der MVP-Phase (ca. Mitte bis Ende Woche 6; nach 1–2 MVP-Sprints)
-- Schwerpunkt-Arbeitspakete:
-  - AP-B1 (Standortbestimmung)
-  - AP-B2 (Overpass-Abfrage + Parser)
-  - AP-B3 (Kartenintegration)
-- Ergebnis: Die technische Grundlage für die Kernfunktionen (Positionsermittlung, Abruf und Darstellung von Blitzern
-  auf der Karte) ist vorhanden. Erste interne Tests und Feedbackschleifen sind möglich.
-
-**M3: MVP funktionsfähig (intern nutzbar)**
-
-- Voraussichtlicher Zeitraum: Ende der MVP-Phase (ca. Woche 10; nach 4–5 MVP-Sprints)
-- Schwerpunkt-Arbeitspakete:
-  - AP-B4 (Warnlogik)
-  - AP-B5 (Disclaimer & Datenschutzinfo)
-  - AP-B6 (POI-Overlay & Cache)
-  - AP-B7 (Geofencing)
-- Ergebnis: Alle für den MVP definierten Must-have-Funktionen sind umgesetzt. Die App ist intern nutzbar und kann von
-  einem begrenzten Nutzerkreis (z. B. Projektteam, ausgewählte Tester:innen) erprobt werden.
-
-**M4: Beta-Release & Qualitätssicherung**
-
-- Voraussichtlicher Zeitraum: Mitte der Phase AppStore-Release & Qualität (ca. Woche 12; nach 1 Sprint in dieser Phase)
-- Schwerpunkt-Arbeitspakete:
-  - AP-R1 (Testautomatisierung Ausbau)
-  - AP-R2 (Beta-Test & Feedback-Auswertung)
-- Ergebnis: Eine stabile Beta-Version der App liegt vor. Die wichtigsten Testfälle sind automatisiert abgedeckt, und
-  strukturiertes Nutzerfeedback zur Stabilität und Usability liegt vor. Dieses Feedback fließt in das Product Backlog
-  ein.
-
-**M5: AppStore-Release 1.0**
-
-- Voraussichtlicher Zeitraum: Ende der Phase AppStore-Release & Qualität (ca. Ende Woche 14; nach 2 Sprints in dieser Phase)
-- Schwerpunkt-Arbeitspakete:
-  - AP-R3 (App-Store Vorbereitung)
-  - AP-R4 (Release-Kandidaten & Final Review)
-  - Start AP-W1 (Fehlerbehebungen / Patch-Zyklus)
-- Ergebnis: Die Version 1.0 der App ist in den relevanten Stores veröffentlicht. Der reguläre Wartungsprozess ist
-  etabliert; erste reale Nutzungsdaten und Fehlerberichte können in die weitere Planung einfließen.
-
-**M6: Stabilisierung & erste Erweiterungen**
-
-- Voraussichtlicher Zeitraum: Ende des ersten Erweiterungszyklus (ca. Woche 18; nach 2 Erweiterungssprints)
-- Schwerpunkt-Arbeitspakete (je nach Priorisierung):
-  - AP-W1–W3 (Wartung, Monitoring, Feedback-Auswertung)
-  - AP-E1 (Offline-Grundfunktion)
-  - AP-E3 (Einstellungen)
-  - optional: weitere Erweiterungen (z. B. AP-E2 OSM Notes, AP-E4 Performance & Energieoptimierung)
-- Ergebnis: Die App ist im laufenden Betrieb stabilisiert, und erste Erweiterungen erhöhen den praktischen Nutzen für
-  die Nutzer:innen (Release 1.1). Auf Basis von Monitoring- und Feedback-Daten werden nächste Ausbaustufen vorbereitet.
+| Meilenstein                                 | Voraussichtlicher Zeitraum                                                                       | Arbeitspakete                                                                                                                                                                            | Ergebnis                                                                                                                                                                                                                   |
+|---------------------------------------------|--------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| M1: Grundlagen \& Architektur abgeschlossen | Ende der Phase Preparation (ca. Ende Woche 4; nach 2 Sprints)                                    | AP\-A1 (Refinement der MVP\-Anforderungen), AP\-A2 (Architektur\-Validierung), AP\-A3 (Setup Entwicklungsumgebung \& Projektgerüst)                                                      | Abgenommene, priorisierte Anforderungsliste, validierte Architektur und funktionsfähiges Projektgerüst; Start der Umsetzung des MVP\-Kerns möglich.                                                                        |
+| M2: Technischer MVP\-Kern steht             | Erstes Drittel der MVP\-Phase (ca. Mitte bis Ende Woche 6; nach 1–2 MVP\-Sprints)                | AP\-B1 (Standortbestimmung), AP\-B2 (Overpass\-Abfrage \+ Parser), AP\-B3 (Kartenintegration)                                                                                            | Technische Grundlage für die Kernfunktionen (Positionsermittlung, Abruf und Darstellung von Blitzern auf der Karte) ist vorhanden; erste inter­ne Tests und Feedbackschleifen sind möglich.                                |
+| M3: MVP funktionsfähig (intern nutzbar)     | Ende der MVP\-Phase (ca. Woche 10; nach 4–5 MVP\-Sprints)                                        | AP\-B4 (Warnlogik), AP\-B5 (Disclaimer \& Datenschutzinfo), AP\-B6 (POI\-Overlay \& Cache), AP\-B7 (Geofencing)                                                                          | Alle für den MVP definierten Must\-have\-Funktionen sind umgesetzt; die App ist intern nutzbar und kann von einem begrenzten Nutzerkreis (z\. B\. Projektteam, ausgewählte Tester:innen) erprobt werden.                   |
+| M4: Beta\-Release \& Qualitätssicherung     | Mitte der Phase AppStore\-Release \& Qualität (ca. Woche 12; nach 1 Sprint in dieser Phase)      | AP\-R1 (Testautomatisierung Ausbau), AP\-R2 (Beta\-Test \& Feedback\-Auswertung)                                                                                                         | Stabile Beta\-Version liegt vor; wichtigste Testfälle sind automatisiert abgedeckt; strukturiertes Nutzerfeedback zu Stabilität und Usability liegt vor und fließt in das Product Backlog ein.                             |
+| M5: AppStore\-Release 1\.0                  | Ende der Phase AppStore\-Release \& Qualität (ca. Ende Woche 14; nach 2 Sprints in dieser Phase) | AP\-R3 (App\-Store Vorbereitung), AP\-R4 (Release\-Kandidaten \& Final Review), Start AP\-W1 (Fehlerbehebungen / Patch\-Zyklus)                                                          | Version 1\.0 ist in den relevanten Stores veröffentlicht; regulärer Wartungsprozess ist etabliert; erste reale Nutzungsdaten und Fehlerberichte fließen in die weitere Planung ein.                                        |
+| M6: Stabilisierung \& erste Erweiterungen   | Ende des ersten Erweiterungszyklus (ca. Woche 18; nach 2 Erweiterungssprints)                    | AP\-W1–W3 (Wartung, Monitoring, Feedback\-Auswertung), AP\-E1 (Offline\-Grundfunktion), AP\-E3 (Einstellungen), optional: AP\-E2 (OSM Notes), AP\-E4 (Performance \& Energieoptimierung) | App ist im laufenden Betrieb stabilisiert; erste Erweiterungen erhöhen den praktischen Nutzen für die Nutzer:innen (Release 1\.1); auf Basis von Monitoring\- und Feedback\-Daten werden nächste Ausbaustufen vorbereitet. |
 
 Durch die Verortung der Meilensteine auf Phasen- und Zeitachsen-Ebene wird ein klarer Rahmen geschaffen, ohne die
 agile Flexibilität der Sprintplanung einzuschränken. Die Verbindung zu den in Kapitel 4.2 definierten Arbeitspaketen
@@ -171,7 +117,6 @@ Umsetzung bis zum AppStore-Release 1.0; der erste Erweiterungszyklus wird ergän
 skizziert.
 
 ![Roadmap.png](assets/Roadmap.png)
-
 
 Bei der Darstellung steht die agile Idee im Vordergrund, dass pro Phase jeweils die aktuell wichtigsten, priorisierten
 Backlog-Einträge gezogen werden, solange die übergeordneten Zeitboxen (Sprints und Phasen) und Meilensteine im
