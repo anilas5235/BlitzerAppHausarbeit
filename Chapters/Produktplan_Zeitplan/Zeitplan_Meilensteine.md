@@ -108,7 +108,7 @@ Hausarbeit, lässt aber genügend Flexibilität für eine agile Umsetzung mit si
 anschließenden Erweiterungszyklen werden ergänzend betrachtet, um die langfristige Weiterentwicklung der App
 aufzuzeigen, ohne den Kernzeitplan künstlich zu verlängern.
 
-## 4.3.4 Zeitliche Roadmap
+## 4.3.4 Roadmap
 
 Anstelle eines detaillierten Gantt-Diagramms mit Sprint- und Paketzuordnung wird eine vereinfachte zeitliche Roadmap
 verwendet. Diese stellt dar, zu welchem ungefähren Zeitpunkt die einzelnen Phasen und Meilensteine liegen. Grundlage
