@@ -11,28 +11,15 @@ seiner verfügbaren Arbeitszeit für das Projekt eingeplant, um Kontextwechsel u
 Rollen & grobe Kapazitäten (Annahme kleines Kernteam, 1 Sprint = 2 Wochen, ca. 18–20 Wochen Projektlaufzeit für den
 initialen Zyklus):
 
-- Product Owner (1,0 FTE):
-    - Verantwortlich für Produktvision, Priorisierung des Product Backlogs und Abnahme der Inkremente im Sprint Review.
-    - Kapazitätsschwerpunkt: durchgängig, mit erhöhter Auslastung in Preparation (Anforderungs-Refinement),
-      AppStore-Release (Store-Vorbereitung) und beim Management von Erweiterungswünschen.
-- Mobile Entwickler:
-    - Dev1 (Flutter Lead, 1,0 FTE):
-        - Technische Gesamtverantwortung (Architektur, Build, CI), Implementierung Kernfunktionen (AP-A2, AP-B1–B4,
-          AP-B6, AP-R1–R4, zentrale Erweiterungen).
-    - Dev2 (Flutter/Testing, 1,0 FTE):
-        - Unterstützung bei Implementierung, Tests und speziell bei Overpass-Integration, Performance-Optimierung und
-          OSM Notes (AP-B2, AP-E2, AP-E4).
-- UX/Design (1,0 FTE):
-    - Gestaltung der UI, Onboarding, Konzeption des Warn-HUDs, Unterstützung bei Accessibility (AP-B3, AP-B4,
-      AP-E3, AP-E7).
-- QA/Tester (ca. 1,0 FTE):
-    - Testplanung, manuelle Tests, Unterstützung bei Testautomatisierung (AP-R1, AP-R2,
-      Performance-/Energieprofiling in AP-E4).
-- Privacy/Compliance Beratung (ca. 0,1 FTE ad hoc):
-    - Prüfung der Datenschutztexte, rechtlicher Hinweise und Disclaimer (AP-B5, AP-R3, AP-E3).
-- Community Liaison (ggf. mit Product Owner kombiniert, ca. 0,5 FTE):
-    - Zuständig für Guidelines und Prozesse rund um Community-Funktionen (z. B. OSM Notes), sowie strukturierte
-      Auswertung von Nutzerfeedback und Monitoringdaten (AP-E2, AP-W3).
+| Rolle                       | FTE / Umfang              | Hauptaufgaben                                                                                                                                               | Zuordnung / Schwerpunkte                                                                                                                                                             |
+|-----------------------------|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Product Owner               | 1,0 FTE                   | Verantwortlich für Produktvision, Priorisierung des Product Backlogs und Abnahme der Inkremente im Sprint Review.                                           | Kapazitätsschwerpunkt: durchgängig; erhöhte Auslastung in Preparation (Anforderungs-Refinement), AppStore-Release (Store-Vorbereitung) und beim Management von Erweiterungswünschen. |
+| Mobile Entwickler – Dev1    | 1,0 FTE (Flutter Lead)    | Technische Gesamtverantwortung (Architektur, Build, CI), Implementierung der Kernfunktionen.                                                                | AP-A2, AP-B1–B4, AP-B6, AP-R1–R4, zentrale Erweiterungen.                                                                                                                            |
+| Mobile Entwickler – Dev2    | 1,0 FTE (Flutter/Testing) | Unterstützung bei Implementierung, Tests und speziell bei Overpass-Integration, Performance-Optimierung und OSM Notes.                                      | AP-B2, AP-E2, AP-E4.                                                                                                                                                                 |
+| UX/Design                   | 1,0 FTE                   | Gestaltung der UI, Onboarding, Konzeption des Warn-HUDs, Unterstützung bei Accessibility.                                                                   | AP-B3, AP-B4, AP-E3, AP-E7.                                                                                                                                                          |
+| QA/Tester                   | ca. 1,0 FTE               | Testplanung, manuelle Tests, Unterstützung bei Testautomatisierung, Performance-/Energieprofiling.                                                          | AP-R1, AP-R2, Performance-/Energieprofiling in AP-E4.                                                                                                                                |
+| Privacy/Compliance Beratung | ca. 0,1 FTE (ad hoc)      | Prüfung der Datenschutztexte, rechtlicher Hinweise und Disclaimer.                                                                                          | AP-B5, AP-R3, AP-E3.                                                                                                                                                                 |
+| Community Liaison           | ca. 0,5 FTE               | Zuständig für Guidelines und Prozesse rund um Community-Funktionen (z. B. OSM Notes) sowie strukturierte Auswertung von Nutzerfeedback und Monitoringdaten. | AP-E2, AP-W3.                                                                                                                                                                        |
 
 Die hier skizzierten FTE-Kapazitäten werden über die in Abschnitt 4.3 beschriebenen Phasen und Sprints mit den in 4.2
 beschriebenen Arbeitspaketen verknüpft. Sie bilden damit die Grundlage für die weitere Kapazitäts- und
@@ -56,77 +43,35 @@ qualitätsorientierte Kompetenzen betrachtet.
 
 #### 4.4.2.1 Technische und domänenspezifische Skills
 
-- Geodaten / Overpass / OSM-Basis (Dev1 Lead, Dev2)
-    - Relevanz insbesondere für: AP-B2 (Overpass-Abfrage), AP-B6 (POI-Overlay & Cache), AP-E2 (OSM Notes), AP-E5
-      (erweiterte Offline-Caches).
-- Performance / Energieprofiling (Dev2, QA)
-    - Relevanz insbesondere für: AP-B7 (Geofencing), AP-E4 (Performance & Energieoptimierung).
-- Karten- und UI-Design (UX, Dev1)
-    - Relevanz insbesondere für: AP-B3 (Kartenintegration & UI), AP-B4 (Warn-HUD), AP-E3 (Einstellungen), AP-E7
-      (Accessibility Basis).
-- OAuth / OSM Notes (Dev2)
-    - Relevanz insbesondere für: AP-E2 (OSM Notes Integration), ggf. weitere Community-Funktionen.
-- Architektur / Build / CI / DevOps (Dev1)
-    - Relevanz insbesondere für: AP-A2 (Architektur-Validierung), AP-A3 (Projektgerüst & CI), AP-R1
-      (Testautomatisierung), laufende Wartung.
-- iOS‑Plattformkompetenz (Swift/SwiftUI, Dev1)
-    - Kernkompetenzen: CoreLocation (inkl. Region Monitoring), Hintergrundmodi (Location Updates, Background Fetch),
-      lokale Benachrichtigungen (UNUserNotificationCenter), Audio-Ausgabe (AVAudioSession), App‑Store‑Richtlinien,
-      TestFlight‑Distribution.
-    - Relevanz insbesondere für: AP-B1 (Standortbestimmung), AP-B4 (Warnlogik/Benachrichtigungen), AP-B7 (Geofencing),
-      AP-R3/AP-R4 (Store‑Vorbereitung/Release).
-- Android‑Plattformkompetenz (Kotlin/Jetpack, Dev2)
-    - Kernkompetenzen: FusedLocationProviderClient, GeofencingClient, Foreground Service mit Notification,
-      WorkManager/AlarmManager, Runtime‑Permissions (inkl. Hintergrundstandort), Doze/App‑Standby‑Richtlinien,
-      Play‑Console & Review‑Guidelines.
-    - Relevanz insbesondere für: AP-B1 (Standortbestimmung), AP-B4 (Warnlogik/Benachrichtigungen), AP-B7 (Geofencing),
-      AP-E4 (Performance/Energie), AP-R3/AP-R4 (Store‑Vorbereitung/Release).
+| Skillbereich                                | Hauptrollen       | Beschreibung / Kernkompetenzen                                                                                                                                                                                  | Relevante Arbeitspakete                                                                                                                                     |
+|---------------------------------------------|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Geodaten / Overpass / OSM-Basis             | Dev1 (Lead), Dev2 | Umgang mit Geodaten, Overpass-API und OSM-Basisfunktionen (Abfragen, Filtern, Caching von POIs).                                                                                                                | AP-B2 (Overpass-Abfrage), AP-B6 (POI-Overlay & Cache), AP-E2 (OSM Notes), AP-E5 (erweiterte Offline-Caches)                                                 |
+| Performance / Energieprofiling              | Dev2, QA          | Analyse und Optimierung von Performance und Energieverbrauch der App, inkl. Messung, Profiling und Ableitung von Optimierungsmaßnahmen.                                                                         | AP-B7 (Geofencing), AP-E4 (Performance & Energieoptimierung)                                                                                                |
+| Karten- und UI-Design                       | UX, Dev1          | Gestaltung und Implementierung von Karten-UI, Warn-HUD und weiteren visuellen Elementen unter Berücksichtigung von Usability und Klarheit.                                                                      | AP-B3 (Kartenintegration & UI), AP-B4 (Warn-HUD), AP-E3 (Einstellungen), AP-E7 (Accessibility Basis)                                                        |
+| OAuth / OSM Notes                           | Dev2              | Integration von OAuth-Workflows und OSM-Notizen, inkl. Authentifizierung, Rechteverwaltung und Umgang mit Community-Beiträgen.                                                                                  | AP-E2 (OSM Notes Integration), ggf. weitere Community-Funktionen                                                                                            |
+| Architektur / Build / CI / DevOps           | Dev1              | Definition und Pflege der Systemarchitektur, Build-Konfiguration, CI-Pipelines und DevOps-Prozesse für einen stabilen und wiederholbaren Entwicklungs- und Release-Prozess.                                     | AP-A2 (Architektur-Validierung), AP-A3 (Projektgerüst & CI), AP-R1 (Testautomatisierung), laufende Wartung                                                  |
+| iOS‑Plattformkompetenz (Swift/SwiftUI)      | Dev1              | Plattformkenntnisse für iOS: CoreLocation (inkl. Region Monitoring), Hintergrundmodi, lokale Benachrichtigungen, Audio-Ausgabe, App‑Store‑Richtlinien und TestFlight-Distribution.                              | AP-B1 (Standortbestimmung), AP-B4 (Warnlogik/Benachrichtigungen), AP-B7 (Geofencing), AP-R3/AP-R4 (Store‑Vorbereitung/Release)                              |
+| Android‑Plattformkompetenz (Kotlin/Jetpack) | Dev2              | Plattformkenntnisse für Android: FusedLocationProviderClient, GeofencingClient, Foreground Services, Hintergrund-Jobs, Runtime-Permissions, Energie- und Doze-Richtlinien, Play‑Console- und Review-Guidelines. | AP-B1 (Standortbestimmung), AP-B4 (Warnlogik/Benachrichtigungen), AP-B7 (Geofencing), AP-E4 (Performance/Energie), AP-R3/AP-R4 (Store‑Vorbereitung/Release) |
 
 #### 4.4.2.2 Agile und qualitätsorientierte Skills
 
-- Agile Produktentwicklung / Scrum (Product Owner, gesamtes Team)
-    - Fähigkeit, Anforderungen inkrementell zu verfeinern, ein priorisiertes Product Backlog zu pflegen und in kurzen
-      Zyklen nutzbare Inkremente zu liefern. Relevanz über alle Phasen, insbesondere in Preparation (AP-A1) und beim
-      Umgang mit Feedback aus Beta-Phase und Betrieb (AP-R2, AP-W3).
-- Testdesign und Testautomatisierung (QA, Dev1, Dev2)
-    - Fähigkeit, systematische Testfälle zu entwerfen und automatisiert umzusetzen (Unit-, Widget- und ggf.
-      Integrationstests). Relevanz insbesondere für AP-R1 (Testautomatisierung Ausbau), sowie generell für die
-      Absicherung kritischer Logik im MVP-Kern und in Erweiterungen.
-- DevOps / CI/CD-Pipelines (Dev1, QA)
-    - Erfahrung mit automatisierten Builds, Tests und Deployment-Pipelines (z. B. GitHub Actions, mobile CI-Dienste).
-      Unterstützt eine schnelle Rückmeldung zu Codeänderungen und reduziert manuelle Fehler im Release-Prozess.
-- UX-Research und Usability-Testing (UX, PO, QA)
-    - Fähigkeit, Nutzerfeedback qualitativ auszuwerten (z. B. aus Beta-Tests, Interviews) und in Designentscheidungen
-      einfließen zu lassen. Relevanz für die Gestaltung des Warn-HUD, der Einstellungen und der Onboarding-Flows.
-- Datenschutz- und Compliance-Kompetenz (Privacy/Compliance, PO)
-    - Verständnis für rechtliche Rahmenbedingungen (insb. Datenschutz und rechtliche Situation von Blitzer-Apps) und
-      deren Übersetzung in klare Hinweise und UI-Elemente (AP-B5, AP-R3, AP-E3).
+| Skillbereich                          | Hauptrollen                  | Beschreibung                                                                                                                                                                                     | Relevante Arbeitspakete / Phasen                                                        |
+|---------------------------------------|------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| Agile Produktentwicklung / Scrum      | Product Owner, gesamtes Team | Fähigkeit, Anforderungen inkrementell zu verfeinern, ein priorisiertes Product Backlog zu pflegen und in kurzen Zyklen nutzbare Inkremente zu liefern.                                           | Vorbereitung/Preparation (AP-A1), Umgang mit Feedback (AP-R2, AP-W3)                    |
+| Testdesign und Testautomatisierung    | QA, Dev1, Dev2               | Entwurf systematischer Testfälle und Umsetzung in automatisierten Tests (Unit-, Widget- und ggf. Integrationstests), um kritische Logik im MVP-Kern und in Erweiterungen nachhaltig abzusichern. | AP-R1 (Testautomatisierung Ausbau), generelle Absicherung im MVP und Erweiterungen      |
+| DevOps / CI/CD-Pipelines              | Dev1, QA                     | Aufbau und Betrieb automatisierter Builds, Tests und Deployment-Pipelines (z. B. GitHub Actions, mobile CI-Dienste) zur schnellen Rückmeldung zu Codeänderungen und Reduktion manueller Fehler.  | AP-A3 (Projektgerüst & CI), AP-R1 (Testautomatisierung), Wartung/Release-Phasen         |
+| UX-Research und Usability-Testing     | UX, PO, QA                   | Qualitative Auswertung von Nutzerfeedback (z. B. aus Beta-Tests, Interviews) und Ableitung konkreter Verbesserungen für UI, Interaktionskonzepte und Onboarding-Flows.                           | Gestaltung von Warn-HUD, Einstellungen und Onboarding (insb. MVP- und Beta-Phase)       |
+| Datenschutz- und Compliance-Kompetenz | Privacy/Compliance, PO       | Verständnis rechtlicher Rahmenbedingungen (insb. Datenschutz, rechtliche Situation von Blitzer-Apps) und deren Übersetzung in klare Hinweise, UI-Elemente und Dokumentation.                     | AP-B5 (Disclaimer & Datenschutzinfo), AP-R3 (Store-Vorbereitung), AP-E3 (Einstellungen) |
 
 #### 4.4.2.3 Teamübergreifende Aspekte
 
-Aus dieser Skill-Matrix lässt sich ableiten, dass bestimmte Themen (z. B. Overpass/OSM, Performanceoptimierung,
-Datenschutz) klaren "Ownern" im Team zugeordnet sind. Gleichzeitig wird darauf geachtet, dass Rollen breit genug
-aufgestellt sind, um Pairing und Wissensaustausch zu ermöglichen und sogenannte Bus-Faktoren zu reduzieren. Dies ist
-insbesondere bei kritischen Querschnittsthemen wie Architektur, Testautomatisierung und Datenschutz wichtig.
+| Aspekt                            | Beschreibung                                                                                                                                                                                                                              |
+|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Klare "Owner" für zentrale Themen | Bestimmte Themen (z. B. Overpass/OSM, Performanceoptimierung, Datenschutz) sind klaren Ownern im Team zugeordnet, um Verantwortung und Ansprechpartner:innen eindeutig zu machen.                                                         |
+| Wissensaustausch & Bus-Faktor     | Rollen sind bewusst breit aufgestellt, sodass Pairing und Wissensaustausch möglich sind und Bus-Faktoren reduziert werden. Dies ist insbesondere bei Querschnittsthemen wie Architektur, Testautomatisierung und Datenschutz essenziell.  |
+| Steuerung kritischer Phasen       | In kritischen Phasen (z. B. kurz vor AppStore-Release oder beim Einführen neuer Community-Funktionen) dient die Skill-Matrix als Grundlage, um Prioritäten zu setzen und ggf. Arbeitspakete in spätere Erweiterungszyklen zu verschieben. |
+| Risikoorientierte Planung         | Die Skills bestimmen nicht nur, wer welche Aufgaben übernehmen kann, sondern auch, welche Themen aus Risikosicht frühzeitig adressiert werden sollten, um technische, organisatorische und regulatorische Risiken zu minimieren.          |
 
-In kritischen Phasen (z. B. kurz vor AppStore-Release oder beim Einführen neuer Community-Funktionen) kann auf Basis
-dieser Skill-Matrix entschieden werden, welche Arbeitspakete priorisiert und welche gegebenenfalls in spätere
-Erweiterungszyklen verschoben werden. Die Skills bestimmen damit nicht nur, wer welche Aufgaben übernehmen kann,
-sondern auch, welche Themen aus Risikosicht frühzeitig adressiert werden sollten.
-
-Zur besseren Übersicht fasst Tabelle 4‑x die zentralen Skillbereiche, die primär verantwortlichen Rollen sowie die
-zugehörigen Arbeitspaket-Gruppen und unterstützenden Tools zusammen:
-
-| Skillbereich              | Hauptrollen            | Zentrale Arbeitspakete / Phasen                          | Relevante Tools / Ressourcen               |
-|---------------------------|------------------------|----------------------------------------------------------|--------------------------------------------|
-| OSM / Overpass / Geodaten | Dev1 (Lead), Dev2      | AP-B2, AP-B6, AP-E2, AP-E5 (MVP, Erweiterungen)          | Overpass API, OSM-Dokumentation            |
-| Karten & UI / UX          | UX, Dev1               | AP-B3, AP-B4, AP-E3, AP-E7 (MVP, Erweiterungen)          | Design-Tools, Map-Framework, Tile-Provider |
-| Performance & Geofencing  | Dev2, QA               | AP-B7, AP-E4 (MVP, Erweiterungen)                        | Profiling-Tools, Gerätefarm/Testgeräte     |
-| iOS-Plattform             | Dev1                   | B1, B4, B7, R3, R4 (MVP, Release)                        | Xcode, TestFlight, Apple Developer Console |
-| Android-Plattform         | Dev2                   | B1, B4, B7, E4, R3, R4 (MVP, Erweiterungen, Release)     | Android Studio, Play Console, Gerätefarm   |
-| Testautomatisierung & QA  | QA, Dev1, Dev2         | R1, R2, W1–W3 (Release, Wartung)                         | Testframeworks, CI/CD-Plattform            |
-| Datenschutz & Compliance  | Privacy/Compliance, PO | B5, R3, E3 (MVP, Release, Erweiterungen)                 | Rechtsquellen, interne Guidelines          |
-| DevOps / CI/CD            | Dev1, QA               | A3, R1, laufende Wartung (Preparation, Release, Betrieb) | CI/CD-Plattform, Repo-Hosting, Monitoring  |
 
 ### 4.4.3 Externe Ressourcen und Tools
 
