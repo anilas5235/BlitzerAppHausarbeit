@@ -23,3 +23,5 @@
   Backlog-Eintrag als „fertig“ gilt (z. B. implementiert, getestet, dokumentiert).
 - CI/CD-Pipeline: Automatisierte Kette zur kontinuierlichen Integration (Build, Lint, Tests) und Auslieferung von
   Software, die bei Änderungen am Code ausgeführt wird.
+- MVP (Minimal Viable Product): Minimale funktionsfähige Version eines Produkts, die den Kernnutzen bietet und
+  frühzeitig am Markt getestet werden kann.
