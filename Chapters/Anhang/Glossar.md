@@ -25,3 +25,7 @@
   Software, die bei Änderungen am Code ausgeführt wird.
 - MVP (Minimal Viable Product): Minimale funktionsfähige Version eines Produkts, die den Kernnutzen bietet und
   frühzeitig am Markt getestet werden kann.
+- QA (Quality Assurance): Maßnahmen und Prozesse zur Sicherstellung der Produktqualität durch Tests,
+  Reviews und kontinuierliche Verbesserung.
+- API (Application Programming Interface): Schnittstelle, die es verschiedenen Softwarekomponenten ermöglicht,
+  miteinander zu kommunizieren und Daten auszutauschen.
