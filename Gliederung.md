@@ -40,7 +40,7 @@
 - [3.4 Rechtliches und Compliance](Chapters/Anforderungsanalyse/Rechtliches_Compliance.md)
 
 ### 4 Produktplan & Zeitplan (Niklas)
-- [4.1 Planungsvorgehen (Hybrides Projektmanagement)](Chapters/Produktplan_Zeitplan/Planungsvorgehen_Hybrid.md)
+- [4.1 Definition of Done (DoD)](Chapters/Produktplan_Zeitplan/Planungsvorgehen_Hybrid.md)
 - [4.2 Arbeitspakete (WBS)](Chapters/Produktplan_Zeitplan/Arbeitspakete.md)
   - [4.2.1 Grundlagen & MVP](Chapters/Produktplan_Zeitplan/Arbeitspakete.md)
   - [4.2.2 AppStore-Release & Betrieb](Chapters/Produktplan_Zeitplan/Arbeitspakete.md)
