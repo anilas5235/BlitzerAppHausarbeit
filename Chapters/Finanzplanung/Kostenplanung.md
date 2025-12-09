@@ -48,11 +48,11 @@ baut die folgende Kostenplanung auf.
 Aus der FTE-Definition und den Tagessätzen ergeben sich Orientierungsgrößen für die Kosten pro Sprint bei voller
 bzw. teilweiser Belegung:
 
-- 1,0 FTE Produkt Owner pro Sprint → ca. 10 PT × 650 €/PT = 7.500 €
-- 1,0 FTE Entwicklung pro Sprint → ca. 10 PT × 600 €/PT = 7.000 €
-- 1,0 FTE Entwicklung pro Sprint → ca. 10 PT × 600 €/PT = 7.000 €
-- 1,0 FTE UX/Design pro Sprint → ca. 10 PT × 550 €/PT = 6.500 €
-- 1,0 FTE QA/Testing pro Sprint → ca. 10 PT × 550 €/PT = 6.000 €
+- 1,0 FTE Produkt Owner pro Sprint → ca. 10 PT × 750 €/PT = 7.500 €
+- 1,0 FTE Entwicklung pro Sprint → ca. 10 PT × 700 €/PT = 7.000 €
+- 1,0 FTE Entwicklung pro Sprint → ca. 10 PT × 700 €/PT = 7.000 €
+- 1,0 FTE UX/Design pro Sprint → ca. 10 PT × 650 €/PT = 6.500 €
+- 1,0 FTE QA/Testing pro Sprint → ca. 10 PT × 600 €/PT = 6.000 €
   Gesamtkosten pro Sprint: ≈ 34.000 € bei voller Belegung
 
 Ab der Release-Phase (ab M4) wird zusätzlich Community Management eingeplant:
