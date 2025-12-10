@@ -128,59 +128,16 @@ Geschätzte Gesamtkosten bis zum Release 1.0 inkl. Puffer: ≈ mind. 350.000 €
 
 ### 5.1.5 Kostentreiber & Einsparpotenziale
 
-Auf Basis der sprintbasierten Kostenlogik (vgl. 5.1.2) und der phasenorientierten Planung (vgl. 4.3.1) lassen sich
-klar benennen, welche Faktoren die Gesamtkosten der BlitzerApp besonders stark beeinflussen – und an welchen Stellen
-gezielt Einsparungen möglich sind, ohne die Kernziele zu gefährden.
+Kurz zusammengefasst sind die maßgeblichen Kostentreiber:
 
-**Kostentreiber:**
+- Anzahl der Sprints und Team-Auslastung (je mehr Sprints bei voller Besetzung, desto höher die Personalkosten).
+- Qualitätssicherung und Release-Vorbereitung (erhöhte Test- und Review-Aufwände vor AppStore-Submission).
+- Architektur- und Performance-Themen (Aufwand für Geofencing, Energieoptimierung, Caching bei späterer Adressierung).
 
-- **Anzahl Sprints bei voller Teambelegung:**
-    - Jeder zusätzlich geplante Sprint mit nahe voller Belegung der Kernrollen (PO, Dev, UX, QA) verursacht – je nach
-      tatsächlicher FTE – einen vierstelligen Mehrbetrag. Bei einem idealtypischen Vollteam (1,0 FTE je Rolle) liegen
-      die
-      reinen Personalkosten pro Sprint im Bereich von deutlich über 20.000 €.
-    - Eine Verlängerung der MVP-Phase um einen weiteren Sprint kann sinnvoll sein, erhöht die Kosten aber unmittelbar.
-- **Qualitätssicherung und Release-Vorbereitung:**
-    - In der Phase „AppStore-Release & Qualität“ steigen QA-Anteil und Build-/Test-Aktivitäten an; jeder Sprint in
-      dieser
-      Phase ist kostenintensiv, trägt aber direkt zur Stabilität und Review-Fähigkeit der App bei.
-    - Zusätzliche Testrunden oder wiederholte Review-Schleifen in den Stores können weitere Sprints nach sich ziehen.
-- **Architektur- und Performance-Themen:**
-    - Aufwendige Optimierungen (z. B. Geofencing, Energieprofiling, Caching) binden über mehrere Sprints hinweg
-      Entwicklung und QA. Werden sie spät adressiert, steigt das Risiko für Rework und zusätzliche Sprints.
-- **Erweiterungszyklen nach Release:**
-    - Jeder Erweiterungszyklus (typisch 2 Sprints) mit signifikanter Beteiligung des Kernteams führt zu einem klar
-      kalkulierbaren Aufwuchs der Gesamtkosten. Ohne klare Priorisierung können sich diese Zyklen schnell aufsummieren.
+Wesentliche Einsparpotenziale:
 
-**Einsparpotenziale:**
+- Strikter MVP-Fokus und Priorisierung: Features auf spätere Erweiterungen verschieben, um Sprints zu reduzieren.
+- Reduzierte und flexible Teambelegung: Rollen wie UX/QA punktuell mit 0,5 FTE planen, nicht durchgängig 1,0 FTE.
+- Gezielter Einsatz externer Beratung und Nutzung von Open-Source-Tools sowie einem Client-only-Ansatz, um Infrastruktur- und Lizenzkosten zu senken.
 
-- **Strikter Fokus auf den MVP-Umfang:**
-    - Durch eine enge Definition des MVP-Kerns (Kapitel 4.2) und konsequente Priorisierung im Product Backlog lässt sich
-      die Anzahl der Sprints bis M3 (MVP funktionsfähig) begrenzen. Optionale Features (z. B. Komfortfunktionen,
-      weitergehende Einstellungen) werden bewusst in spätere Erweiterungszyklen verschoben.
-- **Bewusster Zuschnitt der Teambelegung pro Sprint:**
-    - Rollen wie UX und QA müssen nicht in jeder Phase und in jedem Sprint mit 1,0 FTE eingeplant werden. Insbesondere
-      in frühen Architektur- und Setup-Phasen kann eine reduzierte Belegung (z. B. 0,5 FTE) ausreichend sein und die
-      Sprintkosten spürbar senken.
-    - Ab der Wartungs- und Erweiterungsphase kann die Entwicklungskapazität in einzelnen Sprints bewusst reduziert
-      werden, um Budget zu schonen und sich stärker auf Bugfixing und kleine Inkremente zu konzentrieren.
-- **Gezielter und begrenzter Einsatz externer Beratung:**
-    - Die geplanten 3–4 Personentage für Privacy/Compliance-Beratung (vgl. 5.1.2) werden möglichst gebündelt an
-      neuralgischen Punkten eingesetzt (z. B. vor Beta-Release, vor AppStore-Submission), um Mehrfacheinsätze zu
-      vermeiden.
-    - Weitere rechtliche Klärungen werden – soweit verantwortbar – in spätere Erweiterungszyklen oder in die laufende
-      Wartungsphase verschoben.
-- **Architekturentscheidungen zugunsten Einfachheit:**
-    - Der Verzicht auf ein eigenes Backend und die Konzentration auf einen Client-only-Ansatz mit Overpass/OSM reduziert
-      dauerhaft Infrastruktur- und Betriebsaufwände.
-    - Eine bewusst einfache erste Ausprägung mancher Features (z. B. Basis-Einstellungen statt komplexer Profile,
-      minimalistische Offline-Funktion) senkt die benötigte Anzahl Sprints in den Erweiterungszyklen.
-- **Nutzung von Open-Source-Tools und bestehenden Ressourcen:**
-    - Der starke Einsatz von Open-Source-Komponenten, vorhandenen Build-Pipelines und günstigen Developer-Plänen
-      (z. B. für Tile-Provider, CI/CD) hält die Sachkosten niedrig und vermeidet zusätzliche Sprint-Aufwände für
-      Evaluierung und Integration proprietärer Lösungen.
-
-Aus Sicht der Finanzplanung bedeutet dies: Die maßgebliche Stellgröße sind nicht einzelne Tage pro Person, sondern die
-Anzahl und Auslastung der Sprints pro Phase. Durch einen klaren MVP-Fokus, eine phasenbewusste Teambelegung und den
-gezielten Einsatz von Beratung und Erweiterungszyklen kann der Kostenrahmen (vgl. 5.1.3 und 5.1.5) aktiv gesteuert
-werden, ohne die zentralen Qualitäts- und Datenschutzanforderungen der BlitzerApp zu kompromittieren.
+Fazit: Steuerungshebel sind primär Anzahl und Auslastung der Sprints; durch Priorisierung, flexible Kapazitätsplanung und gezielten Ressourceneinsatz lässt sich das Budget wirksam steuern, ohne die zentralen Qualitäts- und Datenschutzanforderungen der BlitzerApp zu kompromittieren.
