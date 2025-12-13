@@ -4,11 +4,6 @@
 
 Verkehrsunfälle, Fahrzeugreparaturen sowie Bußgelder können jährlich Kosten für Fahrer, Versicherungen und den Staat verursachen. Digitale Dienste im Verkehrsbereich können diese Kosten sowohl positiv, beispielsweise durch eine Reduktion von Unfällen, als auch negativ, durch z.B. zusätzlichen Infrastruktur- und Betriebsaufwand, beeinflussen. Die geplante App unterscheidet sich hierbei von klassischen, stark serverbasierten Lösungen, da sie auf offene Daten setzt und auf ein eigenes Backend verzichtet, wodurch sich ein abweichendes Kostenprofil ergibt. Aus diesen Gründen ist eine Betrachtung der ökonomischen Auswirkungen der App relevant.
 
----------------------------------------------------------------------------------------
-
-* Verkehrsunfälle, Reparaturen und Bußgelder verursachen jedes Jahr Kosten für Fahrer, Versicherer & Staat
-* Digitale Dienste im Verkehrsbereich können diese Kosten beeinflussen: positiv (z.B. weniger Unfälle) oder negativ (z.B. zusätzliche Infrastrukturkosten)
-* Die geplante App setzt auf offene Daten & verzichtet auf ein eigenes Backend, wodurch sich ihr Kostenprofil deutlich von klassischen, stark serverbasierten Lösungen unterscheidet
 
 ### 7.3.2 Positive Auswirkungen
 
@@ -20,12 +15,8 @@ Ein weiterer positiver ökonomischer Effekt ergibt sich aus den geringen Betrieb
 
 Die Nutzung offener Daten und ein Open-Source-orientierter Entwicklungsansatz kann auch dazu beitragen, dass auf derselben technischen Grundlage weitere Dienste entstehen. Diese können entwickelt werden, ohne grundlegende Infrastruktur erneut finanzieren zu müssen, was langfristig zu ökonomischen Effizienzgewinnen führt [[6]](https://digital-strategy.ec.europa.eu/en/policies/open-data). Dieser Effekt wirkt indirekt, entfaltet sich langfristig und ist in seiner Stärke als gering bis mittel einzustufen.
 
----------------------------------------------------------------------------------------
-
 <img width="1304" height="291" alt="image" src="https://github.com/user-attachments/assets/92771a7b-9ab7-4690-b586-481ecd0cecb6" />
-Quelle für "Unfälle verursachen hohe sozio-ökonomische Kosten": https://road-safety.transport.ec.europa.eu/european-road-safety-observatory/statistics-and-analysis-archive/post-impact-care/socio-economic-costs-and-value-prevention_en
 
-Quelle für "Open-Data/Open-Source hat wirtschaftlichen Nutzen": https://digital-strategy.ec.europa.eu/en/policies/open-data
 
 ### 7.3.3 Negative Auswirkungen / Risiken
 
@@ -35,9 +26,8 @@ Darüber hinaus kann sich die langfristige Refinanzierung der App als herausford
 
 Schließlich kann eine datenschutzfreundliche, offene und kostengünstige Lösung Wettbewerbsdruck auf bestehende kommerzielle Blitzer-Apps ausüben. Dies kann zu Preisdruck oder einer Verschiebung von Marktanteilen führen. Der Effekt wirkt indirekt, tritt mittelfristig auf und ist in seiner Stärke als sehr gering einzustufen, da er nur bei erfolgreicher Marktdurchdringung der App relevant wird.
 
----------------------------------------------------------------------------------------
-
 <img width="1303" height="232" alt="image" src="https://github.com/user-attachments/assets/ea9b6fd5-73fc-490c-b4dd-abdf8feddde8" />
+
 
 ### 7.3.4 Betroffene Stakeholder
 
@@ -47,20 +37,6 @@ Auch staatliche Akteure wie Staat, Kommunen und Polizei zählen zu den betroffen
 
 Schließlich stehen Anbieter konkurrierender Blitzer- oder Navigations-Apps in direkter Konkurrenz zu einer datenschutzfreundlichen und möglicherweise kostengünstigeren Alternative. Ebenso ist die OpenStreetMap- und Open-Source-Community betroffen, die durch eine erhöhte Nutzung sowie potenzielle Beiträge profitieren kann, zugleich jedoch mittelbar den Aufwand für Datenpflege und den Betrieb der zugrunde liegenden Infrastruktur trägt.
 
----------------------------------------------------------------------------------------
-
-* Nutzer der App
-  * Sparen im Idealfall Bußgelder, Reparaturkosten & Zeit durch weniger Vorfälle
-* Betreiber der App
-  * Tragen Entwicklungs- & Wartungsaufwand, profitieren aber von niedrigen Infrastrukturkosten & Wiederverwendbarkeit offener Komponenten
-* Staat, Kommunen und Polizei
-  * Haben potenziell geringere Einnahmen aus Bußgeldern, profitieren aber von weniger Unfällen & geringeren Folgekosten
-* Versicherungen
-  * Profitieren von weniger Schäden, geringeren Regulierungskosten & stabileren Risiken
-* Anbieter konkurrierender Blitzer- oder Navi-Apps
-  * Stehen in direkter Konkurrenz zu einer datenschutzfreundlichen, möglicherweise günstigeren Alternative
-* OpenStreetMap- und Open-Source-Community
-  * Gewinnt durch höhere Nutzung & mögliche Beiträge, trägt aber mittelbar den Aufwand für Datenpflege und Infrastruktur mit
 
 ### 7.3.5 Maßnahmen & Empfehlungen
 
@@ -72,16 +48,6 @@ Ergänzend empfiehlt es sich, offene Ökosysteme gezielt zu stärken. Wo möglic
 
 Schließlich sollten potenzielle Kooperationen geprüft werden, insbesondere mit Akteuren, die wirtschaftlich von einer erhöhten Verkehrssicherheit profitieren, etwa Versicherungen, Kommunen oder Verkehrsinitiativen.
 
----------------------------------------------------------------------------------------
-
-* Nachhaltiges Geschäftsmodell definieren
-  * Früh klären, ob die App z. B. über einmalige Käufe, freiwillige Beiträge/Spenden, Förderprojekte oder Kooperationen finanziert werden soll, ohne den Datenschutzansatz zu untergraben
-* Transparenz über Kosten & Nutzen
-  * Gegenüber Nutzern klar kommunizieren, dass der Fokus auf Sicherheit, Transparenz und Datenschutz liegt, nicht auf maximaler Monetarisierung
-* Offene Ökosysteme stärken
-  * Wo möglich Beiträge an z.B. OSM leisten (Code, Dokumentation, Datenqualität, ...), um die Basis, von der man profitiert, langfristig zu stabilisieren
-* Kooperationen prüfen
-  * Mögliche Zusammenarbeit mit Akteuren, die von höherer Verkehrssicherheit wirtschaftlich profitieren (z. B. Versicherer, Kommunen, Verkehrsinitiativen)
 
 ## 7.4 Fazit
 
