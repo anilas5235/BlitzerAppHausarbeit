@@ -1,6 +1,7 @@
 ﻿## 9.2 Technologie-Stack
-
-(Annahme: Flutter – kann bei Bedarf durch einen alternativen Cross-Plattform-Stack ersetzt werden; Prinzipien bleiben.)
+Der Technologie-Stack bildet die technische Grundlage für die Umsetzung der mobilen Blitzer-App. Er umfasst die Auswahl
+der Programmiersprachen, Frameworks, Bibliotheken und Dienste, die zur Realisierung der Kernfunktionen und zur Erfüllung der
+nicht-funktionalen Anforderungen notwendig sind.
 
 ### Kernkomponenten
 
@@ -24,17 +25,6 @@
 3. OSM Note (optional) → Validierung Eingabe → POST Notes API → Anzeige Bestätigung → Speicherung minimaler Metadaten (
    Note-ID lokal)
 
-### Beispiel Overpass Query (vereinfachte Form)
-
-```
-[out:json][timeout:25];
-(
-  node["highway"="speed_camera"]({{bbox}});
-  node["man_made"="speed_camera"]({{bbox}});
-  node["enforcement"="maxspeed"]({{bbox}});
-);
-out tags center;
-```
 
 ### Sicherheits- & Datenschutzaspekte im Stack
 
