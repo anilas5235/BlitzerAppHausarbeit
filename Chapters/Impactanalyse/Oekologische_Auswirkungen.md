@@ -7,12 +7,12 @@ Die Impactanalyse betrachtet die Auswirkungen der App aus ökologischer, soziale
 
 ## 7.1 Ökologische Auswirkungen
 
-### Ausgangslage & Relevanz
+### 7.1.1 Ausgangslage & Relevanz
 
 Das Fahrverhalten eines Kraftfahrzeugs steht in engem Zusammenhang mit dem Kraftstoffverbrauch und den daraus resultierenden Emissionen [[2]](https://www.sciencedirect.com/science/article/pii/S2095756424000709). Dabei spielen insbesondere die gefahrene Geschwindigkeit sowie Beschleunigungs- und Bremsvorgänge eine zentrale Rolle. Die Bekanntheit von Blitzerstandorten, die durch die App entstehen kann, kann das Fahrverhalten beeinflussen, etwa durch allgemein schnelleres Fahren außerhalb bekannter Kontrollbereiche. Zudem verursachen digitale Dienste wie Apps und die zugrunde liegende Serverinfrastruktur ebenfalls Energieverbrauch, der im Vergleich zu fahrbedingten Effekten jedoch als geringer einzustufen ist. Aus diesen Gründen ist ein Blick auf ökologische Auswirkungen der App begründet und notwendig.
 
 
-### Positive Auswirkungen
+### 7.1.2 Positive Auswirkungen
 
 Durch frühzeitige Hinweise auf Blitzer und Limitwechsel kann das Fahrverhalten gleichmäßiger werden, da abruptes Beschleunigen und Abbremsen reduziert wird. Dies kann indirekt zu einem geringeren Kraftstoffverbrauch führen und entfaltet seine Wirkung mittel- bis langfristig. Die Stärke des Effekts ist jedoch insgesamt als gering einzustufen, da die App keinen direkten Eingriff in das Fahrverhalten vornimmt und die Wirkung situationsabhängig sowie nutzerabhängig ist.
 
@@ -24,7 +24,7 @@ Insgesamt sind aus ökologischer Sicht vor allem das Fahrverhalten und die gefah
 <img width="1377" height="243" alt="image" src="https://github.com/user-attachments/assets/2f68fb28-72a2-44fc-b0da-0fa036414d12" />
 
 
-### Negative Auswirkungen / Risiken
+### 7.1.3 Negative Auswirkungen / Risiken
 
 Ein möglicher negativer Effekt der App besteht darin, dass sich Nutzer durch die Nutzung der Anwendung subjektiv "abgesichert" fühlen und außerhalb bekannter Blitzerzonen tendenziell schneller fahren. Dieses Verhalten kann dazu führen, dass die genannten positiven Effekte innerhalb von Blitzerumfeldern teilweise ausgeglichen oder sogar überkompensiert werden, wodurch sich der durchschnittliche Kraftstoffverbrauch erhöhren kann [[2]](https://www.sciencedirect.com/science/article/pii/S2095756424000709). Dieser Effekt wirkt indirekt, entwickelt sich mittel- bis langfristig durch Fahrgewohnheiten und ist in seiner Stärke als gering einzustufen, da er nur einen Teil der Nutzer betrifft, nur in bestimmten Bereichen auftritt und stark vom individuellen Fahrverhalten abhängt.
 
@@ -36,14 +36,14 @@ Schließlich kann es vereinzelt zu zusätzlichen Fahrkilometern kommen, etwa wen
 <img width="1373" height="390" alt="image" src="https://github.com/user-attachments/assets/3b622b78-cc00-401f-af1c-c637d7ccf843" />
 
 
-### Betroffene Stakeholder
+### 7.1.4 Betroffene Stakeholder
 
 Von den ökologischen Auswirkungen der App sind mehrere Stakeholder betroffen. Dazu zählen in erster Linie die Nutzer der App, deren Fahrverhalten den Kraftstoffverbrauch sowie die damit verbundenen Emissionen beeinflusst. Darüber hinaus ist die Umwelt bzw. die Allgemeinheit betroffen, etwa durch Veränderungen der Luftqualität, der CO₂-Emissionen und der Lärmbelastung.
 
 Auf technischer Ebene sind außerdem Betreiber von IT-Infrastruktur betroffen, da zusätzlicher Datenverkehr in Rechenzentren und Mobilfunknetzen Energie erfordert. Schließlich betreffen die Auswirkungen auch Community-basierte Datenplattformen wie OpenStreetMap, deren Betrieb und Pflege mit einem zusätzlichen Ressourcen- und Energieaufwand verbunden sind.
 
 
-### Maßnahmen & Empfehlungen
+### 7.1.5 Maßnahmen & Empfehlungen
 
 Zur Reduktion negativer ökologischer Effekte und zur gezielten Verstärkung positiver Wirkungen gibt es sowohl technische als auch verhaltensbezogene Maßnahmen.
 
