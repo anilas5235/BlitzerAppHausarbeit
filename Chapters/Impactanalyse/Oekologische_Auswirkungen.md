@@ -1,5 +1,9 @@
 ﻿# 7 Impactanalyse
 
+Die folgende Impactanalyse untersucht die positiven und negativen Auswirkungen der App im Vergleich zu einem Szenario ohne Veröffentlichung. Es wird dabei davon ausgegangen, dass bereits andere Blitzer- und Navigations-Apps existieren. Daher beziehen sich die genannten Auswirkungen auf den zusätzlichen Effekt der geplanten App. Der Fokus der Untersuchung liegt insbesondere auf der Rolle als datenschutzfreundliche Alternative zu anderen Applikationen und nicht auf eine völlige Einführung des Prinzips "Blitzer-App".
+Die Impactanalyse betrachtet die Auswirkungen der App aus ökologischer, sozialer und wirtschaftlicher Perspektive, wobei jede Perspektive getrennt nach dem gleichen Schema untersucht wird. Nach einer kurzen Darstellung der Ausgangslage und Relevanz, in der erläutert wird, weshalb die App in der jeweiligen Perspektive Auswirkungen entfaltet, folgen die positiven Effekte sowie mögliche negative Effekte bzw. Risiken. Dabei werden die Effekte nicht nur benannt, sondern zusätzlich nach Art (direkt oder indirekt), Zeithorizont sowie Stärke des Effekts eingeordnet. Anschließend werden die betroffenen Stakeholder betrachtet, bevor zum Schluss konkrete Maßnahmen und Empfehlungen abgeleitet werden, um negative Effekte präventiv zu vermeiden und positive Effekte zu verstärken.
+
+
 * Es wird davon ausgegangen, dass bereits andere Blitzer- und Navigations-Apps existieren
 * Die folgenden Auswirkungen beziehen sich daher auf den zusätzlichen Effekt der geplanten App
 * Fokus liegt insbesondere auf der Rolle als datenschutzfreundliche Alternative & nicht auf eine völlige Einführung des Prinzips "Blitzer-App"
