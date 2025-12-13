@@ -28,7 +28,7 @@ Die Impactanalyse betrachtet die Auswirkungen der App aus ökologischer, soziale
 
 ### Ausgangslage & Relevanz
 
-Das Fahrverhalten eines Kraftfahrzeugs steht in engem Zusammenhang mit dem Kraftstoffverbrauch und den daraus resultierenden Emissionen. Dabei spielen insbesondere die gefahrene Geschwindigkeit sowie Beschleunigungs- und Bremsvorgänge eine zentrale Rolle. Die Bekanntheit von Blitzerstandorten, die durch die App entstehen kann, kann das Fahrverhalten beeinflussen, etwa durch allgemein schnelleres Fahren außerhalb bekannter Kontrollbereiche. Zudem verursachen digitale Dienste wie Apps und die zugrunde liegende Serverinfrastruktur ebenfalls Energieverbrauch, der im Vergleich zu fahrbedingten Effekten jedoch als geringer einzustufen ist. Aus diesen Gründen ist ein Blick auf ökologische Auswirkungen der App begründet und notwendig.
+Das Fahrverhalten eines Kraftfahrzeugs steht in engem Zusammenhang mit dem Kraftstoffverbrauch und den daraus resultierenden Emissionen [[2]](https://www.sciencedirect.com/science/article/pii/S2095756424000709). Dabei spielen insbesondere die gefahrene Geschwindigkeit sowie Beschleunigungs- und Bremsvorgänge eine zentrale Rolle. Die Bekanntheit von Blitzerstandorten, die durch die App entstehen kann, kann das Fahrverhalten beeinflussen, etwa durch allgemein schnelleres Fahren außerhalb bekannter Kontrollbereiche. Zudem verursachen digitale Dienste wie Apps und die zugrunde liegende Serverinfrastruktur ebenfalls Energieverbrauch, der im Vergleich zu fahrbedingten Effekten jedoch als geringer einzustufen ist. Aus diesen Gründen ist ein Blick auf ökologische Auswirkungen der App begründet und notwendig.
 
 ---------------------------------------------------------------------------------------
 
@@ -37,6 +37,11 @@ Das Fahrverhalten eines Kraftfahrzeugs steht in engem Zusammenhang mit dem Kraft
 * Digitale Dienste wie Apps und Serverinfrastruktur verursachen ebenfalls Energieverbrauch (eher geringere Auswirkungen)
 
 ### Positive Auswirkungen
+
+Durch frühzeitige Hinweise auf Blitzer und Limitwechsel kann das Fahrverhalten gleichmäßiger werden, da abruptes Beschleunigen und Abbremsen reduziert wird. Dies kann indirekt zu einem geringeren Kraftstoffverbrauch führen und entfaltet seine Wirkung mittel- bis langfristig. Die Stärke des Effekts ist jedoch insgesamt als gering einzustufen, da die App keinen direkten Eingriff in das Fahrverhalten vornimmt und die Wirkung situationsabhängig sowie nutzerabhängig ist.
+Zudem können bekannte Blitzerstandorte dazu beitragen, dass Fahrer im jeweiligen Umfeld vorsichtiger fahren und niedrigere Durchschnittsgeschwindigkeiten einhalten. Auch dieser Effekt wirkt indirekt auf die Emissionen und tritt eher kurzfristig und wiederkehrend auf. In seiner Stärke ist er ebenfalls als gering zu bewerten, da sich das angepasste Fahrverhalten meist nur auf das unmittelbare Blitzerumfeld beschränkt und mit rund 4800 installierten Blitzern [[3]](https://www.blitzer.de/land/blitzer-in-Deutschland) nur ein begrenzter Teil des Straßennetzes abgedeckt wird.
+Darüber hinaus verzichtet die App auf eine eigene Server-Backend-Infrastruktur und nutzt bestehende offene Schnittstellen. Dadurch fällt der zusätzliche Energiebedarf geringer aus als bei vergleichbaren Anwendungen mit eigener Backend-Infrastruktur [[4]](https://interactdc.com/static/images/documents/JRC135926_01.pdf). Dieser indirekte Effekt wirkt langfristig, ist jedoch von geringer Stärke, da der absolute Energieverbrauch der App sehr niedrig ist und lediglich aus einzelnen API-Abfragen sowie geringem Datenverkehr besteht, was keinen relevanten zusätzlichen Stromverbrauch verursacht.
+Insgesamt sind aus ökologischer Sicht vor allem das Fahrverhalten und die gefahrenen Kilometer relevant, während der IT-bedingte Energieverbrauch eine nachgeordnete Rolle spielt.
 
 ---------------------------------------------------------------------------------------
 
